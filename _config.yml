@@ -1,7 +1,7 @@
-name: "Kevin's Personal Website"
-description: "Says it all"
+safe:        false
+base-url:    /
+permalink:   none
 
-url: "http://localhost:4000"
-
-markdown: rdiscount
-permalink: pretty
+source:      .
+destination: _site
+plugins:     _plugins
