@@ -112,14 +112,14 @@ html, body {
   height: 100%; }
 
 /* line 12, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-footer {
+body {
   clear: both;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin-bottom: -50px; }
   /* line 18, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-  footer #root_footer {
+  body #page-footer {
     height: 50px; }
 
 /* line 20, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
@@ -146,7 +146,7 @@ body {
   line-height: 200%; }
 
 /* line 72, ../scss/screen.scss */
-.top-nav {
+.header {
   *zoom: 1;
   max-width: 59em;
   _width: 59em;
@@ -159,22 +159,22 @@ body {
   text-align: center;
   display: inline; }
   /* line 38, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .top-nav:after {
+  .header:after {
     content: "";
     display: table;
     clear: both; }
   /* line 78, ../scss/screen.scss */
-  .top-nav a {
+  .header a {
     text-decoration: none; }
   /* line 81, ../scss/screen.scss */
-  .top-nav li {
+  .header li {
     display: inline; }
   /* line 84, ../scss/screen.scss */
-  .top-nav .icon {
+  .header .icon {
     font-size: 1.2em;
     padding: 0.8em; }
     /* line 87, ../scss/screen.scss */
-    .top-nav .icon.twitter:before, .top-nav .icon.tumblr:before, .top-nav .icon.github:before, .top-nav .icon.instagram:before, .top-nav .icon.coderwall:before {
+    .header .icon.twitter:before, .header .icon.tumblr:before, .header .icon.github:before, .header .icon.instagram:before, .header .icon.coderwall:before {
       font-family: 'entypo-social';
       content: attr(data-icon); }
 
@@ -318,17 +318,3 @@ ul.links li {
   /* line 211, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
-
-/* line 216, ../scss/screen.scss */
-.cc {
-  border-bottom: none;
-  color: #66828a;
-  float: right;
-  padding: 1em; }
-  /* line 221, ../scss/screen.scss */
-  .cc:before {
-    font-size: 4em; }
-  /* line 224, ../scss/screen.scss */
-  .cc:hover {
-    border-bottom: none;
-    color: #87aaae; }
