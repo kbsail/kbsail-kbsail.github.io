@@ -157,29 +157,29 @@ header, section, footer {
 
 /* line 71, ../scss/screen.scss */
 .header-wrapper {
-  border-bottom: 2px solid #e5e5e7; }
+  border-bottom: 2px solid #e5e5e7;
+  margin-top: 1em; }
 
-/* line 75, ../scss/screen.scss */
+/* line 76, ../scss/screen.scss */
 body {
   background-color: #f7f7f7;
   color: #3b494e;
   font-family: "Keswick", serif;
   line-height: 200%; }
 
-/* line 82, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 header {
   width: 100%;
   margin: 4em auto;
   display: inline; }
-  /* line 87, ../scss/screen.scss */
+  /* line 88, ../scss/screen.scss */
   header a {
     text-decoration: none; }
-  /* line 91, ../scss/screen.scss */
+  /* line 92, ../scss/screen.scss */
   header nav {
     float: right; }
-  /* line 95, ../scss/screen.scss */
+  /* line 96, ../scss/screen.scss */
   header .contact {
-    margin-top: 0;
     float: right; }
     /* line 98, ../scss/screen.scss */
     header .contact a {

@@ -70,6 +70,7 @@ header, section, footer {
 
 .header-wrapper {
   border-bottom: 2px solid $border;
+  margin-top: 1em;
 }
 
 body {
@@ -93,7 +94,6 @@ header {
   }
 
   .contact {
-    margin-top: 0;
     float: right;
     a {
       padding: 1.2em;
