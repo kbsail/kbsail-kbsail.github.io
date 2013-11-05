@@ -45,7 +45,7 @@ $lightmono: #BAC8CF;
 $medmono: #9DB0B9;
 $darkmono: #66828A;
 $darkestmono: #3B494E;
-$background: #f7f7f7;
+$background: #F7F7F7;
 $border: #e5e5e7;
 $blockquote: #fefefe;
 
@@ -82,18 +82,33 @@ body {
 header {
   width: 100%;
   margin: 4em auto;
-  text-align: center;
   display: inline;
+
   a {
   text-decoration: none;
   }
-  li {
-  display: inline;
+  
+  nav {
+    float: right;
   }
+
+  .contact {
+    margin-top: 0;
+    float: right;
+    a {
+      padding: 1.2em;
+      border: 2px solid black;
+    }
+  }
+
+  .site-title {
+    float: left;
+  }
+
   .icon {
     font-size: 1.2em;
     padding: 0.8em;
-    &.twitter:before, &.tumblr:before, &.github:before, &.instagram:before, &.coderwall:before {
+    &.twitter:before, &.tumblr:before, &.github:before, &.instagram:before, &.coderwall:before, &.linkedin:before {
       font-family: 'entypo-social';
       content: attr(data-icon);
     }
