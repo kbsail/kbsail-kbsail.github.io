@@ -152,66 +152,46 @@ header, section, footer {
 /* line 66, ../scss/screen.scss */
 .header-wrapper {
   border-bottom: 2px solid #e5e5e7;
-  margin-top: 1em; }
+  margin-top: 1em;
+  overflow: hidden;
+  *zoom: 1; }
 
-/* line 71, ../scss/screen.scss */
+/* line 72, ../scss/screen.scss */
 body {
   background-color: #f7f7f7;
   color: #3b494e;
   font-family: "Keswick", serif;
   line-height: 200%; }
 
-/* line 78, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 header {
   display: inline; }
-  /* line 80, ../scss/screen.scss */
+  /* line 81, ../scss/screen.scss */
   header a {
     text-decoration: none; }
-  /* line 84, ../scss/screen.scss */
+  /* line 85, ../scss/screen.scss */
   header nav {
     float: right; }
-  /* line 88, ../scss/screen.scss */
+  /* line 89, ../scss/screen.scss */
   header .contact {
     float: right; }
-    /* line 90, ../scss/screen.scss */
+    /* line 91, ../scss/screen.scss */
     header .contact a {
       padding: 1.2em;
       border: 2px solid black; }
-  /* line 96, ../scss/screen.scss */
+  /* line 97, ../scss/screen.scss */
   header .site-title {
     float: left; }
-  /* line 100, ../scss/screen.scss */
+  /* line 101, ../scss/screen.scss */
   header .icon {
     font-size: 1.2em;
     padding: 0.8em; }
-    /* line 103, ../scss/screen.scss */
+    /* line 104, ../scss/screen.scss */
     header .icon.twitter:before, header .icon.tumblr:before, header .icon.github:before, header .icon.instagram:before, header .icon.coderwall:before, header .icon.linkedin:before {
       font-family: 'entypo-social';
       content: attr(data-icon); }
 
-/* line 111, ../scss/screen.scss */
-.front-page {
-  font-family: "Keswick";
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 2em auto;
-  text-align: center;
-  display: inline-block; }
-  /* line 118, ../scss/screen.scss */
-  .front-page h1 {
-    color: #3b494e;
-    font-size: 2em;
-    font-weight: 600;
-    margin: 0.5em auto;
-    margin-bottom: 0;
-    padding: 0.5em;
-    text-transform: uppercase;
-    width: 12em; }
-  /* line 128, ../scss/screen.scss */
-  .front-page a {
-    text-decoration: none; }
-
-/* line 133, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 .page {
   *zoom: 1;
   max-width: 59em;
@@ -220,24 +200,37 @@ header {
   padding-right: 1em;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  text-align: center; }
   /* line 38, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .page:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 136, ../scss/screen.scss */
-  .page section {
+  /* line 117, ../scss/screen.scss */
+  .page .front-page {
     clear: both;
-    margin-bottom: 2em;
-    margin-top: 5em;
-    text-align: center; }
-    /* line 141, ../scss/screen.scss */
-    .page section .page-links {
+    font-family: "Keswick";
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 2em auto;
+    text-align: center;
+    display: inline-block; }
+    /* line 125, ../scss/screen.scss */
+    .page .front-page h1 {
+      color: #3b494e;
+      font-size: 2em;
+      font-weight: 600;
+      padding: 0.5em;
+      text-transform: uppercase;
+      width: 12em; }
+    /* line 133, ../scss/screen.scss */
+    .page .front-page a {
+      text-decoration: none;
       overflow: hidden;
       *zoom: 1; }
 
-/* line 147, ../scss/screen.scss */
+/* line 141, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -245,23 +238,23 @@ header {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 157, ../scss/screen.scss */
+/* line 151, ../scss/screen.scss */
 h1, h3, h4, h5, h6 {
   font-family: "Keswick", sans-serif; }
 
-/* line 159, ../scss/screen.scss */
+/* line 153, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 166, ../scss/screen.scss */
+/* line 160, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 171, ../scss/screen.scss */
+/* line 165, ../scss/screen.scss */
 h3 {
   color: #bfd9da;
   font-size: 1.1em;
@@ -271,7 +264,7 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 181, ../scss/screen.scss */
+/* line 175, ../scss/screen.scss */
 h4 {
   color: #9db0b9;
   font-size: 0.85em;
@@ -279,7 +272,7 @@ h4 {
   margin-top: 0.2em;
   text-transform: uppercase; }
 
-/* line 189, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 h5 {
   font-size: 0.9em;
   font-weight: 600;
@@ -287,24 +280,24 @@ h5 {
   text-align: right;
   text-transform: uppercase; }
 
-/* line 197, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 201, ../scss/screen.scss */
+/* line 195, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 206, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 .icon {
   margin: 0.5em 0;
   font-weight: normal; }
-  /* line 209, ../scss/screen.scss */
+  /* line 203, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 215, ../scss/screen.scss */
+  /* line 209, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }

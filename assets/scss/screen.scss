@@ -66,6 +66,7 @@ header, section, footer {
 .header-wrapper {
   border-bottom: 2px solid $border;
   margin-top: 1em;
+  @include clearfix;
 }
 
 body {
@@ -108,40 +109,33 @@ header {
 }
 
 
-.front-page {
-  font-family: "Keswick";
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 2em auto;
-  text-align: center;
-  display: inline-block;
-  h1 {
-    color: $darkestmono;
-    font-size: 2em;
-    font-weight: 600;
-    margin: 0.5em auto;
-    margin-bottom: 0;
-    padding: 0.5em;
-    text-transform: uppercase;
-    width: 12em;
-  }
-  a {
-    text-decoration: none;
-  }
-}
 
 .page { 
   @include container;
   padding-bottom: 1em;
-  section {
+  text-align: center;
+  .front-page {
     clear: both;
-    margin-bottom: 2em;
-    margin-top: 5em;
+    font-family: "Keswick";
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 2em auto;
     text-align: center;
-    .page-links {
+    display: inline-block;
+    h1 {
+      color: $darkestmono;
+      font-size: 2em;
+      font-weight: 600;
+      padding: 0.5em;
+      text-transform: uppercase;
+      width: 12em;
+    }
+    a {
+      text-decoration: none;
       @include clearfix;
     }
-  }
+}
+
 }
 
 .footer-wrapper {
