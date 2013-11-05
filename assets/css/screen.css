@@ -199,21 +199,9 @@ header {
 
 /* line 118, ../scss/screen.scss */
 .front-page {
-  *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 4em auto;
+  margin: 2em auto;
   text-align: center; }
-  /* line 38, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .front-page:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 122, ../scss/screen.scss */
+  /* line 121, ../scss/screen.scss */
   .front-page h1 {
     color: #3b494e;
     font-size: 2em;
@@ -223,11 +211,11 @@ header {
     padding: 0.5em;
     text-transform: uppercase;
     width: 12em; }
-  /* line 132, ../scss/screen.scss */
+  /* line 131, ../scss/screen.scss */
   .front-page a {
     text-decoration: none; }
 
-/* line 137, ../scss/screen.scss */
+/* line 136, ../scss/screen.scss */
 .page {
   *zoom: 1;
   max-width: 59em;
@@ -242,18 +230,18 @@ header {
     content: "";
     display: table;
     clear: both; }
-  /* line 140, ../scss/screen.scss */
+  /* line 139, ../scss/screen.scss */
   .page section {
     clear: both;
     margin-bottom: 2em;
     margin-top: 5em;
     text-align: center; }
-    /* line 145, ../scss/screen.scss */
+    /* line 144, ../scss/screen.scss */
     .page section .page-links {
       overflow: hidden;
       *zoom: 1; }
 
-/* line 151, ../scss/screen.scss */
+/* line 150, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -262,11 +250,11 @@ header {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 162, ../scss/screen.scss */
+/* line 161, ../scss/screen.scss */
 h1, h3, h4, h5, h6 {
   font-family: "Keswick", sans-serif; }
 
-/* line 164, ../scss/screen.scss */
+/* line 163, ../scss/screen.scss */
 h1 {
   display: block;
   font-size: 3.4em;
@@ -274,12 +262,12 @@ h1 {
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 172, ../scss/screen.scss */
+/* line 171, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 177, ../scss/screen.scss */
+/* line 176, ../scss/screen.scss */
 h3 {
   color: #bfd9da;
   font-size: 1.1em;
@@ -289,7 +277,7 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 187, ../scss/screen.scss */
+/* line 186, ../scss/screen.scss */
 h4 {
   color: #9db0b9;
   font-size: 0.85em;
@@ -297,7 +285,7 @@ h4 {
   margin-top: 0.2em;
   text-transform: uppercase; }
 
-/* line 195, ../scss/screen.scss */
+/* line 194, ../scss/screen.scss */
 h5 {
   font-size: 0.9em;
   font-weight: 600;
@@ -305,36 +293,24 @@ h5 {
   text-align: right;
   text-transform: uppercase; }
 
-/* line 203, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 207, ../scss/screen.scss */
+/* line 206, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 210, ../scss/screen.scss */
-ul.links li {
-  padding: 0; }
-  /* line 212, ../scss/screen.scss */
-  ul.links li a {
-    border-bottom: none;
-    color: #3b494e; }
-    /* line 215, ../scss/screen.scss */
-    ul.links li a span {
-      color: #e5e5e7;
-      font-weight: normal; }
-
-/* line 226, ../scss/screen.scss */
+/* line 211, ../scss/screen.scss */
 .icon {
   margin: 0.5em 0;
   font-weight: normal; }
-  /* line 229, ../scss/screen.scss */
+  /* line 214, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 235, ../scss/screen.scss */
+  /* line 220, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }

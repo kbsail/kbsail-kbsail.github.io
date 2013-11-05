@@ -116,8 +116,7 @@ header {
 }
 
 .front-page {
-  @include container;
-  margin: 4em auto;
+  margin: 2em auto;
   text-align: center;
   h1 {
     color: $darkestmono;
@@ -205,20 +204,6 @@ h6 { text-transform: uppercase; }
 // LIST ELEMENTS
 
 li { margin-bottom: 0.2em; }
-
-ul.links {
-  li {
-    padding: 0;
-    a {
-      border-bottom: none;
-      color: $darkestmono;
-      span {
-        color: $border;
-        font-weight: normal;
-      }
-    }
-  }
-}
 
 
 // ICONS
