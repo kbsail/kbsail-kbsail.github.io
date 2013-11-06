@@ -126,13 +126,20 @@ body {
 /* BREAKPOINTS */
 /* -------------------------------------------------------------------------*/
 /* COLORS */
+/* 551A8B */
+/* BAC8CF */
+/* DDECEF */
+/* BFD9DA */
+/* 87AAAE */
+/* F6F6F6 */
+/* E7E7E7 */
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
-/* line 60, ../scss/screen.scss */
+/* line 59, ../scss/screen.scss */
 html, body {
   height: 100%; }
 
-/* line 62, ../scss/screen.scss */
+/* line 61, ../scss/screen.scss */
 header, section, footer {
   *zoom: 1;
   max-width: 59em;
@@ -149,40 +156,44 @@ header, section, footer {
     display: table;
     clear: both; }
 
-/* line 68, ../scss/screen.scss */
+/* line 67, ../scss/screen.scss */
 .header-wrapper {
-  border-bottom: 2px solid #e5e5e7;
+  border-bottom: 2px solid grey;
   overflow: hidden;
   *zoom: 1; }
 
-/* line 73, ../scss/screen.scss */
+/* line 72, ../scss/screen.scss */
+a {
+  color: #3b494e; }
+
+/* line 76, ../scss/screen.scss */
 body {
-  background-color: #f7f7f7;
+  background-color: #fbfaf9;
   color: #3b494e;
   font-family: "Keswick", serif;
   line-height: 200%; }
 
-/* line 80, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 header {
   display: inline; }
-  /* line 82, ../scss/screen.scss */
+  /* line 85, ../scss/screen.scss */
   header a {
     text-decoration: none; }
-  /* line 86, ../scss/screen.scss */
+  /* line 89, ../scss/screen.scss */
   header nav {
     float: right;
     margin-top: 0; }
-    /* line 89, ../scss/screen.scss */
+    /* line 92, ../scss/screen.scss */
     header nav a {
       display: inline-block;
       padding-top: 0;
       margin-top: 0; }
-  /* line 96, ../scss/screen.scss */
+  /* line 99, ../scss/screen.scss */
   header .contact {
     float: right;
     padding-top: 1em;
     margin: 0 1.2em; }
-    /* line 100, ../scss/screen.scss */
+    /* line 103, ../scss/screen.scss */
     header .contact a {
       font-size: 1.2em;
       padding: 0.5em 1.5em;
@@ -194,18 +205,18 @@ header {
       -o-border-radius: 10px;
       border-radius: 10px;
       *zoom: 1;
-      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF551A8B', endColorstr='#FF200A35');
-      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #551a8b), color-stop(100%, #3b1260));
-      background: -webkit-linear-gradient(#551a8b, #3b1260);
-      background: -moz-linear-gradient(#551a8b, #3b1260);
-      background: -o-linear-gradient(#551a8b, #3b1260);
-      background: linear-gradient(#551a8b, #3b1260);
-      -webkit-box-shadow: #7c26cb 0 1px 0 inset;
-      -moz-box-shadow: #7c26cb 0 1px 0 inset;
-      box-shadow: #7c26cb 0 1px 0 inset;
-      border: 1px solid #2e0e4b;
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF679498', endColorstr='#FF3E595B');
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #679498), color-stop(100%, #52767a));
+      background: -webkit-linear-gradient(#679498, #52767a);
+      background: -moz-linear-gradient(#679498, #52767a);
+      background: -o-linear-gradient(#679498, #52767a);
+      background: linear-gradient(#679498, #52767a);
+      -webkit-box-shadow: #95b4b7 0 1px 0 inset;
+      -moz-box-shadow: #95b4b7 0 1px 0 inset;
+      box-shadow: #95b4b7 0 1px 0 inset;
+      border: 1px solid #48686a;
       color: white;
-      text-shadow: #11051b 0 -1px 0;
+      text-shadow: #314749 0 -1px 0;
       display: inline;
       font-family: 'Helvetica Neue'; }
       /* line 15, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
@@ -213,22 +224,22 @@ header {
         text-decoration: none; }
       /* line 36, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
       header .contact a:hover {
-        background-color: #2e0e4b;
-        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #481676), color-stop(100%, #2e0e4b));
-        background: -webkit-linear-gradient(#481676, #2e0e4b);
-        background: -moz-linear-gradient(#481676, #2e0e4b);
-        background: -o-linear-gradient(#481676, #2e0e4b);
-        background: linear-gradient(#481676, #2e0e4b); }
+        background-color: #48686a;
+        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d8589), color-stop(100%, #48686a));
+        background: -webkit-linear-gradient(#5d8589, #48686a);
+        background: -moz-linear-gradient(#5d8589, #48686a);
+        background: -o-linear-gradient(#5d8589, #48686a);
+        background: linear-gradient(#5d8589, #48686a); }
       /* line 39, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
       header .contact a:active {
-        -webkit-box-shadow: #260c3e 0 1px 2px inset;
-        -moz-box-shadow: #260c3e 0 1px 2px inset;
-        box-shadow: #260c3e 0 1px 2px inset; }
+        -webkit-box-shadow: #425f61 0 1px 2px inset;
+        -moz-box-shadow: #425f61 0 1px 2px inset;
+        box-shadow: #425f61 0 1px 2px inset; }
       /* line 6, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
       header .contact a.disabled, header .contact a[disabled] {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
         opacity: 0.6;
-        background: #3b1260;
+        background: #52767a;
         cursor: default;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -237,22 +248,22 @@ header {
       header .contact a::-moz-focus-inner {
         padding: 0 !important;
         margin: -1px !important; }
-  /* line 107, ../scss/screen.scss */
+  /* line 110, ../scss/screen.scss */
   header .site-title {
     float: left;
     font-size: 2.4em;
     padding: 0.6em 0 0 1.4em; }
-  /* line 113, ../scss/screen.scss */
+  /* line 116, ../scss/screen.scss */
   header .icon {
     font-size: 1.2em;
     padding: 1em;
     padding-bottom: 0.2em; }
-    /* line 117, ../scss/screen.scss */
+    /* line 120, ../scss/screen.scss */
     header .icon.twitter:before, header .icon.tumblr:before, header .icon.github:before, header .icon.instagram:before, header .icon.coderwall:before, header .icon.linkedin:before {
       font-family: 'entypo-social';
       content: attr(data-icon); }
 
-/* line 126, ../scss/screen.scss */
+/* line 129, ../scss/screen.scss */
 .page {
   *zoom: 1;
   max-width: 59em;
@@ -268,7 +279,7 @@ header {
     content: "";
     display: table;
     clear: both; }
-  /* line 130, ../scss/screen.scss */
+  /* line 134, ../scss/screen.scss */
   .page .front-page {
     clear: both;
     font-family: "Keswick";
@@ -277,7 +288,7 @@ header {
     margin: 0 2em auto;
     text-align: center;
     display: inline-block; }
-    /* line 138, ../scss/screen.scss */
+    /* line 142, ../scss/screen.scss */
     .page .front-page h1 {
       color: #3b494e;
       font-size: 2em;
@@ -285,13 +296,13 @@ header {
       padding: 1em .5em 0 .5em;
       text-transform: uppercase;
       width: 12em; }
-    /* line 146, ../scss/screen.scss */
+    /* line 150, ../scss/screen.scss */
     .page .front-page a {
       text-decoration: none;
       overflow: hidden;
       *zoom: 1; }
 
-/* line 154, ../scss/screen.scss */
+/* line 158, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -299,82 +310,66 @@ header {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 164, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 h1, h3, h4, h5, h6 {
   font-family: "Keswick", sans-serif; }
 
-/* line 166, ../scss/screen.scss */
+/* line 170, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 173, ../scss/screen.scss */
+/* line 177, ../scss/screen.scss */
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
   line-height: 100%; }
 
-/* line 178, ../scss/screen.scss */
+/* line 182, ../scss/screen.scss */
 h3 {
-  color: #bfd9da;
-  font-size: 1.1em;
+  font-size: 2em;
+  color: #679498;
   font-weight: 600;
+  margin-top: 1.5em;
   margin-bottom: 1em;
-  margin-top: 2em;
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 188, ../scss/screen.scss */
-h4 {
-  color: #9db0b9;
-  font-size: 0.85em;
-  font-weight: 600;
-  margin-top: 0.2em;
-  text-transform: uppercase; }
-
-/* line 196, ../scss/screen.scss */
-h5 {
-  font-size: 0.9em;
-  font-weight: 600;
-  margin-top: 8em;
-  text-align: right;
-  text-transform: uppercase; }
-
-/* line 204, ../scss/screen.scss */
+/* line 192, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 208, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 213, ../scss/screen.scss */
+/* line 201, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 216, ../scss/screen.scss */
+  /* line 204, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 222, ../scss/screen.scss */
+  /* line 210, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 227, ../scss/screen.scss */
+/* line 215, ../scss/screen.scss */
 .coderwall {
   vertical-align: top;
   font-weight: bold; }
 
-/* line 233, ../scss/screen.scss */
+/* line 223, ../scss/screen.scss */
 .project-row ul {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
   display: inline; }
-  /* line 235, ../scss/screen.scss */
+  /* line 225, ../scss/screen.scss */
   .project-row ul li {
     height: 20em;
     display: inline;
@@ -399,7 +394,7 @@ li {
     .project-row ul li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 240, ../scss/screen.scss */
+    /* line 230, ../scss/screen.scss */
     .project-row ul li a img {
       width: 80%;
       height: 80%;

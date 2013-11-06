@@ -35,24 +35,23 @@ $less-than-tablet: 0px 9 767px;
 /* -------------------------------------------------------------------------*/
 /* COLORS */
 
-$primary: #87AAAE;
-$secondary: #BFD9DA;
-$lightmono: #BAC8CF;
-$medmono: #9DB0B9;
-$darkmono: #66828A;
-$darkestmono: #3B494E;
-$background: #F7F7F7;
-$border: #e5e5e7;
-$blockquote: #fefefe;
+$lightscheme: #87AAAE;
+$darkscheme: #679498;
+$lightgray: #BAC8CF;
+$grayblue: #9DB0B9;
+$darkcyan: #66828A;
+$darkgrayblue: #3B494E;
+$background: #fbfaf9;
+$border: #808080;
 
-// 551A8B
-// BAC8CF
+/* 551A8B */
+/* BAC8CF */
 
-// DDECEF
-// BFD9DA
-// 87AAAE
-// F6F6F6
-// E7E7E7
+/* DDECEF */
+/* BFD9DA */
+/* 87AAAE */
+/* F6F6F6 */
+/* E7E7E7 */
 
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
@@ -70,9 +69,13 @@ header, section, footer {
   @include clearfix;
 }
 
+a {
+  color: $darkgrayblue;;
+}
+
 body {
   background-color: $background;
-  color: $darkestmono;
+  color: $darkgrayblue;
   font-family: "Keswick", serif;
   line-height: 200%;
 }
@@ -98,7 +101,7 @@ header {
     padding-top: 1em;
     margin: 0 1.2em;
     a {
-      @include sassy-button("simple", 10px, 1.2em, #551A8B);
+      @include sassy-button("simple", 10px, 1.2em, $darkscheme);
       display: inline;
       font-family: 'Helvetica Neue';
     }
@@ -124,6 +127,7 @@ header {
 
 
 .page { 
+
   @include container;
   padding-bottom: 1em;
   text-align: center;
@@ -136,7 +140,7 @@ header {
     text-align: center;
     display: inline-block;
     h1 {
-      color: $darkestmono;
+      color: $darkgrayblue;
       font-size: 2em;
       font-weight: 600;
       padding: 1em .5em 0 .5em;
@@ -154,7 +158,7 @@ header {
 .footer-wrapper {
   width: 100%;
   text-align: center;
-  background-color: $medmono;
+  background-color: $grayblue;
   height: 30px;
   padding: 20px 0 10px 0;
 }
@@ -171,33 +175,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
   line-height: 100%;
 }
 
 h3 {
-  color: $secondary;
-  font-size: 1.1em;
+  font-size: 2em;
+  color: $darkscheme;
   font-weight: 600;
+  margin-top: 1.5em;
   margin-bottom: 1em;
-  margin-top: 2em;
   line-height: 100%;
-  text-transform: uppercase;
-}
-
-h4 {
-  color: $medmono;
-  font-size: 0.85em;
-  font-weight: 600;
-  margin-top: 0.2em;
-  text-transform: uppercase;
-}
-
-h5 {
-  font-size: 0.9em;
-  font-weight: 600;
-  margin-top: 8em;
-  text-align: right;
   text-transform: uppercase;
 }
 
@@ -228,6 +216,8 @@ li { margin-bottom: 0.2em; }
   vertical-align: top;
   font-weight: bold;
 }
+
+// PROJECT ROWS
 
 .project-row {
   ul{ 
