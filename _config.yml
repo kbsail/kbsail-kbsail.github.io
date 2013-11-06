@@ -1,6 +1,9 @@
+title: Kevin Berry
 safe:        false
 base-url:    /
 permalink:   none
+markdown: redcarpet
+pygments: true
 
 source:      .
 destination: _site

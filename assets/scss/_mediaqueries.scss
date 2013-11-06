@@ -1,0 +1,28 @@
+/* MEDIA QUERIES ********************************************************************************************/
+
+@include at-breakpoint($less-than-tablet) {
+  body {
+    font-size: 75%;
+  }
+  .home {
+    .item {
+      h4, h6 {
+        line-height: 120%;
+        margin: 0;
+      }
+    }
+  }
+  .inline {
+    width: 35%;
+  }
+  footer {
+    padding: 50px 0 70px 0;
+    .social, .contact {
+      @include span-columns(9);
+      text-align: center;
+    }
+    .contact {
+      margin-top: 2em;
+    }
+  }
+}
