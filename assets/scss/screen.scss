@@ -67,7 +67,6 @@ header, section, footer {
 
 .header-wrapper {
   border-bottom: 2px solid $border;
-  padding-top: 1em;
   @include clearfix;
 }
 
@@ -86,10 +85,17 @@ header {
   
   nav {
     float: right;
+    margin-top: 0;
+    a {
+    display: inline-block; 
+    padding-top: 0;
+    margin-top: 0; 
+    }
   }
 
   .contact {
     float: right;
+    padding-top: 1em;
     margin: 0 1.2em;
     a {
       @include sassy-button("simple", 10px, 1.2em, #551A8B);
@@ -101,12 +107,13 @@ header {
   .site-title {
     float: left;
     font-size: 2.4em;
-    padding: 5px 0 0 1.4em;
+    padding: 0.6em 0 0 1.4em;
   }
 
   .icon {
     font-size: 1.2em;
-    padding: 0.8em;
+    padding: 1em;
+    padding-bottom: 0.2em;
     &.twitter:before, &.tumblr:before, &.github:before, &.instagram:before, &.coderwall:before, &.linkedin:before {
       font-family: 'entypo-social';
       content: attr(data-icon);
@@ -204,8 +211,8 @@ li { margin-bottom: 0.2em; }
 // ICONS
 
 .icon {
-  margin: 0.5em 0;
   font-weight: normal;
+  padding-top: 0;
   &:before {
     font-family: 'entypo';
     font-size: 3em;
@@ -217,3 +224,7 @@ li { margin-bottom: 0.2em; }
   }
 }
 
+.coderwall {
+  vertical-align: top;
+  font-weight: bold;
+}
