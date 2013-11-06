@@ -38,11 +38,10 @@ $less-than-tablet: 0px 9 767px;
 $lightscheme: #87AAAE;
 $darkscheme: #679498;
 $lightgray: #BAC8CF;
-$grayblue: #9DB0B9;
 $darkcyan: #66828A;
 $darkgrayblue: #3B494E;
 $background: #fbfaf9;
-$border: #808080;
+$border: #9DB0B9;
 
 /* 551A8B */
 /* BAC8CF */
@@ -158,7 +157,7 @@ header {
 .footer-wrapper {
   width: 100%;
   text-align: center;
-  background-color: $grayblue;
+  background-color: $border;
   height: 30px;
   padding: 20px 0 10px 0;
 }
