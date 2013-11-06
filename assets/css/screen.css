@@ -376,6 +376,7 @@ li {
   display: inline; }
   /* line 235, ../scss/screen.scss */
   .project-row ul li {
+    height: 20em;
     display: inline;
     width: 23.72881%;
     float: left;
@@ -398,3 +399,11 @@ li {
     .project-row ul li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
+    /* line 240, ../scss/screen.scss */
+    .project-row ul li a img {
+      width: 80%;
+      height: 80%;
+      border-radius: 5px;
+      box-shadow: 3px 3px 0 #ddd;
+      -moz-box-shadow: 3px 3px 0 #ddd;
+      -webkit-box-shadow: 3px 3px 0 #ddd; }
