@@ -229,6 +229,17 @@ li { margin-bottom: 0.2em; }
   font-weight: bold;
 }
 
+.project-row {
+  ul{ 
+  @include span-columns(12);
+    li {
+      display: inline;
+      @include span-columns(3);
+      @include isolate-grid(4);
+    }
+  }
+}
+
 
 // box-shadow
 
