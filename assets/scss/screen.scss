@@ -182,8 +182,6 @@ h3 {
   font-size: 2em;
   color: $darkscheme;
   font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -219,6 +217,13 @@ li { margin-bottom: 0.2em; }
 // PROJECT ROWS
 
 .project-row {
+  h3 {
+    margin-top: 0.8em;
+    line-height: 1.2em;
+    @include span-columns(12);
+    width: 100%;
+    @include clearfix;
+  }
   ul{ 
     @include span-columns(12);
     width: 100%;

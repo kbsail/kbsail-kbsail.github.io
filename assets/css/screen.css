@@ -329,39 +329,48 @@ h3 {
   font-size: 2em;
   color: #679498;
   font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 191, ../scss/screen.scss */
+/* line 189, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 195, ../scss/screen.scss */
+/* line 193, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 200, ../scss/screen.scss */
+/* line 198, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 203, ../scss/screen.scss */
+  /* line 201, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 209, ../scss/screen.scss */
+  /* line 207, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 214, ../scss/screen.scss */
+/* line 212, ../scss/screen.scss */
 .coderwall {
   vertical-align: top;
   font-weight: bold; }
 
-/* line 222, ../scss/screen.scss */
+/* line 220, ../scss/screen.scss */
+.project-row h3 {
+  margin-top: 0.8em;
+  line-height: 1.2em;
+  width: 100%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1; }
+/* line 227, ../scss/screen.scss */
 .project-row ul {
   width: 100%;
   float: left;
@@ -370,7 +379,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-  /* line 226, ../scss/screen.scss */
+  /* line 231, ../scss/screen.scss */
   .project-row ul li {
     height: 20em;
     display: inline;
@@ -395,7 +404,7 @@ li {
     .project-row ul li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 231, ../scss/screen.scss */
+    /* line 236, ../scss/screen.scss */
     .project-row ul li a img {
       width: 80%;
       height: 80%;
