@@ -75,7 +75,7 @@ a {
 body {
   background-color: $background;
   color: $darkgrayblue;
-  font-family: "Keswick", serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 200%;
 }
 
@@ -109,6 +109,7 @@ header {
   .site-title {
     float: left;
     font-size: 2.4em;
+    font-family: 'Keswick', script;
     padding: 0.6em 0 0 1.4em;
   }
 
@@ -164,7 +165,7 @@ header {
 
 // HEADINGS
 
-h1, h3, h4, h5, h6 { font-family: "Keswick", sans-serif; }
+h3 { font-family: 'Keswick', script; }
 
 h1 {
   font-size: 3.4em;
