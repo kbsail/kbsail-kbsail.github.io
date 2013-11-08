@@ -312,23 +312,20 @@ header {
   padding: 20px 0 10px 0; }
 
 /* line 168, ../scss/screen.scss */
-h3 {
-  font-family: 'Keswick', script; }
-
-/* line 170, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 177, ../scss/screen.scss */
+/* line 175, ../scss/screen.scss */
 h2 {
   font-size: 2em;
   line-height: 100%; }
 
-/* line 182, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 h3 {
+  font-family: 'Keswick', script;
   font-size: 2em;
   color: #679498;
   font-weight: 600;
@@ -337,40 +334,43 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 192, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 196, ../scss/screen.scss */
+/* line 195, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 201, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 204, ../scss/screen.scss */
+  /* line 203, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 210, ../scss/screen.scss */
+  /* line 209, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 215, ../scss/screen.scss */
+/* line 214, ../scss/screen.scss */
 .coderwall {
   vertical-align: top;
   font-weight: bold; }
 
-/* line 223, ../scss/screen.scss */
+/* line 222, ../scss/screen.scss */
 .project-row ul {
   width: 100%;
   float: left;
   margin-right: 1.69492%;
-  display: inline; }
-  /* line 225, ../scss/screen.scss */
+  display: inline;
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 226, ../scss/screen.scss */
   .project-row ul li {
     height: 20em;
     display: inline;
@@ -395,7 +395,7 @@ li {
     .project-row ul li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 230, ../scss/screen.scss */
+    /* line 231, ../scss/screen.scss */
     .project-row ul li a img {
       width: 80%;
       height: 80%;
