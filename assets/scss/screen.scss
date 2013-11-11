@@ -69,7 +69,7 @@ header, section, footer {
 }
 
 a {
-  color: $darkgrayblue;;
+  color: $darkgrayblue;
 }
 
 body {
@@ -143,13 +143,24 @@ header {
       color: $darkgrayblue;
       font-size: 2em;
       font-weight: 600;
-      padding: 1em .5em 0 .5em;
+      padding: .8em .5em 0 .5em;
+      margin: 0 auto;
       text-transform: uppercase;
       width: 12em;
+    }
+    .alinks {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 1.2em;
+      padding: .4em;
     }
     a {
       text-decoration: none;
       @include clearfix;
+      font-size: .8em;
+      color: blue;
     }
 }
 

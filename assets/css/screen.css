@@ -294,16 +294,27 @@ header {
       color: #3b494e;
       font-size: 2em;
       font-weight: 600;
-      padding: 1em .5em 0 .5em;
+      padding: .8em .5em 0 .5em;
+      margin: 0 auto;
       text-transform: uppercase;
       width: 12em; }
-    /* line 150, ../scss/screen.scss */
+    /* line 151, ../scss/screen.scss */
+    .page .front-page .alinks {
+      width: 100%;
+      margin-bottom: 1em; }
+    /* line 155, ../scss/screen.scss */
+    .page .front-page p {
+      font-size: 1.2em;
+      padding: .4em; }
+    /* line 159, ../scss/screen.scss */
     .page .front-page a {
       text-decoration: none;
       overflow: hidden;
-      *zoom: 1; }
+      *zoom: 1;
+      font-size: .8em;
+      color: blue; }
 
-/* line 158, ../scss/screen.scss */
+/* line 169, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -311,19 +322,19 @@ header {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 168, ../scss/screen.scss */
+/* line 179, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 175, ../scss/screen.scss */
+/* line 186, ../scss/screen.scss */
 h2 {
   font-size: 2em;
   line-height: 100%; }
 
-/* line 180, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -332,34 +343,34 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 189, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 193, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 198, ../scss/screen.scss */
+/* line 209, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 201, ../scss/screen.scss */
+  /* line 212, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 207, ../scss/screen.scss */
+  /* line 218, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 212, ../scss/screen.scss */
+/* line 223, ../scss/screen.scss */
 .coderwall {
   vertical-align: top;
   font-weight: bold; }
 
-/* line 220, ../scss/screen.scss */
+/* line 231, ../scss/screen.scss */
 .project-row h3 {
   margin-top: 0.8em;
   line-height: 1.2em;
@@ -370,7 +381,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 227, ../scss/screen.scss */
+/* line 238, ../scss/screen.scss */
 .project-row ul {
   width: 100%;
   float: left;
@@ -379,7 +390,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-  /* line 231, ../scss/screen.scss */
+  /* line 242, ../scss/screen.scss */
   .project-row ul li {
     height: 20em;
     display: inline;
@@ -404,7 +415,7 @@ li {
     .project-row ul li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 236, ../scss/screen.scss */
+    /* line 247, ../scss/screen.scss */
     .project-row ul li a img {
       width: 80%;
       height: 80%;
