@@ -485,3 +485,7 @@ li {
       box-shadow: 3px 3px 0 #ddd;
       -moz-box-shadow: 3px 3px 0 #ddd;
       -webkit-box-shadow: 3px 3px 0 #ddd; }
+
+/* line 272, ../scss/screen.scss */
+.experience li {
+  display: inline; }
