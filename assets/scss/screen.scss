@@ -102,7 +102,7 @@ header {
     a {
       @include sassy-button("simple", 10px, 1.2em, $darkscheme);
       display: inline;
-      font-family: 'Helvetica Neue';
+      font-family: 'Helvetica Neue', sans-serif;
     }
   }
 
@@ -152,14 +152,17 @@ header {
       width: 100%;
       margin-bottom: .4em;
     }
-    p {
-      font-size: 1.2em;
+    h2 {
       padding: .4em;
+    }
+    p {
+      font-size: .7em;
     }
     a {
       text-decoration: none;
       @include clearfix;
-      font-size: .8em;
+      font-size: .6em;
+      font-family: 'Helvetica Neue', sans-serif;
       color: blue;
     }
     .nav-links {
@@ -197,7 +200,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.2em;
   line-height: 100%;
 }
 
