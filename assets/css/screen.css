@@ -327,46 +327,33 @@ header {
           padding: 0.5em 1.5em;
           display: inline-block;
           cursor: pointer;
-          -webkit-border-radius: 1em;
-          -moz-border-radius: 1em;
-          -ms-border-radius: 1em;
-          -o-border-radius: 1em;
-          border-radius: 1em;
+          -webkit-border-radius: 0.8em;
+          -moz-border-radius: 0.8em;
+          -ms-border-radius: 0.8em;
+          -o-border-radius: 0.8em;
+          border-radius: 0.8em;
           *zoom: 1;
           filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0000FF', endColorstr='#FF000099');
-          background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000ff), color-stop(100%, #0000cc));
-          background: -webkit-linear-gradient(#0000ff, #0000cc);
-          background: -moz-linear-gradient(#0000ff, #0000cc);
-          background: -o-linear-gradient(#0000ff, #0000cc);
-          background: linear-gradient(#0000ff, #0000cc);
-          -webkit-box-shadow: #4d4dff 0 1px 0 inset;
-          -moz-box-shadow: #4d4dff 0 1px 0 inset;
-          box-shadow: #4d4dff 0 1px 0 inset;
-          border: 1px solid #0000b3;
+          background-color: blue;
+          border: 0;
           color: white;
-          text-shadow: #00007a 0 -1px 0;
+          text-shadow: navy 0 -1px 0;
+          line-height: 1.2em;
           font-family: 'Open Sans', sans-serif; }
           /* line 15, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a:hover {
             text-decoration: none; }
-          /* line 36, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+          /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a:hover {
-            background-color: #0000b3;
-            background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #0000b3));
-            background: -webkit-linear-gradient(#0000e6, #0000b3);
-            background: -moz-linear-gradient(#0000e6, #0000b3);
-            background: -o-linear-gradient(#0000e6, #0000b3);
-            background: linear-gradient(#0000e6, #0000b3); }
-          /* line 39, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+            background-color: #0000e6; }
+          /* line 44, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a:active {
-            -webkit-box-shadow: #0000a3 0 1px 2px inset;
-            -moz-box-shadow: #0000a3 0 1px 2px inset;
-            box-shadow: #0000a3 0 1px 2px inset; }
+            background-color: #0000d6; }
           /* line 6, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a.disabled, .page .front-page .nav-links li a[disabled] {
             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
             opacity: 0.6;
-            background: #0000cc;
+            background: false;
             cursor: default;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
@@ -376,7 +363,7 @@ header {
             padding: 0 !important;
             margin: -1px !important; }
 
-/* line 181, ../scss/screen.scss */
+/* line 182, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -384,19 +371,19 @@ header {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 191, ../scss/screen.scss */
+/* line 192, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 198, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 h2 {
   font-size: 2em;
   line-height: 100%; }
 
-/* line 203, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -405,34 +392,34 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 212, ../scss/screen.scss */
+/* line 213, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 216, ../scss/screen.scss */
+/* line 217, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 221, ../scss/screen.scss */
+/* line 222, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 224, ../scss/screen.scss */
+  /* line 225, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 230, ../scss/screen.scss */
+  /* line 231, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 235, ../scss/screen.scss */
+/* line 236, ../scss/screen.scss */
 .coderwall {
   vertical-align: top;
   font-weight: bold; }
 
-/* line 243, ../scss/screen.scss */
+/* line 244, ../scss/screen.scss */
 .project-row h3 {
   margin-top: 0.8em;
   line-height: 1.2em;
@@ -443,7 +430,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 250, ../scss/screen.scss */
+/* line 251, ../scss/screen.scss */
 .project-row ul {
   width: 100%;
   float: left;
@@ -452,7 +439,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-  /* line 254, ../scss/screen.scss */
+  /* line 255, ../scss/screen.scss */
   .project-row ul li {
     height: 20em;
     display: inline;
@@ -477,7 +464,7 @@ li {
     .project-row ul li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 259, ../scss/screen.scss */
+    /* line 260, ../scss/screen.scss */
     .project-row ul li a img {
       width: 80%;
       height: 80%;
@@ -486,6 +473,6 @@ li {
       -moz-box-shadow: 3px 3px 0 #ddd;
       -webkit-box-shadow: 3px 3px 0 #ddd; }
 
-/* line 272, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 .experience li {
   display: inline; }
