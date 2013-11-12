@@ -301,14 +301,19 @@ header {
     /* line 151, ../scss/screen.scss */
     .page .front-page .alinks {
       width: 100%;
+      padding-top: .8em;
       margin-bottom: .4em; }
-    /* line 155, ../scss/screen.scss */
+      /* line 155, ../scss/screen.scss */
+      .page .front-page .alinks p {
+        font-size: .6em;
+        font-family: 'Helvetica Neue', sans-serif; }
+    /* line 160, ../scss/screen.scss */
     .page .front-page h2 {
       padding: .4em; }
-    /* line 158, ../scss/screen.scss */
+    /* line 163, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
-    /* line 161, ../scss/screen.scss */
+    /* line 166, ../scss/screen.scss */
     .page .front-page a {
       text-decoration: none;
       overflow: hidden;
@@ -316,15 +321,15 @@ header {
       font-size: .6em;
       font-family: 'Helvetica Neue', sans-serif;
       color: blue; }
-    /* line 168, ../scss/screen.scss */
+    /* line 173, ../scss/screen.scss */
     .page .front-page .nav-links {
       text-align: center;
       margin: 0 auto; }
-      /* line 171, ../scss/screen.scss */
+      /* line 176, ../scss/screen.scss */
       .page .front-page .nav-links li {
         display: inline;
         padding-top: 1em; }
-        /* line 174, ../scss/screen.scss */
+        /* line 179, ../scss/screen.scss */
         .page .front-page .nav-links li a {
           font-size: 0.6em;
           padding: 0.5em 1.5em;
@@ -380,7 +385,7 @@ header {
             padding: 0 !important;
             margin: -1px !important; }
 
-/* line 185, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -388,19 +393,19 @@ header {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 195, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 202, ../scss/screen.scss */
+/* line 207, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 207, ../scss/screen.scss */
+/* line 212, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -409,34 +414,34 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 216, ../scss/screen.scss */
+/* line 221, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 220, ../scss/screen.scss */
+/* line 225, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 225, ../scss/screen.scss */
+/* line 230, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 228, ../scss/screen.scss */
+  /* line 233, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 234, ../scss/screen.scss */
+  /* line 239, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 239, ../scss/screen.scss */
+/* line 244, ../scss/screen.scss */
 .coderwall {
   vertical-align: top;
   font-weight: bold; }
 
-/* line 247, ../scss/screen.scss */
+/* line 252, ../scss/screen.scss */
 .project-row h3 {
   margin-top: 0.8em;
   line-height: 1.2em;
@@ -447,7 +452,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 254, ../scss/screen.scss */
+/* line 259, ../scss/screen.scss */
 .project-row ul {
   width: 100%;
   float: left;
@@ -456,7 +461,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-  /* line 258, ../scss/screen.scss */
+  /* line 263, ../scss/screen.scss */
   .project-row ul li {
     height: 20em;
     display: inline;
@@ -481,7 +486,7 @@ li {
     .project-row ul li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 263, ../scss/screen.scss */
+    /* line 268, ../scss/screen.scss */
     .project-row ul li a img {
       width: 80%;
       height: 80%;
@@ -490,6 +495,6 @@ li {
       -moz-box-shadow: 3px 3px 0 #ddd;
       -webkit-box-shadow: 3px 3px 0 #ddd; }
 
-/* line 276, ../scss/screen.scss */
+/* line 281, ../scss/screen.scss */
 .experience li {
   display: inline; }

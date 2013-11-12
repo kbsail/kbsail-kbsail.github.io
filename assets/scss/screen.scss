@@ -150,7 +150,12 @@ header {
     }
     .alinks {
       width: 100%;
+      padding-top: .8em;
       margin-bottom: .4em;
+      p {
+      font-size: .6em;
+      font-family: 'Helvetica Neue', sans-serif;
+      }
     }
     h2 {
       padding: .4em;
