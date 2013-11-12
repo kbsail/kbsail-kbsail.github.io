@@ -334,26 +334,40 @@ header {
           border-radius: 0.8em;
           *zoom: 1;
           filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0000FF', endColorstr='#FF000099');
-          background-color: blue;
-          border: 0;
+          background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000ff), color-stop(100%, #0000cc));
+          background: -webkit-linear-gradient(#0000ff, #0000cc);
+          background: -moz-linear-gradient(#0000ff, #0000cc);
+          background: -o-linear-gradient(#0000ff, #0000cc);
+          background: linear-gradient(#0000ff, #0000cc);
+          -webkit-box-shadow: #4d4dff 0 1px 0 inset;
+          -moz-box-shadow: #4d4dff 0 1px 0 inset;
+          box-shadow: #4d4dff 0 1px 0 inset;
+          border: 1px solid #0000b3;
           color: white;
-          text-shadow: navy 0 -1px 0;
+          text-shadow: #00007a 0 -1px 0;
           line-height: 1.2em;
           font-family: 'Open Sans', sans-serif; }
           /* line 15, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a:hover {
             text-decoration: none; }
-          /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+          /* line 36, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a:hover {
-            background-color: #0000e6; }
-          /* line 44, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+            background-color: #0000b3;
+            background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0000e6), color-stop(100%, #0000b3));
+            background: -webkit-linear-gradient(#0000e6, #0000b3);
+            background: -moz-linear-gradient(#0000e6, #0000b3);
+            background: -o-linear-gradient(#0000e6, #0000b3);
+            background: linear-gradient(#0000e6, #0000b3); }
+          /* line 39, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a:active {
-            background-color: #0000d6; }
+            -webkit-box-shadow: #0000a3 0 1px 2px inset;
+            -moz-box-shadow: #0000a3 0 1px 2px inset;
+            box-shadow: #0000a3 0 1px 2px inset; }
           /* line 6, ../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
           .page .front-page .nav-links li a.disabled, .page .front-page .nav-links li a[disabled] {
             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
             opacity: 0.6;
-            background: false;
+            background: #0000cc;
             cursor: default;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;

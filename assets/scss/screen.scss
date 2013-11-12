@@ -169,7 +169,7 @@ header {
       display: inline;
       padding-top: 1em;
       a {
-        @include sassy-button("flat", 0.8em, .6em, blue);
+        @include sassy-button("simple", 0.8em, .6em, blue);
         line-height: 1.2em;
         font-family: 'Open Sans', sans-serif;
       }
