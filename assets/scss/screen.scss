@@ -260,24 +260,27 @@ li { margin-bottom: 0.2em; }
     @include span-columns(12);
     width: 100%;
     @include clearfix;
-      li {
-        height: 20em;
-        display: inline;
-        @include span-columns(3);
-        @include isolate-grid(4);
-        a img {
-          width: 80%;
-          height: 80%;
-          border-radius: 5px;
-          box-shadow: 3px 3px 0 #ddd;
-            -moz-box-shadow: 3px 3px 0 #ddd;
-            -webkit-box-shadow: 3px 3px 0 #ddd;
-        }
-      }
   }
 }
 
-.experience {
+#experience, #projects{
+  li {
+    height: 20em;
+    display: inline;
+    @include span-columns(3);
+    @include isolate-grid(4);
+    a img {
+      width: 80%;
+      height: 80%;
+      border-radius: 5px;
+      box-shadow: 3px 3px 0 #ddd;
+        -moz-box-shadow: 3px 3px 0 #ddd;
+        -webkit-box-shadow: 3px 3px 0 #ddd;
+    }
+  }
+}
+
+#skills, #resume {
   li {
     display: inline;
   }

@@ -461,40 +461,41 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-  /* line 263, ../scss/screen.scss */
-  .project-row ul li {
-    height: 20em;
-    display: inline;
-    width: 23.72881%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
-    margin-right: -100%; }
-    /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-    .project-row ul li:nth-child(3n + 1) {
-      margin-left: 0%;
-      clear: left; }
-    /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-    .project-row ul li:nth-child(3n + 2) {
-      margin-left: 33.89831%;
-      clear: none; }
-    /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-    .project-row ul li:nth-child(3n + 3) {
-      margin-left: 67.79661%;
-      clear: none; }
-    /* line 268, ../scss/screen.scss */
-    .project-row ul li a img {
-      width: 80%;
-      height: 80%;
-      border-radius: 5px;
-      box-shadow: 3px 3px 0 #ddd;
-      -moz-box-shadow: 3px 3px 0 #ddd;
-      -webkit-box-shadow: 3px 3px 0 #ddd; }
 
-/* line 281, ../scss/screen.scss */
-.experience li {
+/* line 267, ../scss/screen.scss */
+#experience li, #projects li {
+  height: 20em;
+  display: inline;
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  margin-right: -100%; }
+  /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  #experience li:nth-child(3n + 1), #projects li:nth-child(3n + 1) {
+    margin-left: 0%;
+    clear: left; }
+  /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  #experience li:nth-child(3n + 2), #projects li:nth-child(3n + 2) {
+    margin-left: 33.89831%;
+    clear: none; }
+  /* line 42, ../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+  #experience li:nth-child(3n + 3), #projects li:nth-child(3n + 3) {
+    margin-left: 67.79661%;
+    clear: none; }
+  /* line 272, ../scss/screen.scss */
+  #experience li a img, #projects li a img {
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 #ddd;
+    -moz-box-shadow: 3px 3px 0 #ddd;
+    -webkit-box-shadow: 3px 3px 0 #ddd; }
+
+/* line 284, ../scss/screen.scss */
+#skills li, #resume li {
   display: inline; }
