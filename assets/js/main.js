@@ -1,59 +1,34 @@
-  var Link = function(el){
-    var self = this;
-    this.$el = el;
+//   var Section = function(el){
+//     var self = this;
+//     this.$el = el;
 
-    this.$el.on('click', function(e) {
-      
-    })
-  }
+//     this.$el.on('click', function(e) {
+//       e.preventDefault();
+//       this.toggle();
+//     })
+//   }
 
-$(function() {
+// $(function() {
+//   $('.section-row').hide();
+//   $('#lprojects').on('click', function(e){
+//     $('#projects').toggle();
+//   })
+//   $('#lexperience').on('click', function(e){
+//     $('#experience').toggle();
+//   })
+// });
+
+
+$(document).ready(function () {
+  $('.tabs li').click(function(event){
+    $("li").removeClass('active');
+    $(this).addClass("active");    
+    $('.tab').hide();
+    $('.tab').each(function (index, element) {
+      console.log(index + ": " + $(element).attr('id'))
+    });
+    var tab_index = $(this).children('a').attr('href')
+    $(tab_index).show()
     
-
-    var BoardView = function(el) {
-  // Your board related code goes here
-  var self = this;
-  this.$el = el;
-  this.postIts = [];
-
-  this.$el.on('click', function(e) {
-    var x = e.clientX;
-    var y = e.clientY;
-    var postIt = new PostItView(x,y);
-    self.$el.append(postIt.$el);
-    self
-    // e.stopPropagation()
-    // self.postIts.push(postIt);
-
-
   });
-};
-
-var PostItView = function(x, y) {
-  this.render(x,y);
-  this.$el.draggable({handle: '.header'});
-  this.$el.find('a').on('click', this.closeWindow)
-};
-
-PostItView.prototype.closeWindow = function(e) {
-  $(this).parents('div').remove();
-  e.stopPropagation();
-}
-
-PostItView.prototype.render = function(x, y) {
-  this.$el = $("<div class='post-it'><h3 class='header'><a href='#'>X</a></h3><p class='content'contenteditable='true'>Hello World</p></div>").css({left: x, top: y });;
-  this.$el.on('click', function(e){
-  e.stopPropagation();
-  });
-
-};
-
-var boardView;
-$(function() {
-  // This code will run when the DOM has finished loading
-  boardView = new BoardView($('#board'));
-});
-
-
-
 });

@@ -2,6 +2,7 @@
 // IMPORTS
 
 @import "base";
+@import "tab_interface";
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/layout";
@@ -248,7 +249,7 @@ li { margin-bottom: 0.2em; }
 
 // PROJECT ROWS
 
-.project-row {
+.section-row {
   h3 {
     margin-top: 0.8em;
     line-height: 1.2em;
