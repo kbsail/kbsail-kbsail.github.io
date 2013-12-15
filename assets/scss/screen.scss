@@ -105,8 +105,6 @@ text-decoration: none;
 
   .icon {
     font-size: .8em;
-    padding: 1em;
-    padding-bottom: 0.2em;
 //    &.twitter:before, &.tumblr:before, &.github:before, &.instagram:before, &.coderwall:before, &.linkedin:before {
 //      font-family: 'entypo-social';
 //      content: attr(data-icon);
@@ -160,20 +158,7 @@ text-decoration: none;
       font-family: 'Helvetica Neue', sans-serif;
       color: blue;
     }
-    .nav-links {
-      text-align: center;
-      margin: 0 auto;
-      li {
-      display: inline;
-      padding-top: 1em;
-      a {
-        @include sassy-button("simple", 0.8em, .6em, blue);
-        line-height: 1.2em;
-        font-family: 'Open Sans', sans-serif;
-      }
-    }
   }
-}
 
 }
 
@@ -231,16 +216,11 @@ li { margin-bottom: 0.2em; }
   }
 }
 
-//.coderwall {
-//  vertical-align: top;
-//  font-weight: bold;
-//}
 
 // PROJECT ROWS
 
 .section-row {
   h3 {
-    margin-top: 0.8em;
     line-height: 1.2em;
     @include span-columns(12);
     width: 100%;
@@ -253,7 +233,7 @@ li { margin-bottom: 0.2em; }
   }
 }
 
-#experience, #projects{
+#tab2, #tab3{
   li {
     height: 20em;
     display: inline;
@@ -270,7 +250,7 @@ li { margin-bottom: 0.2em; }
   }
 }
 
-#skills, #resume {
+#tab4, #tab5 {
   li {
     display: inline;
   }
