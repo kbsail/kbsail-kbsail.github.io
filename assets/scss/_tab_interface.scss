@@ -1,15 +1,22 @@
 .tab {
   display: none;
+  margin: 0 auto;
+}
+
+tab-container {
+  margin: 0 auto;
+  clear: both;
 }
 
 .tabs {
-  float: left;
-  border-bottom: 1px solid #ccc;
+//  float: left;
+//  border-bottom: 1px solid #ccc;
   width: 100%;
   margin-bottom: 16px;
   list-style: none;
   li {
-    float: left;
+//    float: left;
+    display: inline;
     margin-right: 16px;
     padding: 10px 15px;
     height: 30px;
@@ -21,10 +28,10 @@
     }
   }
   li.active {
-    border: 1px solid #ccc;
-    border-bottom: 1px solid white;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+//    border: 1px solid #ccc;
+//    border-bottom: 1px solid white;
+//    border-top-left-radius: 4px;
+//    border-top-right-radius: 4px;
     margin-bottom: -1px;
     height: 31px;
     padding: 9px 14px;

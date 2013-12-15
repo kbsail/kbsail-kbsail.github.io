@@ -1,36 +1,36 @@
 /* line 1, ../scss/_tab_interface.scss */
 .tab {
-  display: none; }
+  display: none;
+  margin: 0 auto; }
 
-/* line 5, ../scss/_tab_interface.scss */
+/* line 6, ../scss/_tab_interface.scss */
+tab-container {
+  margin: 0 auto;
+  clear: both; }
+
+/* line 11, ../scss/_tab_interface.scss */
 .tabs {
-  float: left;
-  border-bottom: 1px solid #ccc;
   width: 100%;
   margin-bottom: 16px;
   list-style: none; }
-  /* line 11, ../scss/_tab_interface.scss */
+  /* line 17, ../scss/_tab_interface.scss */
   .tabs li {
-    float: left;
+    display: inline;
     margin-right: 16px;
     padding: 10px 15px;
     height: 30px;
     line-height: 30px; }
-    /* line 17, ../scss/_tab_interface.scss */
+    /* line 24, ../scss/_tab_interface.scss */
     .tabs li a {
       color: #666;
       font-family: Helvetica, Arial, sans-serif;
       text-decoration: none; }
-  /* line 23, ../scss/_tab_interface.scss */
+  /* line 30, ../scss/_tab_interface.scss */
   .tabs li.active {
-    border: 1px solid #ccc;
-    border-bottom: 1px solid white;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     margin-bottom: -1px;
     height: 31px;
     padding: 9px 14px; }
-    /* line 31, ../scss/_tab_interface.scss */
+    /* line 38, ../scss/_tab_interface.scss */
     .tabs li.active a {
       color: black;
       text-decoration: none;
@@ -204,7 +204,6 @@ header, section, footer {
 
 /* line 67, ../scss/screen.scss */
 .header-wrapper {
-  border-bottom: 2px solid #9db0b9;
   overflow: hidden;
   *zoom: 1; }
 
@@ -220,97 +219,34 @@ body {
   line-height: 200%; }
 
 /* line 83, ../scss/screen.scss */
-header {
+.site-title {
+  float: left;
+  font-size: 2.4em;
+  font-family: 'Keswick', script;
+  padding: 0.6em 0 0 1.4em; }
+
+/* line 90, ../scss/screen.scss */
+a {
+  text-decoration: none; }
+
+/* line 94, ../scss/screen.scss */
+.contact-links {
   display: inline; }
-  /* line 85, ../scss/screen.scss */
-  header a {
-    text-decoration: none; }
-  /* line 89, ../scss/screen.scss */
-  header nav {
-    float: right;
+  /* line 97, ../scss/screen.scss */
+  .contact-links nav {
     margin-top: 0; }
-    /* line 92, ../scss/screen.scss */
-    header nav a {
+    /* line 99, ../scss/screen.scss */
+    .contact-links nav a {
       display: inline-block;
       padding-top: 0;
       margin-top: 0; }
-  /* line 99, ../scss/screen.scss */
-  header .contact {
-    float: right;
-    padding-top: 1em;
-    margin: 0 1.2em; }
-    /* line 103, ../scss/screen.scss */
-    header .contact a {
-      font-size: 1.2em;
-      padding: 0.5em 1.5em;
-      display: inline-block;
-      cursor: pointer;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -o-border-radius: 10px;
-      border-radius: 10px;
-      *zoom: 1;
-      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF679498', endColorstr='#FF3E595B');
-      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #679498), color-stop(100%, #52767a));
-      background: -webkit-linear-gradient(#679498, #52767a);
-      background: -moz-linear-gradient(#679498, #52767a);
-      background: -o-linear-gradient(#679498, #52767a);
-      background: linear-gradient(#679498, #52767a);
-      -webkit-box-shadow: #95b4b7 0 1px 0 inset;
-      -moz-box-shadow: #95b4b7 0 1px 0 inset;
-      box-shadow: #95b4b7 0 1px 0 inset;
-      border: 1px solid #48686a;
-      color: white;
-      text-shadow: #314749 0 -1px 0;
-      display: inline;
-      font-family: 'Helvetica Neue', sans-serif; }
-      /* line 15, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-      header .contact a:hover {
-        text-decoration: none; }
-      /* line 36, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-      header .contact a:hover {
-        background-color: #48686a;
-        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d8589), color-stop(100%, #48686a));
-        background: -webkit-linear-gradient(#5d8589, #48686a);
-        background: -moz-linear-gradient(#5d8589, #48686a);
-        background: -o-linear-gradient(#5d8589, #48686a);
-        background: linear-gradient(#5d8589, #48686a); }
-      /* line 39, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-      header .contact a:active {
-        -webkit-box-shadow: #425f61 0 1px 2px inset;
-        -moz-box-shadow: #425f61 0 1px 2px inset;
-        box-shadow: #425f61 0 1px 2px inset; }
-      /* line 6, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-      header .contact a.disabled, header .contact a[disabled] {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-        opacity: 0.6;
-        background: #52767a;
-        cursor: default;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none; }
-      /* line 74, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-      header .contact a::-moz-focus-inner {
-        padding: 0 !important;
-        margin: -1px !important; }
-  /* line 110, ../scss/screen.scss */
-  header .site-title {
-    float: left;
-    font-size: 2.4em;
-    font-family: 'Keswick', script;
-    padding: 0.6em 0 0 1.4em; }
-  /* line 117, ../scss/screen.scss */
-  header .icon {
-    font-size: 1.2em;
+  /* line 106, ../scss/screen.scss */
+  .contact-links .icon {
+    font-size: .8em;
     padding: 1em;
     padding-bottom: 0.2em; }
-    /* line 121, ../scss/screen.scss */
-    header .icon.twitter:before, header .icon.tumblr:before, header .icon.github:before, header .icon.instagram:before, header .icon.coderwall:before, header .icon.linkedin:before {
-      font-family: 'entypo-social';
-      content: attr(data-icon); }
 
-/* line 130, ../scss/screen.scss */
+/* line 119, ../scss/screen.scss */
 .page {
   *zoom: 1;
   max-width: 59em;
@@ -326,7 +262,7 @@ header {
     content: "";
     display: table;
     clear: both; }
-  /* line 135, ../scss/screen.scss */
+  /* line 124, ../scss/screen.scss */
   .page .front-page {
     clear: both;
     font-family: "Keswick";
@@ -335,7 +271,7 @@ header {
     margin: 0 2em auto;
     text-align: center;
     display: inline-block; }
-    /* line 143, ../scss/screen.scss */
+    /* line 132, ../scss/screen.scss */
     .page .front-page h1 {
       color: #3b494e;
       font-size: 2em;
@@ -344,22 +280,22 @@ header {
       margin: 0 auto;
       text-transform: uppercase;
       width: 12em; }
-    /* line 152, ../scss/screen.scss */
+    /* line 141, ../scss/screen.scss */
     .page .front-page .alinks {
       width: 100%;
       padding-top: .8em;
       margin-bottom: .4em; }
-      /* line 156, ../scss/screen.scss */
+      /* line 145, ../scss/screen.scss */
       .page .front-page .alinks p {
         font-size: .6em;
         font-family: 'Helvetica Neue', sans-serif; }
-    /* line 161, ../scss/screen.scss */
+    /* line 150, ../scss/screen.scss */
     .page .front-page h2 {
       padding: .4em; }
-    /* line 164, ../scss/screen.scss */
+    /* line 153, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
-    /* line 167, ../scss/screen.scss */
+    /* line 156, ../scss/screen.scss */
     .page .front-page a {
       text-decoration: none;
       overflow: hidden;
@@ -367,15 +303,15 @@ header {
       font-size: .6em;
       font-family: 'Helvetica Neue', sans-serif;
       color: blue; }
-    /* line 174, ../scss/screen.scss */
+    /* line 163, ../scss/screen.scss */
     .page .front-page .nav-links {
       text-align: center;
       margin: 0 auto; }
-      /* line 177, ../scss/screen.scss */
+      /* line 166, ../scss/screen.scss */
       .page .front-page .nav-links li {
         display: inline;
         padding-top: 1em; }
-        /* line 180, ../scss/screen.scss */
+        /* line 169, ../scss/screen.scss */
         .page .front-page .nav-links li a {
           font-size: 0.6em;
           padding: 0.5em 1.5em;
@@ -431,7 +367,7 @@ header {
             padding: 0 !important;
             margin: -1px !important; }
 
-/* line 191, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -439,19 +375,19 @@ header {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 201, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 208, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 213, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -460,34 +396,29 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 222, ../scss/screen.scss */
+/* line 211, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 226, ../scss/screen.scss */
+/* line 215, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 231, ../scss/screen.scss */
+/* line 220, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 234, ../scss/screen.scss */
+  /* line 223, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 240, ../scss/screen.scss */
+  /* line 229, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 245, ../scss/screen.scss */
-.coderwall {
-  vertical-align: top;
-  font-weight: bold; }
-
-/* line 253, ../scss/screen.scss */
+/* line 242, ../scss/screen.scss */
 .section-row h3 {
   margin-top: 0.8em;
   line-height: 1.2em;
@@ -498,7 +429,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 260, ../scss/screen.scss */
+/* line 249, ../scss/screen.scss */
 .section-row ul {
   width: 100%;
   float: left;
@@ -508,7 +439,7 @@ li {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 268, ../scss/screen.scss */
+/* line 257, ../scss/screen.scss */
 #experience li, #projects li {
   height: 20em;
   display: inline;
@@ -533,7 +464,7 @@ li {
   #experience li:nth-child(3n + 3), #projects li:nth-child(3n + 3) {
     margin-left: 67.79661%;
     clear: none; }
-  /* line 273, ../scss/screen.scss */
+  /* line 262, ../scss/screen.scss */
   #experience li a img, #projects li a img {
     width: 80%;
     height: 80%;
@@ -542,6 +473,6 @@ li {
     -moz-box-shadow: 3px 3px 0 #ddd;
     -webkit-box-shadow: 3px 3px 0 #ddd; }
 
-/* line 285, ../scss/screen.scss */
+/* line 274, ../scss/screen.scss */
 #skills li, #resume li {
   display: inline; }

@@ -65,7 +65,7 @@ header, section, footer {
 }
 
 .header-wrapper {
-  border-bottom: 2px solid $border;
+  // border-bottom: 2px solid $border;
   @include clearfix;
 }
 
@@ -80,14 +80,21 @@ body {
   line-height: 200%;
 }
 
-header {
+.site-title {
+  float: left;
+  font-size: 2.4em;
+  font-family: 'Keswick', script;
+  padding: 0.6em 0 0 1.4em;
+}
+
+a {
+text-decoration: none;
+}
+
+.contact-links {
   display: inline;
-  a {
-  text-decoration: none;
-  }
-  
+
   nav {
-    float: right;
     margin-top: 0;
     a {
     display: inline-block; 
@@ -96,32 +103,14 @@ header {
     }
   }
 
-  .contact {
-    float: right;
-    padding-top: 1em;
-    margin: 0 1.2em;
-    a {
-      @include sassy-button("simple", 10px, 1.2em, $darkscheme);
-      display: inline;
-      font-family: 'Helvetica Neue', sans-serif;
-    }
-  }
-
-  .site-title {
-    float: left;
-    font-size: 2.4em;
-    font-family: 'Keswick', script;
-    padding: 0.6em 0 0 1.4em;
-  }
-
   .icon {
-    font-size: 1.2em;
+    font-size: .8em;
     padding: 1em;
     padding-bottom: 0.2em;
-    &.twitter:before, &.tumblr:before, &.github:before, &.instagram:before, &.coderwall:before, &.linkedin:before {
-      font-family: 'entypo-social';
-      content: attr(data-icon);
-    }
+//    &.twitter:before, &.tumblr:before, &.github:before, &.instagram:before, &.coderwall:before, &.linkedin:before {
+//      font-family: 'entypo-social';
+//      content: attr(data-icon);
+//    }
   }
 }
 
@@ -242,10 +231,10 @@ li { margin-bottom: 0.2em; }
   }
 }
 
-.coderwall {
-  vertical-align: top;
-  font-weight: bold;
-}
+//.coderwall {
+//  vertical-align: top;
+//  font-weight: bold;
+//}
 
 // PROJECT ROWS
 
