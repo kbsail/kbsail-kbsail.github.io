@@ -84,8 +84,6 @@ nav {
 }
 
 .page { 
-  position: relative;
-  top: 10%;
   padding-bottom: 1em;
   text-align: center;
   .front-page {
@@ -194,6 +192,10 @@ li { margin-bottom: 0.2em; }
 // FULL SCREEN
 
 @include at-breakpoint($more-than-tablet) {
+  .page {
+    position: relative;
+    top: 10%;
+  }
   ul{ 
     width: 100%;
     @include clearfix;
@@ -203,6 +205,10 @@ li { margin-bottom: 0.2em; }
     li, li.active {
       padding-top: 0;
       padding-bottom: 0;
+    }
+    li.active {
+      margin-bottom: -1px;
+      height: 31px;
     }
   }
 
@@ -232,6 +238,12 @@ li { margin-bottom: 0.2em; }
     font-size: 85%;
     padding: 0 1em;
   }
+
+  .page {
+    position: relative;
+    top: 0;
+  }
+
   .front-page {
     @include span-columns(12);
     margin-bottom: 1em;
@@ -279,12 +291,12 @@ li { margin-bottom: 0.2em; }
       border: 2px solid $border;
       display: block;
       margin: 0.5em 0;
-      padding: 0.5em 1em;
-    a {
-      height: 100%;
-      width: 100%;
-      display: block;
-    }
+      padding: 0 1em;
+      a {
+        height: 100%;
+        width: 100%;
+        display: block;
+      }
     }
   }
 }

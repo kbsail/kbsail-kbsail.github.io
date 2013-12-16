@@ -23,16 +23,11 @@ tab-container {
       color: #666;
       font-family: Helvetica, Arial, sans-serif;
       text-decoration: none; }
-  /* line 25, ../scss/_tab_interface.scss */
-  .tabs li.active {
-    margin-bottom: -1px;
-    height: 31px;
-    padding: 9px 14px; }
-    /* line 29, ../scss/_tab_interface.scss */
-    .tabs li.active a {
-      color: black;
-      text-decoration: none;
-      border-bottom: none; }
+  /* line 26, ../scss/_tab_interface.scss */
+  .tabs li.active a {
+    color: black;
+    text-decoration: none;
+    border-bottom: none; }
 
 /*
   To get the "tab" effect, we have to cover up the grey border of the ul element
@@ -178,11 +173,9 @@ nav {
 
 /* line 86, ../scss/screen.scss */
 .page {
-  position: relative;
-  top: 10%;
   padding-bottom: 1em;
   text-align: center; }
-  /* line 91, ../scss/screen.scss */
+  /* line 89, ../scss/screen.scss */
   .page .front-page {
     clear: both;
     font-family: "Keswick";
@@ -192,7 +185,7 @@ nav {
     text-align: center;
     display: block;
     float: none; }
-    /* line 100, ../scss/screen.scss */
+    /* line 98, ../scss/screen.scss */
     .page .front-page h1 {
       color: #3b494e;
       font-size: 2em;
@@ -201,36 +194,36 @@ nav {
       margin: 0 auto;
       text-transform: uppercase;
       width: 90%; }
-    /* line 109, ../scss/screen.scss */
+    /* line 107, ../scss/screen.scss */
     .page .front-page .alinks {
       width: 100%;
       padding-top: .8em;
       margin-bottom: .4em; }
-      /* line 113, ../scss/screen.scss */
+      /* line 111, ../scss/screen.scss */
       .page .front-page .alinks p {
         font-size: .6em;
         font-family: 'Helvetica Neue', sans-serif; }
-    /* line 118, ../scss/screen.scss */
+    /* line 116, ../scss/screen.scss */
     .page .front-page h2 {
       padding: .4em;
       padding-top: 0; }
-    /* line 122, ../scss/screen.scss */
+    /* line 120, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
 
-/* line 145, ../scss/screen.scss */
+/* line 143, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 152, ../scss/screen.scss */
+/* line 150, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 157, ../scss/screen.scss */
+/* line 155, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -239,15 +232,15 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 166, ../scss/screen.scss */
+/* line 164, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 170, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 176, ../scss/screen.scss */
+/* line 174, ../scss/screen.scss */
 .tab-row h3 {
   padding-top: .4em;
   line-height: 1.2em;
@@ -259,22 +252,31 @@ li {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 187, ../scss/screen.scss */
+/* line 185, ../scss/screen.scss */
 #tab4 li, #tab5 li {
   display: inline; }
 
 @media (min-width: 767px) and (max-width: 1500px) {
-  /* line 197, ../scss/screen.scss */
+  /* line 195, ../scss/screen.scss */
+  .page {
+    position: relative;
+    top: 10%; }
+
+  /* line 199, ../scss/screen.scss */
   ul {
     width: 100%;
     overflow: hidden; }
 
-  /* line 203, ../scss/screen.scss */
+  /* line 205, ../scss/screen.scss */
   .tabs li, .tabs li.active {
     padding-top: 0;
     padding-bottom: 0; }
+  /* line 209, ../scss/screen.scss */
+  .tabs li.active {
+    margin-bottom: -1px;
+    height: 31px; }
 
-  /* line 210, ../scss/screen.scss */
+  /* line 216, ../scss/screen.scss */
   #tab2 li, #tab3 li {
     height: 20em;
     display: inline;
@@ -297,7 +299,7 @@ li {
     #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 215, ../scss/screen.scss */
+    /* line 221, ../scss/screen.scss */
     #tab2 li a img, #tab3 li a img {
       width: 80%;
       height: 80%;
@@ -306,7 +308,7 @@ li {
       -moz-box-shadow: 3px 3px 0 #ddd;
       -webkit-box-shadow: 3px 3px 0 #ddd; } }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 230, ../scss/screen.scss */
+  /* line 236, ../scss/screen.scss */
   body {
     max-width: 44em;
     padding-left: 1em;
@@ -321,7 +323,12 @@ li {
       display: table;
       clear: both; }
 
-  /* line 235, ../scss/screen.scss */
+  /* line 242, ../scss/screen.scss */
+  .page {
+    position: relative;
+    top: 0; }
+
+  /* line 247, ../scss/screen.scss */
   .front-page {
     width: 134.09091%;
     float: left;
@@ -331,14 +338,14 @@ li {
     width: 90%;
     margin: 0 auto; }
 
-  /* line 244, ../scss/screen.scss */
+  /* line 256, ../scss/screen.scss */
   #tab2 ul, #tab3 ul {
     overflow: hidden;
     clear: both; }
-    /* line 247, ../scss/screen.scss */
+    /* line 259, ../scss/screen.scss */
     #tab2 ul li:nth-child(odd), #tab3 ul li:nth-child(odd) {
       background-color: #bac8cf; }
-    /* line 250, ../scss/screen.scss */
+    /* line 262, ../scss/screen.scss */
     #tab2 ul li, #tab3 ul li {
       overflow: hidden;
       width: 134.09091%;
@@ -349,20 +356,20 @@ li {
       float: none;
       margin: 0 auto;
       width: 100%; }
-      /* line 258, ../scss/screen.scss */
+      /* line 270, ../scss/screen.scss */
       #tab2 ul li h6, #tab3 ul li h6 {
         padding: .4em 0;
         font-size: 2em;
         width: 100%; }
-      /* line 263, ../scss/screen.scss */
+      /* line 275, ../scss/screen.scss */
       #tab2 ul li img, #tab3 ul li img {
         width: 80%;
         height: 80%; }
 
-  /* line 272, ../scss/screen.scss */
+  /* line 284, ../scss/screen.scss */
   .tabs {
     text-align: center; }
-    /* line 274, ../scss/screen.scss */
+    /* line 286, ../scss/screen.scss */
     .tabs li {
       width: 134.09091%;
       float: left;
@@ -377,8 +384,8 @@ li {
       border: 2px solid #9db0b9;
       display: block;
       margin: 0.5em 0;
-      padding: 0.5em 1em; }
-      /* line 283, ../scss/screen.scss */
+      padding: 0 1em; }
+      /* line 295, ../scss/screen.scss */
       .tabs li a {
         height: 100%;
         width: 100%;
