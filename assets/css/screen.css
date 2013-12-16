@@ -170,20 +170,13 @@ body {
 /* BREAKPOINTS */
 /* -------------------------------------------------------------------------*/
 /* COLORS */
-/* 551A8B */
-/* BAC8CF */
-/* DDECEF */
-/* BFD9DA */
-/* 87AAAE */
-/* F6F6F6 */
-/* E7E7E7 */
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
-/* line 59, ../scss/screen.scss */
+/* line 50, ../scss/screen.scss */
 html, body {
   height: 100%; }
 
-/* line 61, ../scss/screen.scss */
+/* line 52, ../scss/screen.scss */
 header, section, footer {
   *zoom: 1;
   max-width: 59em;
@@ -200,49 +193,49 @@ header, section, footer {
     display: table;
     clear: both; }
 
-/* line 67, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 .header-wrapper {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 72, ../scss/screen.scss */
+/* line 63, ../scss/screen.scss */
 a {
   color: #3b494e; }
 
-/* line 76, ../scss/screen.scss */
+/* line 67, ../scss/screen.scss */
 body {
   background-color: #fbfaf9;
   color: #3b494e;
   font-family: 'Open Sans', sans-serif;
   line-height: 200%; }
 
-/* line 83, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 .site-title {
   float: left;
   font-size: 2.4em;
   font-family: 'Keswick', script;
   padding: 0.6em 0 0 1.4em; }
 
-/* line 90, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 a {
   text-decoration: none; }
 
-/* line 94, ../scss/screen.scss */
+/* line 85, ../scss/screen.scss */
 .contact-links {
   display: inline; }
-  /* line 97, ../scss/screen.scss */
+  /* line 88, ../scss/screen.scss */
   .contact-links nav {
     margin-top: 0; }
-    /* line 99, ../scss/screen.scss */
+    /* line 90, ../scss/screen.scss */
     .contact-links nav a {
       display: inline-block;
       padding-top: 0;
       margin-top: 0; }
-  /* line 106, ../scss/screen.scss */
+  /* line 97, ../scss/screen.scss */
   .contact-links .icon {
     font-size: .8em; }
 
-/* line 117, ../scss/screen.scss */
+/* line 108, ../scss/screen.scss */
 .page {
   *zoom: 1;
   max-width: 59em;
@@ -258,7 +251,7 @@ a {
     content: "";
     display: table;
     clear: both; }
-  /* line 122, ../scss/screen.scss */
+  /* line 113, ../scss/screen.scss */
   .page .front-page {
     clear: both;
     font-family: "Keswick";
@@ -267,7 +260,7 @@ a {
     margin: 0 2em auto;
     text-align: center;
     display: inline-block; }
-    /* line 130, ../scss/screen.scss */
+    /* line 121, ../scss/screen.scss */
     .page .front-page h1 {
       color: #3b494e;
       font-size: 2em;
@@ -276,22 +269,22 @@ a {
       margin: 0 auto;
       text-transform: uppercase;
       width: 12em; }
-    /* line 139, ../scss/screen.scss */
+    /* line 130, ../scss/screen.scss */
     .page .front-page .alinks {
       width: 100%;
       padding-top: .8em;
       margin-bottom: .4em; }
-      /* line 143, ../scss/screen.scss */
+      /* line 134, ../scss/screen.scss */
       .page .front-page .alinks p {
         font-size: .6em;
         font-family: 'Helvetica Neue', sans-serif; }
-    /* line 148, ../scss/screen.scss */
+    /* line 139, ../scss/screen.scss */
     .page .front-page h2 {
       padding: .4em; }
-    /* line 151, ../scss/screen.scss */
+    /* line 142, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
-    /* line 154, ../scss/screen.scss */
+    /* line 145, ../scss/screen.scss */
     .page .front-page a {
       text-decoration: none;
       overflow: hidden;
@@ -300,7 +293,7 @@ a {
       font-family: 'Helvetica Neue', sans-serif;
       color: blue; }
 
-/* line 165, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -308,19 +301,19 @@ a {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 175, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 182, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 187, ../scss/screen.scss */
+/* line 178, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -329,29 +322,29 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 196, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 200, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 205, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 .icon {
   font-weight: normal;
   padding-top: 0; }
-  /* line 208, ../scss/screen.scss */
+  /* line 199, ../scss/screen.scss */
   .icon:before {
     font-family: 'entypo';
     font-size: 3em;
     content: attr(data-icon);
     speak: none; }
-  /* line 214, ../scss/screen.scss */
+  /* line 205, ../scss/screen.scss */
   .icon.list-link:before {
     font-size: 1.75em; }
 
-/* line 223, ../scss/screen.scss */
+/* line 214, ../scss/screen.scss */
 .section-row h3 {
   line-height: 1.2em;
   width: 100%;
@@ -361,7 +354,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 229, ../scss/screen.scss */
+/* line 220, ../scss/screen.scss */
 .section-row ul {
   width: 100%;
   float: left;
@@ -371,7 +364,7 @@ li {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 237, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 #tab2 li, #tab3 li {
   height: 20em;
   display: inline;
@@ -396,7 +389,7 @@ li {
   #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
     margin-left: 67.79661%;
     clear: none; }
-  /* line 242, ../scss/screen.scss */
+  /* line 233, ../scss/screen.scss */
   #tab2 li a img, #tab3 li a img {
     width: 80%;
     height: 80%;
@@ -405,6 +398,51 @@ li {
     -moz-box-shadow: 3px 3px 0 #ddd;
     -webkit-box-shadow: 3px 3px 0 #ddd; }
 
-/* line 254, ../scss/screen.scss */
+/* line 245, ../scss/screen.scss */
 #tab4 li, #tab5 li {
   display: inline; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  /* line 253, ../scss/screen.scss */
+  body {
+    font-size: 85%;
+    padding: 0 1em; }
+
+  /* line 257, ../scss/screen.scss */
+  .front-page {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-bottom: 1em;
+    text-align: center; }
+
+  /* line 262, ../scss/screen.scss */
+  header {
+    padding-bottom: 1em;
+    padding-top: 2em; }
+    /* line 265, ../scss/screen.scss */
+    header h1 {
+      font-size: 1.4em;
+      font-weight: 700; }
+
+  /* line 273, ../scss/screen.scss */
+  tab {
+    background-color: red; }
+
+  /* line 281, ../scss/screen.scss */
+  .tabs {
+    text-align: center; }
+    /* line 283, ../scss/screen.scss */
+    .tabs li {
+      width: 100%;
+      float: left;
+      margin-right: 1.69492%;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      border: 2px solid #9db0b9;
+      display: block;
+      margin: 0.5em 0;
+      padding: 0.5em 1em; } }

@@ -44,15 +44,6 @@ $darkgrayblue: #3B494E;
 $background: #fbfaf9;
 $border: #9DB0B9;
 
-/* 551A8B */
-/* BAC8CF */
-
-/* DDECEF */
-/* BFD9DA */
-/* 87AAAE */
-/* F6F6F6 */
-/* E7E7E7 */
-
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
 
@@ -256,8 +247,46 @@ li { margin-bottom: 0.2em; }
   }
 }
 
-// box-shadow
+// MEDIA QUERIES
 
-// -moz-box-shadow: 2px 2px 0 #ddd;
-// -webkit-box-shadow:
-// box-shadow:
+@include at-breakpoint($less-than-tablet) {
+  body {
+    font-size: 85%;
+    padding: 0 1em;
+  }
+  .front-page {
+    @include span-columns(12,12);
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  header {
+    padding-bottom: 1em;
+    padding-top: 2em;
+    h1 {
+      font-size: 1.4em;
+      font-weight: 700;
+    }
+  }
+
+
+  
+  tab {
+    background-color: red;
+
+    li {
+
+    }
+  }
+
+  .tabs {
+    text-align: center;
+    li {
+      @include span-columns(12,12);
+      @include border-radius(3px);
+      border: 2px solid $border;
+      display: block;
+      margin: 0.5em 0;
+      padding: 0.5em 1em;
+    }
+  }
+}
