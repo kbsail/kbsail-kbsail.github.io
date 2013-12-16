@@ -73,7 +73,7 @@ nav {
   margin-top: 0;
   a {
     display: inline; 
-    padding: 0;
+    padding: 0 1em;
     margin: 0; 
     @include clearfix;
     text-decoration: none;

@@ -162,7 +162,7 @@ nav {
   /* line 74, ../scss/screen.scss */
   nav a {
     display: inline;
-    padding: 0;
+    padding: 0 1em;
     margin: 0;
     overflow: hidden;
     *zoom: 1;
