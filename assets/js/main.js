@@ -21,13 +21,14 @@
 
 $(document).ready(function () {
   $('.tabs li').click(function(event){
+    event.preventDefault();
     $("li").removeClass('active');
     $(this).addClass("active");    
     $('.tab').hide();
     $('.tab').each(function (index, element) {
       console.log(index + ": " + $(element).attr('id'))
     });
-    var tab_index = $(this).children('a').attr('href')
+    var tab_index = $(this).children('a').attr('data-tab')
     $(tab_index).show()
     
   });

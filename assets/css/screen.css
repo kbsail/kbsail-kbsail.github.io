@@ -172,12 +172,12 @@ body {
 /* COLORS */
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
-/* line 50, ../scss/screen.scss */
+/* line 49, ../scss/screen.scss */
 html, body {
   height: 100%; }
 
-/* line 52, ../scss/screen.scss */
-header, section, footer {
+/* line 51, ../scss/screen.scss */
+section, footer {
   *zoom: 1;
   max-width: 59em;
   _width: 59em;
@@ -188,54 +188,39 @@ header, section, footer {
   padding-left: 0;
   padding-right: 0; }
   /* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  header:after, section:after, footer:after {
+  section:after, footer:after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 58, ../scss/screen.scss */
-.header-wrapper {
-  overflow: hidden;
-  *zoom: 1; }
-
-/* line 63, ../scss/screen.scss */
-a {
-  color: #3b494e; }
-
-/* line 67, ../scss/screen.scss */
+/* line 57, ../scss/screen.scss */
 body {
   background-color: #fbfaf9;
   color: #3b494e;
   font-family: 'Open Sans', sans-serif;
   line-height: 200%; }
 
-/* line 74, ../scss/screen.scss */
-.site-title {
-  float: left;
-  font-size: 2.4em;
-  font-family: 'Keswick', script;
-  padding: 0.6em 0 0 1.4em; }
-
-/* line 81, ../scss/screen.scss */
+/* line 64, ../scss/screen.scss */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3b494e; }
 
-/* line 85, ../scss/screen.scss */
-.contact-links {
-  display: inline; }
-  /* line 88, ../scss/screen.scss */
-  .contact-links nav {
-    margin-top: 0; }
-    /* line 90, ../scss/screen.scss */
-    .contact-links nav a {
-      display: inline-block;
-      padding-top: 0;
-      margin-top: 0; }
-  /* line 97, ../scss/screen.scss */
-  .contact-links .icon {
-    font-size: .8em; }
+/* line 70, ../scss/screen.scss */
+nav {
+  margin-top: 0; }
+  /* line 72, ../scss/screen.scss */
+  nav a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    *zoom: 1;
+    text-decoration: none;
+    font-size: .6em;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: blue; }
 
-/* line 108, ../scss/screen.scss */
+/* line 84, ../scss/screen.scss */
 .page {
   *zoom: 1;
   max-width: 59em;
@@ -251,16 +236,16 @@ a {
     content: "";
     display: table;
     clear: both; }
-  /* line 113, ../scss/screen.scss */
+  /* line 88, ../scss/screen.scss */
   .page .front-page {
     clear: both;
     font-family: "Keswick";
     font-size: 1.5em;
     font-weight: bold;
-    margin: 0 2em auto;
+    margin: 0 auto;
     text-align: center;
     display: inline-block; }
-    /* line 121, ../scss/screen.scss */
+    /* line 96, ../scss/screen.scss */
     .page .front-page h1 {
       color: #3b494e;
       font-size: 2em;
@@ -268,32 +253,25 @@ a {
       padding: .8em .5em 0 .5em;
       margin: 0 auto;
       text-transform: uppercase;
-      width: 12em; }
-    /* line 130, ../scss/screen.scss */
+      width: 90%; }
+    /* line 105, ../scss/screen.scss */
     .page .front-page .alinks {
       width: 100%;
       padding-top: .8em;
       margin-bottom: .4em; }
-      /* line 134, ../scss/screen.scss */
+      /* line 109, ../scss/screen.scss */
       .page .front-page .alinks p {
         font-size: .6em;
         font-family: 'Helvetica Neue', sans-serif; }
-    /* line 139, ../scss/screen.scss */
+    /* line 114, ../scss/screen.scss */
     .page .front-page h2 {
-      padding: .4em; }
-    /* line 142, ../scss/screen.scss */
+      padding: .4em;
+      padding-top: 0; }
+    /* line 118, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
-    /* line 145, ../scss/screen.scss */
-    .page .front-page a {
-      text-decoration: none;
-      overflow: hidden;
-      *zoom: 1;
-      font-size: .6em;
-      font-family: 'Helvetica Neue', sans-serif;
-      color: blue; }
 
-/* line 156, ../scss/screen.scss */
+/* line 125, ../scss/screen.scss */
 .footer-wrapper {
   width: 100%;
   text-align: center;
@@ -301,19 +279,19 @@ a {
   height: 30px;
   padding: 20px 0 10px 0; }
 
-/* line 166, ../scss/screen.scss */
+/* line 135, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 173, ../scss/screen.scss */
+/* line 142, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 178, ../scss/screen.scss */
+/* line 147, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -322,29 +300,15 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 187, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 191, ../scss/screen.scss */
+/* line 160, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 196, ../scss/screen.scss */
-.icon {
-  font-weight: normal;
-  padding-top: 0; }
-  /* line 199, ../scss/screen.scss */
-  .icon:before {
-    font-family: 'entypo';
-    font-size: 3em;
-    content: attr(data-icon);
-    speak: none; }
-  /* line 205, ../scss/screen.scss */
-  .icon.list-link:before {
-    font-size: 1.75em; }
-
-/* line 214, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 .section-row h3 {
   line-height: 1.2em;
   width: 100%;
@@ -354,7 +318,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 220, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 .section-row ul {
   width: 100%;
   float: left;
@@ -364,7 +328,7 @@ li {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 228, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 #tab2 li, #tab3 li {
   height: 20em;
   display: inline;
@@ -389,7 +353,7 @@ li {
   #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
     margin-left: 67.79661%;
     clear: none; }
-  /* line 233, ../scss/screen.scss */
+  /* line 185, ../scss/screen.scss */
   #tab2 li a img, #tab3 li a img {
     width: 80%;
     height: 80%;
@@ -398,45 +362,45 @@ li {
     -moz-box-shadow: 3px 3px 0 #ddd;
     -webkit-box-shadow: 3px 3px 0 #ddd; }
 
-/* line 245, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 #tab4 li, #tab5 li {
   display: inline; }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 253, ../scss/screen.scss */
+  /* line 206, ../scss/screen.scss */
   body {
     font-size: 85%;
     padding: 0 1em; }
 
-  /* line 257, ../scss/screen.scss */
+  /* line 210, ../scss/screen.scss */
   .front-page {
     width: 100%;
     float: left;
     margin-right: 1.69492%;
     margin-bottom: 1em;
-    text-align: center; }
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; }
 
-  /* line 262, ../scss/screen.scss */
-  header {
-    padding-bottom: 1em;
-    padding-top: 2em; }
-    /* line 265, ../scss/screen.scss */
-    header h1 {
-      font-size: 1.4em;
-      font-weight: 700; }
-
-  /* line 273, ../scss/screen.scss */
+  /* line 218, ../scss/screen.scss */
   tab {
     background-color: red; }
+    /* line 221, ../scss/screen.scss */
+    tab li {
+      width: 100%;
+      float: left;
+      margin-right: 1.69492%; }
 
-  /* line 281, ../scss/screen.scss */
+  /* line 226, ../scss/screen.scss */
   .tabs {
     text-align: center; }
-    /* line 283, ../scss/screen.scss */
+    /* line 228, ../scss/screen.scss */
     .tabs li {
       width: 100%;
       float: left;
       margin-right: 1.69492%;
+      width: 90%;
+      margin: 0 auto;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       -ms-border-radius: 3px;

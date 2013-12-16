@@ -18,7 +18,6 @@
   @include container;
   @include susy-grid-background;
 }
- 
 
 /* -------------------------------------------------------------------------*/
 /* INCLUDES */
@@ -49,19 +48,10 @@ $border: #9DB0B9;
 
 html, body { height: 100%; }
 
-header, section, footer {
+section, footer {
   @include container;
   padding-left: 0;
   padding-right: 0;
-}
-
-.header-wrapper {
-  // border-bottom: 2px solid $border;
-  @include clearfix;
-}
-
-a {
-  color: $darkgrayblue;
 }
 
 body {
@@ -71,42 +61,27 @@ body {
   line-height: 200%;
 }
 
-.site-title {
-  float: left;
-  font-size: 2.4em;
-  font-family: 'Keswick', script;
-  padding: 0.6em 0 0 1.4em;
-}
-
 a {
-text-decoration: none;
-}
-
-.contact-links {
-  display: inline;
-
-  nav {
-    margin-top: 0;
-    a {
-    display: inline-block; 
-    padding-top: 0;
-    margin-top: 0; 
-    }
-  }
-
-  .icon {
-    font-size: .8em;
-//    &.twitter:before, &.tumblr:before, &.github:before, &.instagram:before, &.coderwall:before, &.linkedin:before {
-//      font-family: 'entypo-social';
-//      content: attr(data-icon);
-//    }
-  }
+  text-decoration: none;
+  color: $darkgrayblue;
 }
 
 
+nav {
+  margin-top: 0;
+  a {
+    display: inline; 
+    padding: 0;
+    margin: 0; 
+    @include clearfix;
+    text-decoration: none;
+    font-size: .6em;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: blue;
+  }
+}
 
 .page { 
-
   @include container;
   padding-bottom: 1em;
   text-align: center;
@@ -115,7 +90,7 @@ text-decoration: none;
     font-family: "Keswick";
     font-size: 1.5em;
     font-weight: bold;
-    margin: 0 2em auto;
+    margin: 0 auto;
     text-align: center;
     display: inline-block;
     h1 {
@@ -125,29 +100,23 @@ text-decoration: none;
       padding: .8em .5em 0 .5em;
       margin: 0 auto;
       text-transform: uppercase;
-      width: 12em;
+      width: 90%;
     }
     .alinks {
       width: 100%;
       padding-top: .8em;
       margin-bottom: .4em;
       p {
-      font-size: .6em;
-      font-family: 'Helvetica Neue', sans-serif;
+        font-size: .6em;
+        font-family: 'Helvetica Neue', sans-serif;
       }
     }
     h2 {
       padding: .4em;
+      padding-top: 0;
     }
     p {
       font-size: .7em;
-    }
-    a {
-      text-decoration: none;
-      @include clearfix;
-      font-size: .6em;
-      font-family: 'Helvetica Neue', sans-serif;
-      color: blue;
     }
   }
 
@@ -189,23 +158,6 @@ h6 { text-transform: uppercase; }
 // LIST ELEMENTS
 
 li { margin-bottom: 0.2em; }
-
-
-// ICONS
-
-.icon {
-  font-weight: normal;
-  padding-top: 0;
-  &:before {
-    font-family: 'entypo';
-    font-size: 3em;
-    content: attr(data-icon);
-    speak: none;
-  }
-  &.list-link:before {
-    font-size: 1.75em;
-  }
-}
 
 
 // PROJECT ROWS
@@ -250,6 +202,7 @@ li { margin-bottom: 0.2em; }
 // MEDIA QUERIES
 
 @include at-breakpoint($less-than-tablet) {
+
   body {
     font-size: 85%;
     padding: 0 1em;
@@ -258,23 +211,15 @@ li { margin-bottom: 0.2em; }
     @include span-columns(12,12);
     margin-bottom: 1em;
     text-align: center;
-  }
-  header {
-    padding-bottom: 1em;
-    padding-top: 2em;
-    h1 {
-      font-size: 1.4em;
-      font-weight: 700;
-    }
+    width: 90%;
+    margin: 0 auto; 
   }
 
-
-  
   tab {
     background-color: red;
 
     li {
-
+      @include span-columns(12,12);
     }
   }
 
@@ -282,6 +227,8 @@ li { margin-bottom: 0.2em; }
     text-align: center;
     li {
       @include span-columns(12,12);
+      width: 90%;
+      margin: 0 auto;
       @include border-radius(3px);
       border: 2px solid $border;
       display: block;
