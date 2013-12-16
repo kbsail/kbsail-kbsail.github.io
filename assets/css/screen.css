@@ -310,6 +310,7 @@ li {
 
 /* line 166, ../scss/screen.scss */
 .section-row h3 {
+  padding-top: .4em;
   line-height: 1.2em;
   width: 100%;
   float: left;
@@ -318,7 +319,7 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 172, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 .section-row ul {
   width: 100%;
   float: left;
@@ -328,7 +329,7 @@ li {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 180, ../scss/screen.scss */
+/* line 181, ../scss/screen.scss */
 #tab2 li, #tab3 li {
   height: 20em;
   display: inline;
@@ -353,7 +354,7 @@ li {
   #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
     margin-left: 67.79661%;
     clear: none; }
-  /* line 185, ../scss/screen.scss */
+  /* line 186, ../scss/screen.scss */
   #tab2 li a img, #tab3 li a img {
     width: 80%;
     height: 80%;
@@ -362,17 +363,17 @@ li {
     -moz-box-shadow: 3px 3px 0 #ddd;
     -webkit-box-shadow: 3px 3px 0 #ddd; }
 
-/* line 197, ../scss/screen.scss */
+/* line 198, ../scss/screen.scss */
 #tab4 li, #tab5 li {
   display: inline; }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 206, ../scss/screen.scss */
+  /* line 207, ../scss/screen.scss */
   body {
     font-size: 85%;
     padding: 0 1em; }
 
-  /* line 210, ../scss/screen.scss */
+  /* line 211, ../scss/screen.scss */
   .front-page {
     width: 100%;
     float: left;
@@ -382,19 +383,10 @@ li {
     width: 90%;
     margin: 0 auto; }
 
-  /* line 218, ../scss/screen.scss */
-  tab {
-    background-color: red; }
-    /* line 221, ../scss/screen.scss */
-    tab li {
-      width: 100%;
-      float: left;
-      margin-right: 1.69492%; }
-
-  /* line 226, ../scss/screen.scss */
+  /* line 232, ../scss/screen.scss */
   .tabs {
     text-align: center; }
-    /* line 228, ../scss/screen.scss */
+    /* line 234, ../scss/screen.scss */
     .tabs li {
       width: 100%;
       float: left;

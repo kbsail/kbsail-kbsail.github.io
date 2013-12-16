@@ -164,6 +164,7 @@ li { margin-bottom: 0.2em; }
 
 .section-row {
   h3 {
+    padding-top: .4em;
     line-height: 1.2em;
     @include span-columns(12);
     width: 100%;
@@ -215,12 +216,17 @@ li { margin-bottom: 0.2em; }
     margin: 0 auto; 
   }
 
-  tab {
-    background-color: red;
-
-    li {
-      @include span-columns(12,12);
-    }
+  .tab {
+//    background-color: red;
+//    display: block;
+//    @include span-columns(12,12);
+//    h3 {
+//      width: 100%;
+//    }
+//    li {
+//      @include span-columns(12,12);
+//      width: 90%;
+//    }
   }
 
   .tabs {
