@@ -218,15 +218,19 @@ li { margin-bottom: 0.2em; }
 
   .tab {
 //    background-color: red;
-//    display: block;
+   display: none;
 //    @include span-columns(12,12);
 //    h3 {
 //      width: 100%;
 //    }
-//    li {
-//      @include span-columns(12,12);
+    li {
+      @include span-columns(12,12);
 //      width: 90%;
-//    }
+      display: block;
+    img {
+      @include span-columns(12,12);
+    }
+    }
   }
 
   .tabs {
@@ -240,6 +244,11 @@ li { margin-bottom: 0.2em; }
       display: block;
       margin: 0.5em 0;
       padding: 0.5em 1em;
+    a {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
     }
   }
 }
