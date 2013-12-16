@@ -109,20 +109,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-right: 1em;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-position: left top;
-  -webkit-background-origin: content;
-  -moz-background-origin: content;
-  -ms-background-origin: content-box;
-  -o-background-origin: content-box;
-  background-origin: content-box;
-  -webkit-background-clip: content-box;
-  -moz-background-clip: content-box;
-  background-clip: content-box; }
+  text-align: center; }
   /* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .container:after {
     content: "";
@@ -145,70 +132,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url('/assets/fonts/entypo-social.eot');
   src: url('/assets/fonts/entypo-social.eot?#iefix') format('eot'), url('/assets/fonts/entypo-social.ttf') format('truetype'), url('/assets/fonts/entypo-social.woff') format('woff'), url('/assets/fonts/entypo-social.svg') format('svg'); }
 
-/* line 10, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-html, body {
-  height: 100%; }
-
-/* line 12, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-body {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -50px; }
-  /* line 18, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-  body .page-footer {
-    height: 50px; }
-
-/* line 20, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#footer {
-  clear: both;
-  position: relative;
-  height: 50px; }
-
+/* @include sticky-footer(50px, '.container', '.footer-wrapper', '#footer'); */
 /* -------------------------------------------------------------------------*/
 /* BREAKPOINTS */
 /* -------------------------------------------------------------------------*/
 /* COLORS */
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
-/* line 49, ../scss/screen.scss */
+/* line 50, ../scss/screen.scss */
 html, body {
+  margin: 0;
+  padding: 0;
   height: 100%; }
 
-/* line 51, ../scss/screen.scss */
-section, footer {
-  *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0; }
-  /* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  section:after, footer:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/* line 57, ../scss/screen.scss */
+/* line 56, ../scss/screen.scss */
 body {
   background-color: #fbfaf9;
   color: #3b494e;
   font-family: 'Open Sans', sans-serif;
   line-height: 200%; }
 
-/* line 64, ../scss/screen.scss */
+/* line 63, ../scss/screen.scss */
+section {
+  height: 100%; }
+
+/* line 67, ../scss/screen.scss */
 a {
   text-decoration: none;
   color: #3b494e; }
 
-/* line 70, ../scss/screen.scss */
+/* line 72, ../scss/screen.scss */
 nav {
   margin-top: 0; }
-  /* line 72, ../scss/screen.scss */
+  /* line 74, ../scss/screen.scss */
   nav a {
     display: inline;
     padding: 0;
@@ -220,23 +176,13 @@ nav {
     font-family: 'Helvetica Neue', sans-serif;
     color: blue; }
 
-/* line 84, ../scss/screen.scss */
+/* line 86, ../scss/screen.scss */
 .page {
-  *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  top: 10%;
   padding-bottom: 1em;
   text-align: center; }
-  /* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .page:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 88, ../scss/screen.scss */
+  /* line 91, ../scss/screen.scss */
   .page .front-page {
     clear: both;
     font-family: "Keswick";
@@ -244,8 +190,9 @@ nav {
     font-weight: bold;
     margin: 0 auto;
     text-align: center;
-    display: inline-block; }
-    /* line 96, ../scss/screen.scss */
+    display: block;
+    float: none; }
+    /* line 100, ../scss/screen.scss */
     .page .front-page h1 {
       color: #3b494e;
       font-size: 2em;
@@ -254,44 +201,36 @@ nav {
       margin: 0 auto;
       text-transform: uppercase;
       width: 90%; }
-    /* line 105, ../scss/screen.scss */
+    /* line 109, ../scss/screen.scss */
     .page .front-page .alinks {
       width: 100%;
       padding-top: .8em;
       margin-bottom: .4em; }
-      /* line 109, ../scss/screen.scss */
+      /* line 113, ../scss/screen.scss */
       .page .front-page .alinks p {
         font-size: .6em;
         font-family: 'Helvetica Neue', sans-serif; }
-    /* line 114, ../scss/screen.scss */
+    /* line 118, ../scss/screen.scss */
     .page .front-page h2 {
       padding: .4em;
       padding-top: 0; }
-    /* line 118, ../scss/screen.scss */
+    /* line 122, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
 
-/* line 125, ../scss/screen.scss */
-.footer-wrapper {
-  width: 100%;
-  text-align: center;
-  background-color: #9db0b9;
-  height: 30px;
-  padding: 20px 0 10px 0; }
-
-/* line 135, ../scss/screen.scss */
+/* line 145, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 142, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 147, ../scss/screen.scss */
+/* line 157, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -300,16 +239,16 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 156, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 160, ../scss/screen.scss */
+/* line 170, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 166, ../scss/screen.scss */
-.section-row h3 {
+/* line 176, ../scss/screen.scss */
+.tab-row h3 {
   padding-top: .4em;
   line-height: 1.2em;
   width: 100%;
@@ -319,93 +258,115 @@ li {
   width: 100%;
   overflow: hidden;
   *zoom: 1; }
-/* line 173, ../scss/screen.scss */
-.section-row ul {
-  width: 100%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
-  width: 100%;
-  overflow: hidden;
-  *zoom: 1; }
 
-/* line 181, ../scss/screen.scss */
-#tab2 li, #tab3 li {
-  height: 20em;
-  display: inline;
-  width: 23.72881%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
-  margin-right: -100%; }
-  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-  #tab2 li:nth-child(3n + 1), #tab3 li:nth-child(3n + 1) {
-    margin-left: 0%;
-    clear: left; }
-  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-  #tab2 li:nth-child(3n + 2), #tab3 li:nth-child(3n + 2) {
-    margin-left: 33.89831%;
-    clear: none; }
-  /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
-  #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
-    margin-left: 67.79661%;
-    clear: none; }
-  /* line 186, ../scss/screen.scss */
-  #tab2 li a img, #tab3 li a img {
-    width: 80%;
-    height: 80%;
-    border-radius: 5px;
-    box-shadow: 3px 3px 0 #ddd;
-    -moz-box-shadow: 3px 3px 0 #ddd;
-    -webkit-box-shadow: 3px 3px 0 #ddd; }
-
-/* line 198, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 #tab4 li, #tab5 li {
   display: inline; }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  /* line 207, ../scss/screen.scss */
-  body {
-    font-size: 85%;
-    padding: 0 1em; }
-
-  /* line 211, ../scss/screen.scss */
-  .front-page {
+@media (min-width: 767px) and (max-width: 1500px) {
+  /* line 197, ../scss/screen.scss */
+  ul {
     width: 100%;
+    overflow: hidden; }
+
+  /* line 203, ../scss/screen.scss */
+  .tabs li, .tabs li.active {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  /* line 210, ../scss/screen.scss */
+  #tab2 li, #tab3 li {
+    height: 20em;
+    display: inline;
+    width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-right: -100%; }
+    /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+    #tab2 li:nth-child(3n + 1), #tab3 li:nth-child(3n + 1) {
+      margin-left: 0%;
+      clear: left; }
+    /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+    #tab2 li:nth-child(3n + 2), #tab3 li:nth-child(3n + 2) {
+      margin-left: 33.89831%;
+      clear: none; }
+    /* line 42, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-1.0.9/sass/susy/_isolation.scss */
+    #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
+      margin-left: 67.79661%;
+      clear: none; }
+    /* line 215, ../scss/screen.scss */
+    #tab2 li a img, #tab3 li a img {
+      width: 80%;
+      height: 80%;
+      border-radius: 5px;
+      box-shadow: 3px 3px 0 #ddd;
+      -moz-box-shadow: 3px 3px 0 #ddd;
+      -webkit-box-shadow: 3px 3px 0 #ddd; } }
+@media (min-width: 0px) and (max-width: 767px) {
+  /* line 230, ../scss/screen.scss */
+  body {
+    max-width: 44em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 85%;
+    padding: 0 1em; }
+    /* line 38, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    body:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+  /* line 235, ../scss/screen.scss */
+  .front-page {
+    width: 134.09091%;
+    float: left;
+    margin-right: 2.27273%;
     margin-bottom: 1em;
     text-align: center;
     width: 90%;
     margin: 0 auto; }
 
-  /* line 219, ../scss/screen.scss */
-  .tab {
-    display: none; }
-    /* line 226, ../scss/screen.scss */
-    .tab li {
-      width: 100%;
+  /* line 244, ../scss/screen.scss */
+  #tab2 ul, #tab3 ul {
+    overflow: hidden;
+    clear: both; }
+    /* line 247, ../scss/screen.scss */
+    #tab2 ul li:nth-child(odd), #tab3 ul li:nth-child(odd) {
+      background-color: #bac8cf; }
+    /* line 250, ../scss/screen.scss */
+    #tab2 ul li, #tab3 ul li {
+      overflow: hidden;
+      width: 134.09091%;
       float: left;
-      margin-right: 1.69492%;
-      display: block; }
-      /* line 230, ../scss/screen.scss */
-      .tab li img {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
+      margin-right: 2.27273%;
+      text-align: center;
+      display: block;
+      float: none;
+      margin: 0 auto;
+      width: 100%; }
+      /* line 258, ../scss/screen.scss */
+      #tab2 ul li h6, #tab3 ul li h6 {
+        padding: .4em 0;
+        font-size: 2em;
+        width: 100%; }
+      /* line 263, ../scss/screen.scss */
+      #tab2 ul li img, #tab3 ul li img {
+        width: 80%;
+        height: 80%; }
 
-  /* line 236, ../scss/screen.scss */
+  /* line 272, ../scss/screen.scss */
   .tabs {
     text-align: center; }
-    /* line 238, ../scss/screen.scss */
+    /* line 274, ../scss/screen.scss */
     .tabs li {
-      width: 100%;
+      width: 134.09091%;
       float: left;
-      margin-right: 1.69492%;
+      margin-right: 2.27273%;
       width: 90%;
       margin: 0 auto;
       -webkit-border-radius: 3px;
@@ -417,7 +378,7 @@ li {
       display: block;
       margin: 0.5em 0;
       padding: 0.5em 1em; }
-      /* line 247, ../scss/screen.scss */
+      /* line 283, ../scss/screen.scss */
       .tabs li a {
         height: 100%;
         width: 100%;

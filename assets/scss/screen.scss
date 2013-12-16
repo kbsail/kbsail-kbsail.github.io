@@ -16,7 +16,7 @@
 
 .container {
   @include container;
-  @include susy-grid-background;
+  text-align: center;
 }
 
 /* -------------------------------------------------------------------------*/
@@ -25,12 +25,13 @@
 @include font-face("Keswick", font-files("Keswick.otf"));
 @include font-face("entypo", font-files("entypo.woff", "entypo.ttf", "entypo.svg"), "entypo.eot"); 
 @include font-face("entypo-social", font-files("entypo-social.ttf", "entypo-social.woff", "entypo-social.svg"), "entypo-social.eot"); 
-@include sticky-footer(50px, 'body', '.page-footer');
+/* @include sticky-footer(50px, '.container', '.footer-wrapper', '#footer'); */
 
 /* -------------------------------------------------------------------------*/
 /* BREAKPOINTS */
 
 $less-than-tablet: 0px 9 767px;
+$more-than-tablet: 767px 12 1500px;
 
 /* -------------------------------------------------------------------------*/
 /* COLORS */
@@ -46,12 +47,10 @@ $border: #9DB0B9;
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
 
-html, body { height: 100%; }
-
-section, footer {
-  @include container;
-  padding-left: 0;
-  padding-right: 0;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {
@@ -61,11 +60,14 @@ body {
   line-height: 200%;
 }
 
+section {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
   color: $darkgrayblue;
 }
-
 
 nav {
   margin-top: 0;
@@ -82,7 +84,8 @@ nav {
 }
 
 .page { 
-  @include container;
+  position: relative;
+  top: 10%;
   padding-bottom: 1em;
   text-align: center;
   .front-page {
@@ -92,7 +95,8 @@ nav {
     font-weight: bold;
     margin: 0 auto;
     text-align: center;
-    display: inline-block;
+    display: block;
+    float: none;
     h1 {
       color: $darkgrayblue;
       font-size: 2em;
@@ -122,13 +126,19 @@ nav {
 
 }
 
-.footer-wrapper {
-  width: 100%;
-  text-align: center;
-  background-color: $border;
-  height: 30px;
-  padding: 20px 0 10px 0;
-}
+//.footer-wrapper {
+//  @include span-columns(12);
+//}
+
+//#footer {
+//@include span-columns(12);
+//  background-color: $border;
+//  height: 30px;
+//  padding: 10px 0;
+//  p {
+//    text-align: center;
+//  }
+//}
 
 // HEADINGS
 
@@ -162,7 +172,7 @@ li { margin-bottom: 0.2em; }
 
 // PROJECT ROWS
 
-.section-row {
+.tab-row {
   h3 {
     padding-top: .4em;
     line-height: 1.2em;
@@ -170,73 +180,99 @@ li { margin-bottom: 0.2em; }
     width: 100%;
     @include clearfix;
   }
-  ul{ 
-    @include span-columns(12);
-    width: 100%;
-    @include clearfix;
+}
+
+#tab4, #tab5 {
+//  display: block;
+  li {
+    display: inline;
   }
 }
 
-#tab2, #tab3{
-  li {
-    height: 20em;
-    display: inline;
-    @include span-columns(3);
-    @include isolate-grid(4);
-    a img {
-      width: 80%;
-      height: 80%;
-      border-radius: 5px;
-      box-shadow: 3px 3px 0 #ddd;
-        -moz-box-shadow: 3px 3px 0 #ddd;
-        -webkit-box-shadow: 3px 3px 0 #ddd;
+
+// MEDIA QUERIES
+// FULL SCREEN
+
+@include at-breakpoint($more-than-tablet) {
+  ul{ 
+    width: 100%;
+    @include clearfix;
+  }
+
+  .tabs {
+    li, li.active {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  #tab2, #tab3{
+    li {
+      height: 20em;
+      display: inline;
+      @include span-columns(3);
+      @include isolate-grid(4);
+      a img {
+        width: 80%;
+        height: 80%;
+        border-radius: 5px;
+        box-shadow: 3px 3px 0 #ddd;
+          -moz-box-shadow: 3px 3px 0 #ddd;
+          -webkit-box-shadow: 3px 3px 0 #ddd;
+      }
     }
   }
 }
 
-#tab4, #tab5 {
-  li {
-    display: inline;
-  }
-}
-
-// MEDIA QUERIES
+// TABLET OR SMALLER
 
 @include at-breakpoint($less-than-tablet) {
-
   body {
+    @include container;
     font-size: 85%;
     padding: 0 1em;
   }
   .front-page {
-    @include span-columns(12,12);
+    @include span-columns(12);
     margin-bottom: 1em;
     text-align: center;
     width: 90%;
     margin: 0 auto; 
   }
 
-  .tab {
-//    background-color: red;
-   display: none;
-//    @include span-columns(12,12);
-//    h3 {
-//      width: 100%;
-//    }
-    li {
-      @include span-columns(12,12);
-//      width: 90%;
-      display: block;
-    img {
-      @include span-columns(12,12);
-    }
+  #tab2, #tab3 {
+    ul {
+      @include clearfix;
+      clear: both;
+      li:nth-child(odd) {
+        background-color: $lightgray;
+      }
+      li {
+        @include clearfix;
+        @include span-columns(12);
+        text-align: center;
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        h6 {
+          padding: .4em 0;
+          font-size: 2em;
+          width: 100%;
+        }
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
     }
   }
+
 
   .tabs {
     text-align: center;
     li {
-      @include span-columns(12,12);
+      @include span-columns(12);
       width: 90%;
       margin: 0 auto;
       @include border-radius(3px);
