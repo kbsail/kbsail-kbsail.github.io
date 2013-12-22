@@ -195,32 +195,33 @@ nav {
       width: 90%; }
     /* line 107, ../scss/screen.scss */
     .page .front-page h2 {
-      padding: 0 .4em; }
-    /* line 110, ../scss/screen.scss */
+      padding: 0 .4em;
+      margin-bottom: -.4em; }
+    /* line 111, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
 
-/* line 117, ../scss/screen.scss */
+/* line 118, ../scss/screen.scss */
 .alinks {
   width: 100%;
   padding: .8em 0; }
-  /* line 120, ../scss/screen.scss */
+  /* line 121, ../scss/screen.scss */
   .alinks p {
     font-style: italic; }
 
-/* line 141, ../scss/screen.scss */
+/* line 142, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 148, ../scss/screen.scss */
+/* line 149, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 153, ../scss/screen.scss */
+/* line 154, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -229,20 +230,20 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 162, ../scss/screen.scss */
+/* line 163, ../scss/screen.scss */
 h4 {
   font-size: 1.2em;
   font-weight: 600; }
 
-/* line 167, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 171, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 177, ../scss/screen.scss */
+/* line 178, ../scss/screen.scss */
 .tab-row h3 {
   padding-top: .4em;
   line-height: 1.2em;
@@ -254,31 +255,31 @@ li {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 188, ../scss/screen.scss */
+/* line 189, ../scss/screen.scss */
 #tab4 li, #tab5 li {
   display: inline; }
 
 @media (min-width: 767px) and (max-width: 1500px) {
-  /* line 198, ../scss/screen.scss */
+  /* line 199, ../scss/screen.scss */
   .page {
     position: relative;
     top: 10%; }
 
-  /* line 202, ../scss/screen.scss */
+  /* line 203, ../scss/screen.scss */
   ul {
     width: 100%;
     overflow: hidden; }
 
-  /* line 208, ../scss/screen.scss */
+  /* line 209, ../scss/screen.scss */
   .tabs li, .tabs li.active {
     padding-top: 0;
     padding-bottom: 0; }
-  /* line 212, ../scss/screen.scss */
+  /* line 213, ../scss/screen.scss */
   .tabs li.active {
     margin-bottom: -1px;
     height: 31px; }
 
-  /* line 219, ../scss/screen.scss */
+  /* line 220, ../scss/screen.scss */
   #tab2 li, #tab3 li {
     height: 20em;
     display: inline;
@@ -301,7 +302,7 @@ li {
     #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 224, ../scss/screen.scss */
+    /* line 225, ../scss/screen.scss */
     #tab2 li a img, #tab3 li a img {
       width: 80%;
       height: 80%;
@@ -310,7 +311,7 @@ li {
       -moz-box-shadow: 3px 3px 0 #ddd;
       -webkit-box-shadow: 3px 3px 0 #ddd; } }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 239, ../scss/screen.scss */
+  /* line 240, ../scss/screen.scss */
   body {
     max-width: 44em;
     padding-left: 1em;
@@ -325,12 +326,12 @@ li {
       display: table;
       clear: both; }
 
-  /* line 245, ../scss/screen.scss */
+  /* line 246, ../scss/screen.scss */
   .page {
     position: relative;
     top: 0; }
 
-  /* line 250, ../scss/screen.scss */
+  /* line 251, ../scss/screen.scss */
   .front-page {
     width: 134.09091%;
     float: left;
@@ -340,14 +341,14 @@ li {
     width: 90%;
     margin: 0 auto; }
 
-  /* line 259, ../scss/screen.scss */
+  /* line 260, ../scss/screen.scss */
   #tab2 ul, #tab3 ul {
     overflow: hidden;
     clear: both; }
-    /* line 262, ../scss/screen.scss */
+    /* line 263, ../scss/screen.scss */
     #tab2 ul li:nth-child(odd), #tab3 ul li:nth-child(odd) {
       background-color: #bac8cf; }
-    /* line 265, ../scss/screen.scss */
+    /* line 266, ../scss/screen.scss */
     #tab2 ul li, #tab3 ul li {
       overflow: hidden;
       width: 134.09091%;
@@ -358,20 +359,20 @@ li {
       float: none;
       margin: 0 auto;
       width: 100%; }
-      /* line 273, ../scss/screen.scss */
+      /* line 274, ../scss/screen.scss */
       #tab2 ul li h6, #tab3 ul li h6 {
         padding: .4em 0;
         font-size: 2em;
         width: 100%; }
-      /* line 278, ../scss/screen.scss */
+      /* line 279, ../scss/screen.scss */
       #tab2 ul li img, #tab3 ul li img {
         width: 80%;
         height: 80%; }
 
-  /* line 287, ../scss/screen.scss */
+  /* line 288, ../scss/screen.scss */
   .tabs {
     text-align: center; }
-    /* line 289, ../scss/screen.scss */
+    /* line 290, ../scss/screen.scss */
     .tabs li {
       width: 134.09091%;
       float: left;
@@ -387,7 +388,7 @@ li {
       display: block;
       margin: 0.5em 0;
       padding: 0 1em; }
-      /* line 298, ../scss/screen.scss */
+      /* line 299, ../scss/screen.scss */
       .tabs li a {
         height: 100%;
         width: 100%;
