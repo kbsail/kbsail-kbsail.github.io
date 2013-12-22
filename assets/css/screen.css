@@ -195,33 +195,35 @@ nav {
       width: 90%; }
     /* line 107, ../scss/screen.scss */
     .page .front-page h2 {
-      padding: 0 .4em;
+      padding: 0 .4em; }
+    /* line 110, ../scss/screen.scss */
+    .page .front-page h2:nth-of-type(1) {
       margin-bottom: -.4em; }
-    /* line 111, ../scss/screen.scss */
+    /* line 113, ../scss/screen.scss */
     .page .front-page p {
       font-size: .7em; }
 
-/* line 118, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 .alinks {
   width: 100%;
   padding: .8em 0; }
-  /* line 121, ../scss/screen.scss */
+  /* line 123, ../scss/screen.scss */
   .alinks p {
     font-style: italic; }
 
-/* line 142, ../scss/screen.scss */
+/* line 144, ../scss/screen.scss */
 h1 {
   font-size: 3.4em;
   line-height: 100%;
   margin-bottom: 0.2em;
   width: 100%; }
 
-/* line 149, ../scss/screen.scss */
+/* line 151, ../scss/screen.scss */
 h2 {
   font-size: 1.2em;
   line-height: 100%; }
 
-/* line 154, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 h3 {
   font-family: 'Keswick', script;
   font-size: 2em;
@@ -230,20 +232,20 @@ h3 {
   line-height: 100%;
   text-transform: uppercase; }
 
-/* line 163, ../scss/screen.scss */
+/* line 165, ../scss/screen.scss */
 h4 {
   font-size: 1.2em;
   font-weight: 600; }
 
-/* line 168, ../scss/screen.scss */
+/* line 170, ../scss/screen.scss */
 h6 {
   text-transform: uppercase; }
 
-/* line 172, ../scss/screen.scss */
+/* line 174, ../scss/screen.scss */
 li {
   margin-bottom: 0.2em; }
 
-/* line 178, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 .tab-row h3 {
   padding-top: .4em;
   line-height: 1.2em;
@@ -255,31 +257,36 @@ li {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 189, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
+#tab1 h4 {
+  text-decoration: underline;
+  font-weight: 800; }
+
+/* line 198, ../scss/screen.scss */
 #tab4 li, #tab5 li {
   display: inline; }
 
 @media (min-width: 767px) and (max-width: 1500px) {
-  /* line 199, ../scss/screen.scss */
+  /* line 208, ../scss/screen.scss */
   .page {
     position: relative;
     top: 10%; }
 
-  /* line 203, ../scss/screen.scss */
+  /* line 212, ../scss/screen.scss */
   ul {
     width: 100%;
     overflow: hidden; }
 
-  /* line 209, ../scss/screen.scss */
+  /* line 218, ../scss/screen.scss */
   .tabs li, .tabs li.active {
     padding-top: 0;
     padding-bottom: 0; }
-  /* line 213, ../scss/screen.scss */
+  /* line 222, ../scss/screen.scss */
   .tabs li.active {
     margin-bottom: -1px;
     height: 31px; }
 
-  /* line 220, ../scss/screen.scss */
+  /* line 229, ../scss/screen.scss */
   #tab2 li, #tab3 li {
     height: 20em;
     display: inline;
@@ -302,7 +309,7 @@ li {
     #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 225, ../scss/screen.scss */
+    /* line 234, ../scss/screen.scss */
     #tab2 li a img, #tab3 li a img {
       width: 80%;
       height: 80%;
@@ -311,7 +318,7 @@ li {
       -moz-box-shadow: 3px 3px 0 #ddd;
       -webkit-box-shadow: 3px 3px 0 #ddd; } }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 240, ../scss/screen.scss */
+  /* line 249, ../scss/screen.scss */
   body {
     max-width: 44em;
     padding-left: 1em;
@@ -326,12 +333,12 @@ li {
       display: table;
       clear: both; }
 
-  /* line 246, ../scss/screen.scss */
+  /* line 255, ../scss/screen.scss */
   .page {
     position: relative;
     top: 0; }
 
-  /* line 251, ../scss/screen.scss */
+  /* line 260, ../scss/screen.scss */
   .front-page {
     width: 134.09091%;
     float: left;
@@ -341,14 +348,14 @@ li {
     width: 90%;
     margin: 0 auto; }
 
-  /* line 260, ../scss/screen.scss */
+  /* line 269, ../scss/screen.scss */
   #tab2 ul, #tab3 ul {
     overflow: hidden;
     clear: both; }
-    /* line 263, ../scss/screen.scss */
+    /* line 272, ../scss/screen.scss */
     #tab2 ul li:nth-child(odd), #tab3 ul li:nth-child(odd) {
       background-color: #bac8cf; }
-    /* line 266, ../scss/screen.scss */
+    /* line 275, ../scss/screen.scss */
     #tab2 ul li, #tab3 ul li {
       overflow: hidden;
       width: 134.09091%;
@@ -359,20 +366,20 @@ li {
       float: none;
       margin: 0 auto;
       width: 100%; }
-      /* line 274, ../scss/screen.scss */
+      /* line 283, ../scss/screen.scss */
       #tab2 ul li h6, #tab3 ul li h6 {
         padding: .4em 0;
         font-size: 2em;
         width: 100%; }
-      /* line 279, ../scss/screen.scss */
+      /* line 288, ../scss/screen.scss */
       #tab2 ul li img, #tab3 ul li img {
         width: 80%;
         height: 80%; }
 
-  /* line 288, ../scss/screen.scss */
+  /* line 297, ../scss/screen.scss */
   .tabs {
     text-align: center; }
-    /* line 290, ../scss/screen.scss */
+    /* line 299, ../scss/screen.scss */
     .tabs li {
       width: 134.09091%;
       float: left;
@@ -388,7 +395,7 @@ li {
       display: block;
       margin: 0.5em 0;
       padding: 0 1em; }
-      /* line 299, ../scss/screen.scss */
+      /* line 308, ../scss/screen.scss */
       .tabs li a {
         height: 100%;
         width: 100%;
