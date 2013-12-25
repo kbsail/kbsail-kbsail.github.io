@@ -66,27 +66,17 @@ section {
 
 a {
   text-decoration: none;
-//  color: $darkgrayblue;
 }
 
-nav {
-  margin-top: 0;
-  a {
-    display: inline; 
-    padding: 0 1em;
-    margin: 0; 
-    @include clearfix;
-    text-decoration: none;
-    font-size: .6em;
-    font-family: 'Helvetica Neue', sans-serif;
-    color: blue;
-  }
-}
+
+// MAIN SECTION
 
 .page { 
   padding-bottom: 1em;
   text-align: center;
-  .front-page {
+}
+
+.front-page {
     clear: both;
     font-family: "Keswick";
     font-size: 1.5em;
@@ -112,6 +102,18 @@ nav {
     }
   }
 
+nav {
+  margin-top: 0;
+  a {
+    display: inline; 
+    padding: 0 1em;
+    margin: 0; 
+    @include clearfix;
+    text-decoration: none;
+    font-size: .6em;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: blue;
+  }
 }
 
 .alinks {
@@ -122,19 +124,6 @@ nav {
   }
 }
 
-//.footer-wrapper {
-//  @include span-columns(12);
-//}
-
-//#footer {
-//@include span-columns(12);
-//  background-color: $border;
-//  height: 30px;
-//  padding: 10px 0;
-//  p {
-//    text-align: center;
-//  }
-//}
 
 // HEADINGS
 
