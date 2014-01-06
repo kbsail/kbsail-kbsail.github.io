@@ -114,8 +114,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* -------------------------------------------------------------------------*/
 /* INCLUDES */
 @font-face {
-  font-family: "Keswick";
-  src: url('/assets/fonts/Keswick.otf') format('opentype'); }
+  font-family: "Siple";
+  src: url('/assets/fonts/SurroundingRegular.otf') format('opentype'); }
 
 @font-face {
   font-family: "entypo";
@@ -163,7 +163,7 @@ a {
 /* line 79, ../scss/screen.scss */
 .front-page {
   clear: both;
-  font-family: "Keswick";
+  font-family: 'Siple', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   margin: 0 auto;
@@ -223,7 +223,7 @@ h2 {
 
 /* line 142, ../scss/screen.scss */
 h3 {
-  font-family: 'Keswick', script;
+  font-family: 'Siple', sans-serif;
   font-size: 2em;
   color: #679498;
   font-weight: 600;
