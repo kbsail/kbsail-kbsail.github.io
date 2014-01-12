@@ -173,6 +173,18 @@ li { margin-bottom: 0.2em; }
 }
 
 #tab1 {
+  clear: both;
+  ul {
+    list-style-type: disc;
+  }
+  h4 {
+    text-align: left;
+    margin-left: 15%;
+  }
+  li {
+    text-align: left;
+    margin-left: 20%
+  }
   h4 {
     text-decoration: underline;
     font-weight: 800;
