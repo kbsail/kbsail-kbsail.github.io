@@ -22,7 +22,7 @@
 /* -------------------------------------------------------------------------*/
 /* INCLUDES */
 
-@include font-face("Siple", font-files("SurroundingRegular.otf"));
+@include font-face("alright-sans", font-files("AlrightSans-Regular-v3.otf"));
 @include font-face("entypo", font-files("entypo.woff", "entypo.ttf", "entypo.svg"), "entypo.eot"); 
 @include font-face("entypo-social", font-files("entypo-social.ttf", "entypo-social.woff", "entypo-social.svg"), "entypo-social.eot"); 
 /* @include sticky-footer(50px, '.container', '.footer-wrapper', '#footer'); */
@@ -78,7 +78,7 @@ a {
 
 .front-page {
     clear: both;
-    font-family: 'Siple', sans-serif;
+    font-family: 'alright-sans', sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     margin: 0 auto;
@@ -140,7 +140,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Siple', sans-serif;
+  font-family: 'alright-sans', sans-serif;
   font-size: 2em;
   color: $darkscheme;
   font-weight: 600;
