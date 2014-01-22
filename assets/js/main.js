@@ -3,15 +3,18 @@ $(document).ready(function () {
     event.preventDefault();
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
-        $('.tab').hide();
+        $('body').animate({scrollTop: 0}, 1000, function() {
+          $('.tab').hide();
+          });
       }
       else {
         $("li").removeClass('active');
         $(this).addClass("active");    
         $('.tab').hide();
         
-        var tab_index = $(this).children('a').attr('data-tab')
+        var tab_index = $(this).children('a').attr('href')
         $(tab_index).show()
+        $('body').animate({scrollTop: $('.tabs').offset().top}, 1000);
       }
   });
 });
