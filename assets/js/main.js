@@ -3,7 +3,7 @@ $(document).ready(function () {
     event.preventDefault();
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
-        $('body').animate({scrollTop: 0}, 1000, function() {
+        $('body').animate({scrollTop: 0}, 700, function() {
           $('.tab').hide();
           });
       }
@@ -14,7 +14,7 @@ $(document).ready(function () {
         
         var tab_index = $(this).children('a').attr('href')
         $(tab_index).show()
-        $('body').animate({scrollTop: $('.tabs').offset().top}, 1000);
+        $('body').animate({scrollTop: $('.tabs').offset().top}, 700);
       }
   });
 });
