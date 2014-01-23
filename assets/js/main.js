@@ -1,20 +1,23 @@
 $(document).ready(function () {
   $('.tabs li').click(function(event){
     event.preventDefault();
-      if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-        $('body').animate({scrollTop: 0}, 700, function() {
-          $('.tab').hide();
-          });
-      }
-      else {
-        $("li").removeClass('active');
-        $(this).addClass("active");    
+    $self = $(this)
+    if($self.hasClass('active')){
+      var openTab = false;
+    } else {
+      var openTab = true;
+    };
+    if($('.active').length > 0) {
+      $(".active").removeClass('active');
+      $('body').animate({scrollTop: 0}, 700, function() {
         $('.tab').hide();
-        
-        var tab_index = $(this).children('a').attr('href')
-        $(tab_index).show()
-        $('body').animate({scrollTop: $('.tabs').offset().top}, 700);
-      }
+      });  
+    }
+    if(openTab === true) {
+      $self.addClass("active");
+      var showTab = $self.children('a')[0].getAttribute("href")
+      $(showTab).show();
+      $('body').animate({scrollTop: $('.tabs').offset().top}, 700);
+    }
   });
 });
