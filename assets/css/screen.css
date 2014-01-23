@@ -292,13 +292,10 @@ li {
   /* line 216, ../scss/screen.scss */
   .tabs li, .tabs li.active {
     padding-top: 0;
-    padding-bottom: 0; }
-  /* line 220, ../scss/screen.scss */
-  .tabs li.active {
-    margin-bottom: -1px;
-    height: 31px; }
+    padding-bottom: 0;
+    cursor: pointer; }
 
-  /* line 227, ../scss/screen.scss */
+  /* line 224, ../scss/screen.scss */
   #tab2 li, #tab3 li {
     height: 20em;
     display: inline;
@@ -321,7 +318,7 @@ li {
     #tab2 li:nth-child(3n + 3), #tab3 li:nth-child(3n + 3) {
       margin-left: 67.79661%;
       clear: none; }
-    /* line 232, ../scss/screen.scss */
+    /* line 229, ../scss/screen.scss */
     #tab2 li a img, #tab3 li a img {
       width: 80%;
       height: 80%;
@@ -330,7 +327,7 @@ li {
       -moz-box-shadow: 3px 3px 0 #ddd;
       -webkit-box-shadow: 3px 3px 0 #ddd; } }
 @media (min-width: 0px) and (max-width: 767px) {
-  /* line 247, ../scss/screen.scss */
+  /* line 244, ../scss/screen.scss */
   body {
     max-width: 44em;
     padding-left: 1em;
@@ -345,12 +342,12 @@ li {
       display: table;
       clear: both; }
 
-  /* line 253, ../scss/screen.scss */
+  /* line 250, ../scss/screen.scss */
   .page {
     position: relative;
     top: 0; }
 
-  /* line 258, ../scss/screen.scss */
+  /* line 255, ../scss/screen.scss */
   .front-page {
     width: 134.09091%;
     float: left;
@@ -360,14 +357,14 @@ li {
     width: 90%;
     margin: 0 auto; }
 
-  /* line 267, ../scss/screen.scss */
+  /* line 264, ../scss/screen.scss */
   #tab2 ul, #tab3 ul {
     overflow: hidden;
     clear: both; }
-    /* line 270, ../scss/screen.scss */
+    /* line 267, ../scss/screen.scss */
     #tab2 ul li:nth-child(odd), #tab3 ul li:nth-child(odd) {
       background-color: #bac8cf; }
-    /* line 273, ../scss/screen.scss */
+    /* line 270, ../scss/screen.scss */
     #tab2 ul li, #tab3 ul li {
       overflow: hidden;
       width: 134.09091%;
@@ -378,20 +375,20 @@ li {
       float: none;
       margin: 0 auto;
       width: 100%; }
-      /* line 281, ../scss/screen.scss */
+      /* line 278, ../scss/screen.scss */
       #tab2 ul li h6, #tab3 ul li h6 {
         padding: .4em 0;
         font-size: 2em;
         width: 100%; }
-      /* line 286, ../scss/screen.scss */
+      /* line 283, ../scss/screen.scss */
       #tab2 ul li img, #tab3 ul li img {
         width: 80%;
         height: 80%; }
 
-  /* line 295, ../scss/screen.scss */
+  /* line 292, ../scss/screen.scss */
   .tabs {
     text-align: center; }
-    /* line 297, ../scss/screen.scss */
+    /* line 294, ../scss/screen.scss */
     .tabs li {
       width: 134.09091%;
       float: left;
@@ -407,7 +404,7 @@ li {
       display: block;
       margin: 0.5em 0;
       padding: 0 1em; }
-      /* line 306, ../scss/screen.scss */
+      /* line 303, ../scss/screen.scss */
       .tabs li a {
         height: 100%;
         width: 100%;

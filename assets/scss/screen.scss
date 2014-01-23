@@ -216,10 +216,7 @@ li { margin-bottom: 0.2em; }
     li, li.active {
       padding-top: 0;
       padding-bottom: 0;
-    }
-    li.active {
-      margin-bottom: -1px;
-      height: 31px;
+      cursor: pointer;
     }
   }
 
