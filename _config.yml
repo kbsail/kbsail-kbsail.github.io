@@ -6,6 +6,7 @@ markdown: redcarpet
 highlighter: rouge
 description: My personal website, to showcase my work and organize all of web content into one place.
 
+
 source:      .
 destination: _site
 plugins:     _plugins
