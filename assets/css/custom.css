@@ -17,3 +17,8 @@ h3 {
 li {
 	text-align: left;
 }
+
+.about-me {
+	width: 70%;
+  margin: 0 auto;
+}

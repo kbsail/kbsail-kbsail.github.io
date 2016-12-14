@@ -181,7 +181,7 @@ a {
     width: 90%; }
   /* line 97, ../scss/screen.scss */
   .front-page h2 {
-    padding: 0 .4em; }
+    padding: .3em .4em; }
   /* line 100, ../scss/screen.scss */
   .front-page p {
     font-size: .7em; }
