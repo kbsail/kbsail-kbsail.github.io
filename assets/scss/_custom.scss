@@ -1,3 +1,7 @@
+.main-part {
+  @include span(9);
+  .my-section { @include span(3 of 9); }
+}
 
 .custom-list {
 	list-style-type: none;
