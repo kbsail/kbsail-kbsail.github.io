@@ -1,7 +1,12 @@
-{% include header.html %}
-
-  {{ content }}
-
-{%  include sections.html %}
-
-{% include footer.html %}
+<!doctype html>
+<html>
+	{% include header.html %}
+	<body class="container">
+		<section class="page">
+			{%  include front-page.html %}
+			{{ content }}
+			{%  include sections.html %}
+		</section>
+		{% include footer.html %}
+  </body>
+</html>
