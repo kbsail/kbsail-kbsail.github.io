@@ -350,7 +350,7 @@ li {
   /* line 255, ../scss/screen.scss */
   .front-page {
     width: 134.09091%;
-    float: left;
+    /*float: left;*/
     margin-right: 2.27273%;
     margin-bottom: 1em;
     text-align: center;
