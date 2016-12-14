@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Kevin Berry -- That's Me -- [@lostmarinero](https://twitter.com/lostmarinero)
 
 # THANKS
 
-    <name>
+    To everyone who has supported me over the years
 
 # TECHNOLOGY COLOPHON
 
