@@ -10,6 +10,7 @@
 @import "compass/utilities/general/clearfix";
 @import "sassy-buttons";
 @import "susy";
+@import "custom";
 
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
@@ -95,7 +96,7 @@ a {
       width: 90%;
     }
     h2 {
-      padding: 0 .4em;
+      padding: .3em .4em;
     }
     p {
       font-size: .7em;
