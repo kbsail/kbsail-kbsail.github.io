@@ -1,7 +1,7 @@
 
 .main-part {
   @include span(9);
-  .my-section { @include span(3 of 9); }
+  .my-section { width: span(3 of 9); }
 	@include show-grid(overlay);
 }
 
