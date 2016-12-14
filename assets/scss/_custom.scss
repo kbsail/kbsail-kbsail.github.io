@@ -1,7 +1,8 @@
+@import susy
 
 .main-part {
-  @include span(9);
-  .my-section { width: span(3 of 9); }
+  @include span(12);
+  .my-section { width: span(4 of 12); }
 	@include show-grid(overlay);
 }
 
