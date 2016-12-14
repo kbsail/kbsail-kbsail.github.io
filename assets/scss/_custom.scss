@@ -1,7 +1,7 @@
 @import susy
 
 .main-part {
-	background: red;
+	background-color: red;
   @include span(12);
   .my-section { width: span(4 of 12); }
 	@include show-grid(overlay);
