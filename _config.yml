@@ -3,7 +3,7 @@ safe:        false
 base-url:    /
 permalink:   none
 markdown: redcarpet
-pygments: true
+highlighter: rouge
 
 source:      .
 destination: _site
