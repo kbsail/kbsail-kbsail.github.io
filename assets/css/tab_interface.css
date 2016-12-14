@@ -47,3 +47,5 @@
   color: black;
   text-decoration: none;
   border-bottom: none; }
+
+.custom-button { @include sassy-button-gradient("flat", 2px, 19px, #9370DB); }
