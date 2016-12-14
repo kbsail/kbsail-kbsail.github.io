@@ -10,3 +10,5 @@ description: My personal website, to showcase my work and organize all of web co
 source:      .
 destination: _site
 plugins:     _plugins
+sass:
+    sass_dir: _sass
