@@ -4,15 +4,10 @@
 // ---------------------------------------------------------------------------
 // IMPORTS
 
-@import "compass/reset",
-        "compass/css3",
-        "compass/layout",
-        "compass/typography/",
-        "compass/utilities/general/clearfix",
-        "sassy-buttons",
-        "susy",
-        "base",
-        "custom";
+@import 'normalize',
+        'susy',
+        'base',
+        'custom';
 
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
@@ -23,18 +18,28 @@
 }
 
 /* -------------------------------------------------------------------------*/
-/* INCLUDES */
+/* FONTS */
 
-@include font-face("alright-sans", font-files("AlrightSans-Regular-v3.otf"));
-@include font-face("entypo", font-files("entypo.woff", "entypo.ttf", "entypo.svg"), "entypo.eot"); 
-@include font-face("entypo-social", font-files("entypo-social.ttf", "entypo-social.woff", "entypo-social.svg"), "entypo-social.eot"); 
-/* @include sticky-footer(50px, '.container', '.footer-wrapper', '#footer'); */
+@font-face {
+  font-family: 'alright-sans';
+  src:  url('../fonts/AlrightSans-Regular-v3.otf') format('otf'),
+        url('../fonts/AlrightSans-Regular-v3.woff') format('woff');
+}
 
-/* -------------------------------------------------------------------------*/
-/* BREAKPOINTS */
+@font-face {
+  font-family: 'entypo';
+  src: url('entypo.eot');
+  src: url('../fonts/entypo.ttf') format('truetype'),
+       url('../fonts/entypo.woff') format('woff');
+}
 
-$less-than-tablet: 0px 9 767px;
-$more-than-tablet: 767px 12 1500px;
+@font-face {
+  font-family: 'entypo-social';
+  src: url('entypo-social.eot');
+  src: url('../fonts/entypo-social.ttf') format('truetype'),
+       url('../fonts/entypo-social.woff') format('woff');
+}
+
 
 /* -------------------------------------------------------------------------*/
 /* COLORS */
@@ -71,10 +76,14 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  clear: both;
+  margin: 0;
+}
 
 // MAIN SECTION
 
-.page { 
+.page {
   padding-bottom: 1em;
   text-align: center;
 }
@@ -99,9 +108,12 @@ a {
     }
     h2 {
       padding: .3em .4em;
+      padding-bottom: 0;
+      margin: 0 auto;
     }
     p {
       font-size: .7em;
+      margin: 0 auto;
     }
   }
 
@@ -111,7 +123,6 @@ nav {
     display: inline;
     padding: 0 1em;
     margin: 0;
-    @include clearfix;
     text-decoration: none;
     font-size: .6em;
     font-family: 'Helvetica Neue', sans-serif;
@@ -169,9 +180,7 @@ li { margin-bottom: 0.2em; }
   h3 {
     padding-top: .4em;
     line-height: 1.2em;
-    @include span-columns(12);
-    width: 100%;
-    @include clearfix;
+    @include container(100%);
   }
 }
 
@@ -205,14 +214,13 @@ li { margin-bottom: 0.2em; }
 // MEDIA QUERIES
 // FULL SCREEN
 
-@include at-breakpoint($more-than-tablet) {
+@include susy-breakpoint(767px, 1500px, 12) {
   .page {
     position: relative;
     top: 10%;
   }
   ul{
     width: 100%;
-    @include clearfix;
   }
 
   .tabs {
@@ -227,8 +235,8 @@ li { margin-bottom: 0.2em; }
     li {
       height: 20em;
       display: inline;
-      @include span-columns(3);
-      @include isolate-grid(4);
+      @include span(3 of 12);
+      @include gallery(4);
       a img {
         width: 80%;
         height: 80%;
@@ -243,7 +251,7 @@ li { margin-bottom: 0.2em; }
 
 // TABLET OR SMALLER
 
-@include at-breakpoint($less-than-tablet) {
+@include susy-breakpoint(0px, 767px, 9) {
   body {
     @include container;
     font-size: 85%;
@@ -256,7 +264,7 @@ li { margin-bottom: 0.2em; }
   }
 
   .front-page {
-    @include span-columns(12);
+    @include container(100%);
     margin-bottom: 1em;
     text-align: center;
     width: 90%;
@@ -265,14 +273,12 @@ li { margin-bottom: 0.2em; }
 
   #tab2, #tab3 {
     ul {
-      @include clearfix;
       clear: both;
       li:nth-child(odd) {
         background-color: $lightgray;
       }
       li {
-        @include clearfix;
-        @include span-columns(12);
+        @include container(100%);
         text-align: center;
         display: block;
         float: none;
@@ -295,13 +301,13 @@ li { margin-bottom: 0.2em; }
   .tabs {
     text-align: center;
     li {
-      @include span-columns(12);
+      @include container(100%);
       width: 90%;
       margin: 0 auto;
-      @include border-radius(3px);
+      border-radius: 3px;
       border: 2px solid $border;
       display: block;
-      margin: 0.5em 0;
+      // margin: 0.5em 0;
       padding: 0 1em;
       a {
         height: 100%;

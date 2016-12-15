@@ -1,7 +1,9 @@
 
+@import "susy";
+
 /* MEDIA QUERIES ********************************************************************************************/
 
-@include at-breakpoint($less-than-tablet) {
+@include susy-breakpoint($less-than-tablet) {
   body {
     font-size: 75%;
   }
