@@ -4,16 +4,15 @@
 // ---------------------------------------------------------------------------
 // IMPORTS
 
-@import "base";
-@import "tab_interface";
-@import "compass/reset";
-@import "compass/css3";
-@import "compass/layout";
-@import "compass/typography/";
-@import "compass/utilities/general/clearfix";
-@import "sassy-buttons";
-@import "susy";
-@import "custom";
+@import "compass/reset",
+        "compass/css3",
+        "compass/layout",
+        "compass/typography/",
+        "compass/utilities/general/clearfix",
+        "sassy-buttons",
+        "susy",
+        "base",
+        "custom";
 
 /* -------------------------------------------------------------------------*/
 /* LAYOUT */
@@ -109,9 +108,9 @@ a {
 nav {
   margin-top: 0;
   a {
-    display: inline; 
+    display: inline;
     padding: 0 1em;
-    margin: 0; 
+    margin: 0;
     @include clearfix;
     text-decoration: none;
     font-size: .6em;
@@ -211,7 +210,7 @@ li { margin-bottom: 0.2em; }
     position: relative;
     top: 10%;
   }
-  ul{ 
+  ul{
     width: 100%;
     @include clearfix;
   }
@@ -261,7 +260,7 @@ li { margin-bottom: 0.2em; }
     margin-bottom: 1em;
     text-align: center;
     width: 90%;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 
   #tab2, #tab3 {
