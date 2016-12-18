@@ -1,9 +1,7 @@
 
-@import "susy";
-
 /* MEDIA QUERIES ********************************************************************************************/
 
-@include susy-breakpoint($less-than-tablet) {
+@media only screen and (max-width: 767px) {
   body {
     font-size: 75%;
   }
@@ -21,7 +19,7 @@
   footer {
     padding: 50px 0 70px 0;
     .social, .contact {
-      @include span-columns(9);
+      // @include span-columns(9);
       text-align: center;
     }
     .contact {

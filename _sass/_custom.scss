@@ -1,8 +1,8 @@
 
 .main-part {
-  @include span(12);
-  .my-section { width: span(4 of 12); }
-	@include show-grid(overlay);
+  // @include span(12);
+  // .my-section { width: span(4 of 12); }
+	// @include show-grid(overlay);
 }
 
 .custom-list {
@@ -17,6 +17,10 @@ h2 {
 h3 {
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+h5 {
+	margin: 0 auto;
 }
 
 

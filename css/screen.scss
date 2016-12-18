@@ -5,7 +5,6 @@
 // IMPORTS
 
 @import 'normalize',
-        'susy',
         'base',
         'custom';
 
@@ -13,7 +12,7 @@
 /* LAYOUT */
 
 .container {
-  @include container;
+  // @include container;
   text-align: center;
 }
 
@@ -95,6 +94,7 @@ h2 {
     font-weight: bold;
     margin: 0 auto;
     text-align: center;
+    margin-top: 10%;
     display: block;
     float: none;
     h1 {
@@ -180,7 +180,7 @@ li { margin-bottom: 0.2em; }
   h3 {
     padding-top: .4em;
     line-height: 1.2em;
-    @include container(100%);
+    // @include container(100%);
   }
 }
 
@@ -212,48 +212,11 @@ li { margin-bottom: 0.2em; }
 
 
 // MEDIA QUERIES
-// FULL SCREEN
-
-@include susy-breakpoint(767px, 1500px, 12) {
-  .page {
-    position: relative;
-    top: 10%;
-  }
-  ul{
-    width: 100%;
-  }
-
-  .tabs {
-    li, li.active {
-      padding-top: 0;
-      padding-bottom: 0;
-      cursor: pointer;
-    }
-  }
-
-  #tab2, #tab3{
-    li {
-      height: 20em;
-      display: inline;
-      @include span(3 of 12);
-      @include gallery(4);
-      a img {
-        width: 80%;
-        height: 80%;
-        border-radius: 5px;
-        box-shadow: 3px 3px 0 #ddd;
-          -moz-box-shadow: 3px 3px 0 #ddd;
-          -webkit-box-shadow: 3px 3px 0 #ddd;
-      }
-    }
-  }
-}
-
 // TABLET OR SMALLER
 
-@include susy-breakpoint(0px, 767px, 9) {
+@media only screen and (max-width: 767px) {
   body {
-    @include container;
+    // @include container;
     font-size: 85%;
     padding: 0 1em;
   }
@@ -264,7 +227,7 @@ li { margin-bottom: 0.2em; }
   }
 
   .front-page {
-    @include container(100%);
+    // @include container(100%);
     margin-bottom: 1em;
     text-align: center;
     width: 90%;
@@ -278,7 +241,7 @@ li { margin-bottom: 0.2em; }
         background-color: $lightgray;
       }
       li {
-        @include container(100%);
+        // @include container(100%);
         text-align: center;
         display: block;
         float: none;
@@ -301,7 +264,7 @@ li { margin-bottom: 0.2em; }
   .tabs {
     text-align: center;
     li {
-      @include container(100%);
+      // @include container(100%);
       width: 90%;
       margin: 0 auto;
       border-radius: 3px;

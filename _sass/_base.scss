@@ -2,8 +2,6 @@
 // ---------------------------------------------------------------------------
 // Imports
 
-@import "susy";
-
 // ---------------------------------------------------------------------------
 // Basic Grid
 
@@ -11,5 +9,6 @@ $total-columns  : 12;
 $column-width   : 4em;
 $gutter-width   : 1em;
 $grid-padding   : $gutter-width;
+$tablet-width		: 48em; // 48em = 768px by default
 
 $show-grid-backgrounds  : true;

@@ -13,7 +13,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.11.1)
+    coffee-script-source (1.12.2)
     colorator (1.1.0)
     compass (1.0.3)
       chunky_png (~> 1.2)
@@ -198,8 +198,6 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
-    susy (2.2.12)
-      sass (>= 3.3.0, < 3.5)
     terminal-table (1.7.3)
       unicode-display_width (~> 1.1.1)
     thread_safe (0.3.5)
@@ -216,7 +214,6 @@ DEPENDENCIES
   font-icons
   github-pages
   sass
-  susy
 
 BUNDLED WITH
    1.13.6

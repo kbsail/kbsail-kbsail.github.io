@@ -21,7 +21,6 @@ sass:
 markdown: kramdown
 gems:
   - rouge
-  - susy
 exclude:
   - Gemfile
   - Gemfile.lock
