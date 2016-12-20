@@ -9,7 +9,6 @@ $fa-font-path:  "../fonts/font-awesome";
 
 
 @import 'normalize',
-        'base',
         '_font-awesome/font-awesome',
         'custom';
 
@@ -188,33 +187,6 @@ li { margin-bottom: 0.2em; }
   }
 }
 
-#tab1 {
-  clear: both;
-  ul {
-    list-style-type: disc;
-  }
-  h4 {
-    text-align: left;
-    margin-left: 15%;
-  }
-  li {
-    text-align: left;
-    margin-left: 20%
-  }
-  h4 {
-    text-decoration: underline;
-    font-weight: 800;
-  }
-}
-
-#tab4, #tab5 {
-//  display: block;
-  li {
-    display: inline;
-  }
-}
-
-
 // MEDIA QUERIES
 // TABLET OR SMALLER
 
@@ -235,51 +207,5 @@ li { margin-bottom: 0.2em; }
     text-align: center;
     width: 90%;
     margin: 25% auto 1em;
-  }
-
-  #tab2, #tab3 {
-    ul {
-      clear: both;
-      li:nth-child(odd) {
-        background-color: $lightgray;
-      }
-      li {
-        // @include container(100%);
-        text-align: center;
-        display: block;
-        float: none;
-        margin: 0 auto;
-        width: 100%;
-        h6 {
-          padding: .4em 0;
-          font-size: 2em;
-          width: 100%;
-        }
-        img {
-          width: 80%;
-          height: 80%;
-        }
-      }
-    }
-  }
-
-
-  .tabs {
-    text-align: center;
-    li {
-      // @include container(100%);
-      width: 90%;
-      margin: 0 auto;
-      border-radius: 3px;
-      border: 2px solid $border;
-      display: block;
-      // margin: 0.5em 0;
-      padding: 0 1em;
-      a {
-        height: 100%;
-        width: 100%;
-        display: block;
-      }
-    }
   }
 }
