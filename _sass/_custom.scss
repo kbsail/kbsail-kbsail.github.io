@@ -63,6 +63,18 @@ li {
   border-radius: .2rem;
 }
 
+.cell {
+  margin: 1rem;
+}
+
+
+// Projects Desktop Size
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+
 // Projects Tablet Size
 @media screen and (min-width: 600px) {
   .grid {
@@ -71,13 +83,13 @@ li {
     flex-direction: row;
   }
   .cell {
-    // width: calc(50% - 2rem);
+    width: calc(50% - 2rem);
   }
 }
 
 // Projects Desktop Size
 @media screen and (min-width: 1000px) {
   .cell {
-    // width: calc(33.3333% - 2rem);
+    width: calc(33.3333% - 2rem);
   }
 }
