@@ -27,11 +27,15 @@ li {
   // margin: 0 auto;
 }
 
+
+
+// Info Section
+
 .flex-container {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-	width: 90%;
+	max-width: 1200px;
 	justify-content: center;
   // height: 200px;
   border: 1px solid #555;
@@ -42,27 +46,38 @@ li {
   }
 }
 
-
-.img-wrap {
-  height: 100%;   // change this
-  width: 100%;    // change this
-
-  position: relative;
+// Projects Container
+.projects-container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 1rem;
 }
-.img-wrap img {
 
-  // this will center the image into container but does not scale down 
-  // the image
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-
-  // this will scale down and maintain ratio
-
-  max-height: 100%;
+// Projects Image Items
+.responsive-image {
   max-width: 100%;
+}
+
+.cell img {
+  display: block;
+  border-radius: .2rem;
+}
+
+// Projects Tablet Size
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    // width: calc(50% - 2rem);
+  }
+}
+
+// Projects Desktop Size
+@media screen and (min-width: 1000px) {
+  .cell {
+    // width: calc(33.3333% - 2rem);
+  }
 }
