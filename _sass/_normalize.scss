@@ -17,6 +17,16 @@ html {
   -webkit-text-size-adjust: 100%; /* 3 */
 }
 
+//
+// !!!!! ADDED MYSELF FROM https://www.taniarascia.com/you-dont-need-a-framework/
+//
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Sections
    ========================================================================== */
 

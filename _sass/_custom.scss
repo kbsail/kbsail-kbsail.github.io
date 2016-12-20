@@ -27,6 +27,18 @@ li {
   // margin: 0 auto;
 }
 
+.my-skills {
+	h4 {
+		margin: 0 auto;
+		text-decoration: underline;
+	}
+	ul {
+		margin-top: 0;
+		li {
+			line-height: 120%;
+		}
+	}
+}
 
 
 // Info Section
@@ -34,8 +46,8 @@ li {
 .flex-container {
 	margin: 0 auto;
 	display: flex;
-	flex-direction: row;
 	max-width: 1200px;
+	flex-direction: row;
 	justify-content: center;
   // height: 200px;
   border: 1px solid #555;
@@ -67,7 +79,6 @@ li {
   margin: 1rem;
 }
 
-
 // Projects Desktop Size
 @media screen and (min-width: 1000px) {
   .cell {
@@ -81,6 +92,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: flex-start;
   }
   .cell {
     width: calc(50% - 2rem);
