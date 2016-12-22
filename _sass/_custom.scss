@@ -27,6 +27,11 @@ li {
 	font-weight: bold;
 }
 
+// Profile Photo
+.profile-photo {
+	border-radius: 100%;
+}
+
 .about-me {
 	// width: 70%;
   // margin: 0 auto;
@@ -49,12 +54,16 @@ li {
 // Info Section
 
 .flex-container {
-	margin: 0 auto;
+	// Flex settings
 	display: flex;
-	max-width: 1200px;
 	flex-direction: row;
 	justify-content: center;
-  // height: 200px;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	// Other settings
+	margin: 0 auto;
+	max-width: 1200px;
   border: 1px solid #555;
   div {
   	flex-grow: 1;
@@ -62,6 +71,11 @@ li {
   	flex-basis: 0;
   }
 }
+
+// Profile Photo
+.front-photo {
+  display: None;
+ }
 
 // Projects Container
 .projects-container {
@@ -109,11 +123,13 @@ li {
   .cell {
     width: calc(50% - 2rem);
   }
-}
-
-// Projects Desktop Size
-@media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(33.3333% - 2rem);
+  .front-photo {
+  	display: block;
+  	max-width: 8.75rem;
+    max-height: 8.75rem;
+    img {
+    	max-width: 100%;
+    	max-height: 100%;
+    }
   }
 }
