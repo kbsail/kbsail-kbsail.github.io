@@ -5,11 +5,6 @@ This is a website that hopefully represents my skills as a coder, my passions as
 ## Tools Used
 - [Github Pages](http://pages.github.com/)
 - [Jekyll](http://jekyllrb.com/)
-- [Jen Myers](https://github.com/jenmyers)
-- [Sassy-Buttons](http://jaredhardy.com/sassy-buttons/)
-- [Compass](http://compass-style.org/)
-- [Entypo](http://entypo.com)
-- [Susy](http://susy.oddbird.net/)
 
 ## Want to contact me?
 

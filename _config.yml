@@ -10,8 +10,8 @@ highlighter: rouge
 description: The personal website of Kevin Berry, a ruby and python focused developer.
 
 
-source:      .
-destination: _site
+source: src
+destination: public
 plugins_dir: _plugins
 sass:
   sass_dir: _sass
