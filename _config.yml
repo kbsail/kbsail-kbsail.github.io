@@ -14,7 +14,7 @@ source: src
 destination: public
 plugins_dir: _plugins
 sass:
-  sass_dir: _sass
+  sass_dir: /_sass
   style: compressed
 
 
