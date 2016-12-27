@@ -21536,11 +21536,7 @@
 	  _createClass(Hello, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        'Hey, y\'all!!'
-	      );
+	      return _react2.default.createElement('div', null);
 	    }
 	  }]);
 
