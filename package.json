@@ -1,0 +1,39 @@
+{
+  "name": "kevin-berry.com",
+  "version": "1.1.0",
+  "description": "My personal website, with React added for functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostmarinero/lostmarinero.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "react",
+    "jekyll"
+  ],
+  "author": "Kevin Berry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostmarinero/lostmarinero.github.io/issues"
+  },
+  "homepage": "https://github.com/lostmarinero/lostmarinero.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.12.2",
+    "eslint-plugin-react": "^6.8.0",
+    "react": "^15.4.1",
+    "react-addons-update": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "webpack": "^1.14.0"
+  }
+}
