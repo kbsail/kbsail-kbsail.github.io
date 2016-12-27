@@ -2,7 +2,7 @@ module.exports = {
   // webpack folder's entry js - excluded from jekll's build process.
   entry: "./webpack/entry.js",
   output: {
-    path: "src/assets/javascripts",
+    path: "assets/javascripts",
     filename: "bundle.js"
   },
   module: {
