@@ -8,6 +8,7 @@ export default React.createClass({
       <div>
         <SideBar/>
         <div className="main-page">
+          <button >
           {this.props.children}
           <Footer/>
         </div>
