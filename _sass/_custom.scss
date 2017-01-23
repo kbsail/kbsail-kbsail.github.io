@@ -55,18 +55,18 @@ li {
 // # Side Nav Open
 // ###
 
-.side-open {
+// .side-open {
 
-  .main-page {
-    right: 25rem;
-    width: calc(100% - 25rem);
-  }
+//   .main-page {
+//     right: 25rem;
+//     width: calc(100% - 25rem);
+//   }
 
-  .side-nav-container {
-    right: 0;
-    transition: right, .25s;
-  }
-}
+//   .side-nav-container {
+//     right: 0;
+//     transition: right, .25s;
+//   }
+// }
 
 
 
@@ -87,7 +87,7 @@ li {
   border-left: 2px solid $light-grey;
   height: 100%;
   position: fixed;
-  right: -25rem;
+  // right: -25rem;
   top: 0;
   width: 25rem;
 }

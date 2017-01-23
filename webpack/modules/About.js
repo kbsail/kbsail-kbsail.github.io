@@ -1,8 +1,8 @@
 // module/About.js
 import React from 'react'
 
-export default React.createClass({
-  render() {
-    return <div>About</div>
-  }
-})
+function About() {
+  return <div>About</div>
+}
+
+export default About;

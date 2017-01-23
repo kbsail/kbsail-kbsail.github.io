@@ -4,6 +4,6 @@ import { Link } from 'react-router'
 
 export default React.createClass({
   render() {
-    return <Link {...this.props} activeClassName="active" target="_blank"/>
+    return <a {...this.props} target="_blank"/>;
   }
-})
+});

@@ -8,13 +8,17 @@ import ProjectsContainer from './ProjectsContainer'
 import Project from './Project'
 import Home from './Home'
 
-module.exports = (
-  <Route path="/" component={App}>
-    <IndexRoute component={Home}/>
-    <Route path="/about" component={About}/>
-    <Route path="/projects" component={ProjectsContainer}>
-      <IndexRoute component={Projects}/>
-      <Route path="/projects/:id" component={Project}/>
+function routes () {
+  return (
+    <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route path="/projects" component={ProjectsContainer}>
+        <IndexRoute component={Projects}/>
+        <Route path="/projects/:id" component={Project}/>
+      </Route>
     </Route>
-  </Route>
-)
+  )
+}
+
+export default routes;

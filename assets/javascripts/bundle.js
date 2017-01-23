@@ -60,7 +60,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _reactDom.render)(_react2.default.createElement(_reactRouter.Router, { routes: _routes2.default, history: _reactRouter.browserHistory }), document.getElementById('root'));
+	(0, _reactDom.render)(_react2.default.createElement(_reactRouter.Router, { routes: (0, _routes2.default)(), history: _reactRouter.browserHistory }), document.getElementById('root'));
 	// import routes and pass them into <Router/>
 
 /***/ },
@@ -27148,6 +27148,10 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -27158,41 +27162,45 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _About = __webpack_require__(245);
+	var _About = __webpack_require__(247);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Projects = __webpack_require__(246);
+	var _Projects = __webpack_require__(248);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _ProjectsContainer = __webpack_require__(247);
+	var _ProjectsContainer = __webpack_require__(249);
 
 	var _ProjectsContainer2 = _interopRequireDefault(_ProjectsContainer);
 
-	var _Project = __webpack_require__(249);
+	var _Project = __webpack_require__(251);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Home = __webpack_require__(250);
+	var _Home = __webpack_require__(252);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// modules/routes.js
-	module.exports = _react2.default.createElement(
-	  _reactRouter.Route,
-	  { path: '/', component: _App2.default },
-	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
-	  _react2.default.createElement(
+	function routes() {
+	  return _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: '/projects', component: _ProjectsContainer2.default },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Projects2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/projects/:id', component: _Project2.default })
-	  )
-	);
+	    { path: '/', component: _App2.default },
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+	    _react2.default.createElement(
+	      _reactRouter.Route,
+	      { path: '/projects', component: _ProjectsContainer2.default },
+	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _Projects2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: '/projects/:id', component: _Project2.default })
+	    )
+	  );
+	}
+
+	exports.default = routes;
 
 /***/ },
 /* 242 */
@@ -27208,11 +27216,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SideBar = __webpack_require__(255);
+	var _SideBar = __webpack_require__(243);
 
 	var _SideBar2 = _interopRequireDefault(_SideBar);
 
-	var _Footer = __webpack_require__(254);
+	var _Footer = __webpack_require__(245);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -27236,7 +27244,67 @@
 	});
 
 /***/ },
-/* 243 */,
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _NavLink = __webpack_require__(244);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'SideBar',
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'side-nav-container' },
+	      _react2.default.createElement(
+	        'ul',
+	        { role: 'nav', className: 'side-nav-list' },
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { to: '/', onlyActiveOnIndex: true },
+	            'Home'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { to: '/about' },
+	            'About'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { to: '/projects' },
+	            'Projects'
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
 /* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27278,21 +27346,108 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _OutsideLink = __webpack_require__(246);
+
+	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _react2.default.createClass({
-	  displayName: 'About',
-	  render: function render() {
-	    return _react2.default.createElement(
+	function Footer() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
 	      'div',
-	      null,
-	      'About'
-	    );
-	  }
-	}); // module/About.js
+	      { className: 'reach-out' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'alinks' },
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Currently accepting proposals for freelance projects for Q1, 2017. To inquire, please reach out at ',
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'bold-heavy' },
+	            'berry.kevinw'
+	          ),
+	          ' at ',
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'bold-heavy' },
+	            'gmail.com'
+	          ),
+	          ' or ',
+	          _react2.default.createElement(
+	            _OutsideLink2.default,
+	            { href: 'http://www.twitter.com/lostmarinero', alt: 'lostmarinero twitter' },
+	            '@lostmarinero'
+	          ),
+	          '.'
+	        )
+	      )
+	    )
+	  );
+	}
+
+	exports.default = Footer;
 
 /***/ },
 /* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/Navlink.js
+
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'OutsideLink',
+	  render: function render() {
+	    return _react2.default.createElement('a', _extends({}, this.props, { target: '_blank' }));
+	  }
+	});
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function About() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    'About'
+	  );
+	} // module/About.js
+	exports.default = About;
+
+/***/ },
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27353,7 +27508,7 @@
 	});
 
 /***/ },
-/* 247 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27366,7 +27521,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Modal = __webpack_require__(248);
+	var _Modal = __webpack_require__(250);
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -27410,7 +27565,7 @@
 	});
 
 /***/ },
-/* 248 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27427,28 +27582,27 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _react2.default.createClass({
-	  displayName: 'Modal',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { style: this.styles, className: 'custom-modal' },
+	function Modal() {
+	  return _react2.default.createElement(
+	    'div',
+	    { style: this.styles, className: 'custom-modal' },
+	    _react2.default.createElement(
+	      'p',
+	      null,
 	      _react2.default.createElement(
-	        'p',
-	        null,
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: this.props.returnTo },
-	          'Back'
-	        )
-	      ),
-	      this.props.children
-	    );
-	  }
-	});
+	        _reactRouter.Link,
+	        { to: this.props.returnTo },
+	        'Back'
+	      )
+	    ),
+	    this.props.children
+	  );
+	}
+
+	exports.default = Modal;
 
 /***/ },
-/* 249 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27465,131 +27619,15 @@
 
 	var PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }];
 
-	exports.default = _react2.default.createClass({
-	  displayName: 'Project',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement('img', { src: PROJECTS[this.props.params.id].src, style: { height: '80%' } })
-	    );
-	  }
-	});
+	function Project() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement('img', { src: PROJECTS[this.props.params.id].src, style: { height: '80%' } })
+	  );
+	}
 
-/***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _SocialLinks = __webpack_require__(252);
-
-	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
-
-	var _OutsideLink = __webpack_require__(253);
-
-	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	    displayName: 'Home',
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'div',
-	            { className: 'front-page' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'front-info' },
-	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'Kevin Berry'
-	                ),
-	                _react2.default.createElement(_SocialLinks2.default, null),
-	                _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    'Web Developer'
-	                ),
-	                _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    'Specializing in Python & Ruby'
-	                ),
-	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Formerly of ',
-	                    _react2.default.createElement(
-	                        _OutsideLink2.default,
-	                        { href: 'https://codeforamerica.org', alt: 'Code for America' },
-	                        'Code for America'
-	                    ),
-	                    ' & ',
-	                    _react2.default.createElement(
-	                        _OutsideLink2.default,
-	                        { href: 'https://flyrlabs.com', alt: 'FlyrLabs' },
-	                        'FlyrLabs'
-	                    ),
-	                    '.'
-	                ),
-	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Mentorship with ',
-	                    _react2.default.createElement(
-	                        _OutsideLink2.default,
-	                        { href: 'https://missionbit.org', alt: 'MissionBit' },
-	                        'MissionBit'
-	                    ),
-	                    '.'
-	                )
-	            )
-	        );
-	    }
-	}); // modules/Home.js
-
-/***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/SocialLink.js
-
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'SocialLink',
-	  render: function render() {
-	    var linkType = this.props.linkType;
-	    return _react2.default.createElement(
-	      _reactRouter.Link,
-	      _extends({}, this.props, { target: '_blank' }),
-	      _react2.default.createElement('i', { className: 'fa fa-2x ' + linkType, 'aria-hidden': 'true' })
-	    );
-	  }
-	});
+	exports.default = Project;
 
 /***/ },
 /* 252 */
@@ -27605,7 +27643,87 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SocialLink = __webpack_require__(251);
+	var _SocialLinks = __webpack_require__(253);
+
+	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
+
+	var _OutsideLink = __webpack_require__(246);
+
+	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function Home() {
+	    return _react2.default.createElement(
+	        'div',
+	        { className: 'front-page' },
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'front-info' },
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Kevin Berry'
+	            ),
+	            _react2.default.createElement(_SocialLinks2.default, null),
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Web Developer'
+	            ),
+	            _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Specializing in Python & Ruby'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Formerly of ',
+	                _react2.default.createElement(
+	                    _OutsideLink2.default,
+	                    { to: 'https://codeforamerica.org', alt: 'Code for America' },
+	                    'Code for America'
+	                ),
+	                ' & ',
+	                _react2.default.createElement(
+	                    _OutsideLink2.default,
+	                    { to: 'https://flyrlabs.com', alt: 'FlyrLabs' },
+	                    'FlyrLabs'
+	                ),
+	                '.'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Mentorship with ',
+	                _react2.default.createElement(
+	                    _OutsideLink2.default,
+	                    { to: 'https://missionbit.org', alt: 'MissionBit' },
+	                    'MissionBit'
+	                ),
+	                '.'
+	            )
+	        )
+	    );
+	} // modules/Home.js
+	exports.default = Home;
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _SocialLink = __webpack_require__(254);
 
 	var _SocialLink2 = _interopRequireDefault(_SocialLink);
 
@@ -27627,149 +27745,34 @@
 	});
 
 /***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/Navlink.js
-
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'OutsideLink',
-	  render: function render() {
-	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'active', target: '_blank' }));
-	  }
-	});
-
-/***/ },
 /* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/SocialLink.js
+
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _OutsideLink = __webpack_require__(253);
-
-	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// import { Link } from 'react-router'
 
 	exports.default = _react2.default.createClass({
-	  displayName: 'Footer',
+	  displayName: "SocialLink",
 	  render: function render() {
+	    var linkType = this.props.linkType;
 	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'reach-out' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'alinks' },
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Currently accepting proposals for freelance projects for Q1, 2017. To inquire, please reach out at ',
-	            _react2.default.createElement(
-	              'span',
-	              { className: 'bold-heavy' },
-	              'berry.kevinw'
-	            ),
-	            ' at ',
-	            _react2.default.createElement(
-	              'span',
-	              { className: 'bold-heavy' },
-	              'gmail.com'
-	            ),
-	            ' or ',
-	            _react2.default.createElement(
-	              _OutsideLink2.default,
-	              { href: 'http://www.twitter.com/lostmarinero', alt: 'lostmarinero twitter' },
-	              '@lostmarinero'
-	            ),
-	            '.'
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 255 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _NavLink = __webpack_require__(244);
-
-	var _NavLink2 = _interopRequireDefault(_NavLink);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var React = __webpack_require__(1);
-	exports.default = React.createClass({
-	  displayName: 'SideBar',
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      { className: 'side-nav-container' },
-	      React.createElement(
-	        'ul',
-	        { role: 'nav', className: 'side-nav-list' },
-	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            _NavLink2.default,
-	            { to: '/', onlyActiveOnIndex: true },
-	            'Home'
-	          )
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            _NavLink2.default,
-	            { to: '/about' },
-	            'About'
-	          )
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            _NavLink2.default,
-	            { to: '/projects' },
-	            'Projects'
-	          )
-	        )
-	      )
+	      "a",
+	      _extends({}, this.props, { target: "_blank" }),
+	      _react2.default.createElement("i", { className: "fa fa-2x " + linkType, "aria-hidden": "true" })
 	    );
 	  }
 	});

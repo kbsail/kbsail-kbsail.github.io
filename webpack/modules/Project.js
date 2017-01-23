@@ -6,12 +6,12 @@ const PROJECTS = [
   { id: 2, src: 'http://placekitten.com/620/620' }
 ]
 
-export default React.createClass({
-  render() {
-    return (
-      <div>
-        <img src={PROJECTS[this.props.params.id].src} style={{ height: '80%' }} />
-      </div>
-    )
-  }
-})
+function Project() {
+  return (
+    <div>
+      <img src={PROJECTS[this.props.params.id].src} style={{ height: '80%' }} />
+    </div>
+  )
+}
+
+export default Project;
