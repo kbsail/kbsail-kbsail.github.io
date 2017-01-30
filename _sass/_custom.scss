@@ -50,23 +50,46 @@ li {
 //   transition: transform .9s cubic-bezier(.19,1,.22,1);
 // }
 
+.side {
+  right: -25rem;
+  transition: right .25s ease-in;
+
+  .side-active {
+    right: 0;
+    transition: right .25s ease-in;
+  }
+}
+
+
+.footer {
+  margin: 0 auto;
+  width: 90%
+}
+
+
+// ###
+// # Side Bar Toggle Button
+// ###
+.side-bar-toggle {
+  position: fixed;
+}
 
 // ###
 // # Side Nav Open
 // ###
 
-// .side-open {
+.side-open {
+  &.main-page {
+    right: 25rem;
+    transition: right, .25s;
+    width: calc(100% - 25rem);
+  }
 
-//   .main-page {
-//     right: 25rem;
-//     width: calc(100% - 25rem);
-//   }
-
-//   .side-nav-container {
-//     right: 0;
-//     transition: right, .25s;
-//   }
-// }
+  &.side-nav-container {
+    right: 0;
+    transition: right, .25s;
+  }
+}
 
 
 
@@ -75,8 +98,7 @@ li {
 // ###
 .main-page {
   position: fixed;
-
-
+  transition: right, .25s;
 }
 
 
@@ -87,8 +109,9 @@ li {
   border-left: 2px solid $light-grey;
   height: 100%;
   position: fixed;
-  // right: -25rem;
+  right: -25rem;
   top: 0;
+  transition: right, .25s;
   width: 25rem;
 }
 
