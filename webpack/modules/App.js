@@ -8,8 +8,7 @@ export default React.createClass({
     return {visible: false};
   },
   toggleActive() {
-    var newState = this.state.visible == true ? false : true
-    this.setState({visible: newState});
+    this.setState({visible: !this.state.visible});
   },
   render() {
     let sideBarClasses = 'side-nav-container';
@@ -19,10 +18,12 @@ export default React.createClass({
       mainPageClasses = 'side-open main-page'
     }
     return (
-      <div>
+      <div className="react-container">
         <SideBar sideBarClasses={sideBarClasses} />
         <div className={mainPageClasses}>
-          <button className="side-bar-toggle" onClick={this.toggleActive}>Menu</button>
+          <div className="header-container">
+            <button className="side-bar-toggle-button" onClick={this.toggleActive}>Menu</button>
+          </div>
           {this.props.children}
           <Footer/>
         </div>

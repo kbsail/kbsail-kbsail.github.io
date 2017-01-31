@@ -202,7 +202,6 @@ li { margin-bottom: 0.2em; }
   h3 {
     padding-top: .4em;
     line-height: 1.2em;
-    // @include container(100%);
   }
 }
 
@@ -211,7 +210,6 @@ li { margin-bottom: 0.2em; }
 
 @media only screen and (max-width: 767px) {
   body {
-    // @include container;
     font-size: 85%;
     padding: 0 1em;
   }
@@ -222,7 +220,6 @@ li { margin-bottom: 0.2em; }
   }
 
   .main-page {
-    // @include container(100%);
     text-align: center;
     width: 90%;
     margin: 25% auto 1em;

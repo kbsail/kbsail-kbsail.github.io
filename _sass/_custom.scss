@@ -61,44 +61,38 @@ li {
 }
 
 
+.header-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
 .footer {
   margin: 0 auto;
-  width: 90%
+  width: 90%;
 }
 
 
 // ###
 // # Side Bar Toggle Button
 // ###
-.side-bar-toggle {
-  position: fixed;
+.side-bar-toggle-button {
+  // position: absolute;
+  margin-right: 0;
 }
 
-// ###
-// # Side Nav Open
-// ###
-
-.side-open {
-  &.main-page {
-    right: 25rem;
-    transition: right, .25s;
-    width: calc(100% - 25rem);
-  }
-
-  &.side-nav-container {
-    right: 0;
-    transition: right, .25s;
-  }
+.react-container {
+  width: 100%;
 }
-
 
 
 // ###
 // # Main Page
 // ###
 .main-page {
-  position: fixed;
+  position: relative;
   transition: right, .25s;
+  width: 100%;
 }
 
 
@@ -109,10 +103,8 @@ li {
   border-left: 2px solid $light-grey;
   height: 100%;
   position: fixed;
-  right: -25rem;
   top: 0;
   transition: right, .25s;
-  width: 25rem;
 }
 
 
@@ -239,15 +231,30 @@ li {
   }
 }
 
-// Projects Desktop Size
-@media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(33.3333% - 2rem);
-  }
-}
-
 // Projects Tablet Size
 @media screen and (min-width: 600px) {
+  .side-nav-container {
+    right: -12.5rem;
+    width: 12.5rem;
+  }
+  // ###
+  // # Side Nav Open
+  // ###
+  .side-open {
+    &.main-page {
+      margin-right: 0;
+      right: 12.5rem;
+      transition: right, .25s;
+      width: calc(100% - 12.5rem);
+    }
+
+    &.side-nav-container {
+      right: 0;
+      transition: right, .25s;
+    }
+  }
+
+
   .grid {
     align-items: flex-start;
     display: flex;
@@ -268,5 +275,34 @@ li {
       max-height: 100%;
       max-width: 100%;
     }
+  }
+}
+
+// Projects Desktop Size
+@media screen and (min-width: 1000px) {
+  // ###
+  // # Side Nav Open
+  // ###
+  .side-nav-container {
+    right: -25rem;
+    width: 25rem;
+  }
+
+  .side-open {
+    &.main-page {
+      margin-right: 0;
+      right: 25rem;
+      transition: right, .25s;
+      width: calc(100% - 25rem);
+    }
+
+    &.side-nav-container {
+      right: 0;
+      transition: right, .25s;
+    }
+  }
+
+  .cell {
+    width: calc(33.3333% - 2rem);
   }
 }

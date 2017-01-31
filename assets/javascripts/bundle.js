@@ -27237,8 +27237,7 @@
 	    return { visible: false };
 	  },
 	  toggleActive: function toggleActive() {
-	    var newState = this.state.visible == true ? false : true;
-	    this.setState({ visible: newState });
+	    this.setState({ visible: !this.state.visible });
 	  },
 	  render: function render() {
 	    var sideBarClasses = 'side-nav-container';
@@ -27249,15 +27248,19 @@
 	    }
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'react-container' },
 	      _react2.default.createElement(_SideBar2.default, { sideBarClasses: sideBarClasses }),
 	      _react2.default.createElement(
 	        'div',
 	        { className: mainPageClasses },
 	        _react2.default.createElement(
-	          'button',
-	          { className: 'side-bar-toggle', onClick: this.toggleActive },
-	          'Menu'
+	          'div',
+	          { className: 'header-container' },
+	          _react2.default.createElement(
+	            'button',
+	            { className: 'side-bar-toggle-button', onClick: this.toggleActive },
+	            'Menu'
+	          )
 	        ),
 	        this.props.children,
 	        _react2.default.createElement(_Footer2.default, null)
