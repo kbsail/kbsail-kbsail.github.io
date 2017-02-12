@@ -50,17 +50,6 @@ li {
 //   transition: transform .9s cubic-bezier(.19,1,.22,1);
 // }
 
-.side {
-  right: -25rem;
-  transition: right .25s ease-in;
-
-  .side-active {
-    right: 0;
-    transition: right .25s ease-in;
-  }
-}
-
-
 .header-container {
   display: flex;
   flex-direction: row-reverse;
@@ -91,10 +80,15 @@ li {
 // ###
 .main-page {
   position: relative;
-  transition: right, .25s;
   width: 100%;
+  transition: right, 5s, width, 5s, margin-right, 5s;
 }
-
+// ###
+// # Sliding Container
+// ###
+.sliding-container {
+  transition: transform, 5s;
+}
 
 // ###
 // # Side Nav Container
@@ -104,7 +98,6 @@ li {
   height: 100%;
   position: fixed;
   top: 0;
-  transition: right, .25s;
 }
 
 
@@ -241,16 +234,8 @@ li {
   // # Side Nav Open
   // ###
   .side-open {
-    &.main-page {
-      margin-right: 0;
-      right: 12.5rem;
-      transition: right, .25s;
-      width: calc(100% - 12.5rem);
-    }
-
-    &.side-nav-container {
-      right: 0;
-      transition: right, .25s;
+    &.sliding-container {
+      transform: translate(-12.5rem, 0);
     }
   }
 
