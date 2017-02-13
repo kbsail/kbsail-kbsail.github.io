@@ -17,6 +17,7 @@ function routes () {
         <IndexRoute component={Projects}/>
         <Route path="/projects/:id" component={Project}/>
       </Route>
+      <Route path="*" component={NoMatch} status={404}/>
     </Route>
   )
 }

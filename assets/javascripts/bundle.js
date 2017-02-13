@@ -27203,7 +27203,8 @@
 	      { path: '/projects', component: _ProjectsContainer2.default },
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _Projects2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: '/projects/:id', component: _Project2.default })
-	    )
+	    ),
+	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _reactRouter.NoMatch, status: 404 })
 	  );
 	}
 
@@ -27223,6 +27224,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(178);
+
 	var _SideBar = __webpack_require__(243);
 
 	var _SideBar2 = _interopRequireDefault(_SideBar);
@@ -27234,6 +27237,10 @@
 	var _reactAddonsCssTransitionGroup = __webpack_require__(247);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
+	var _NotFound = __webpack_require__(268);
+
+	var _NotFound2 = _interopRequireDefault(_NotFound);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27247,28 +27254,37 @@
 	    this.setState({ visible: !this.state.visible });
 	  },
 	  render: function render() {
+	    if (this.props.children == null) {
+	      return _react2.default.createElement(_NotFound2.default, null);
+	    }
 	    var sideBarClasses = 'side-nav-container';
 	    var mainPageClasses = 'main-page';
+	    var slidingContainerClasses = "sliding-container";
 	    if (this.state.visible) {
 	      sideBarClasses = 'side-open side-nav-container';
 	      mainPageClasses = 'side-open main-page';
+	      slidingContainerClasses = "side-open sliding-container";
 	    }
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'react-container' },
-	      _react2.default.createElement(_SideBar2.default, { sideBarClasses: sideBarClasses }),
 	      _react2.default.createElement(
 	        'div',
-	        { className: mainPageClasses },
+	        { className: slidingContainerClasses },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'header-container' },
 	          _react2.default.createElement(
-	            'button',
-	            { className: 'side-bar-toggle-button', onClick: this.toggleActive },
-	            'Menu'
+	            _reactRouter.Link,
+	            { className: 'side-bar-toggle-button', style: { color: "black" }, onClick: this.toggleActive, href: '#' },
+	            _react2.default.createElement('i', { className: 'fa fa-2x fa-bars', 'aria-hidden': 'true' })
 	          )
 	        ),
+	        _react2.default.createElement(_SideBar2.default, { sideBarClasses: sideBarClasses })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: mainPageClasses },
 	        this.props.children,
 	        _react2.default.createElement(_Footer2.default, null)
 	      )
@@ -29574,23 +29590,110 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+			value: true
 	});
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(178);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function About() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'About'
-	  );
-	} // module/About.js
-	exports.default = About;
+	// module/About.js
+	exports.default = _react2.default.createClass({
+			displayName: 'About',
+			render: function render() {
+					var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
+					var resumeUrl = "";
+					return _react2.default.createElement(
+							'div',
+							null,
+							_react2.default.createElement(
+									'p',
+									null,
+									'I am a web developer and user experience researcher with a passion for well designed, user centered websites and applications.'
+							),
+							_react2.default.createElement(
+									'p',
+									null,
+									'For more information, please see my ',
+									_react2.default.createElement(
+											_reactRouter.Link,
+											{ href: linkedInUrl },
+											'LinkedIn Profile'
+									),
+									' or ',
+									_react2.default.createElement(
+											_reactRouter.Link,
+											{ href: resumeUrl },
+											'Resume'
+									),
+									'.'
+							),
+							_react2.default.createElement(
+									'p',
+									null,
+									'My core technologies are Ruby (Rails, Sinatra), Python (Django, Flask) and React (with Redux)'
+							),
+							_react2.default.createElement(
+									'p',
+									null,
+									'I was fortunate to be one of only 8 Developers chosen for the 2016 Code for America Fellowship Program'
+							),
+							_react2.default.createElement(
+									'p',
+									null,
+									'I give back through volunteer teaching web development classes and mentoring new web developers, of all ages with a goal of promoting under-represented developers in the tech industry.'
+							),
+							_react2.default.createElement(
+									'p',
+									null,
+									'Some of the accomplishments I am most proud of include:'
+							),
+							_react2.default.createElement(
+									'ul',
+									null,
+									_react2.default.createElement(
+											'li',
+											null,
+											'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.'
+									),
+									_react2.default.createElement(
+											'li',
+											null,
+											'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.'
+									),
+									_react2.default.createElement(
+											'li',
+											null,
+											'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", the first product for consumers.'
+									),
+									_react2.default.createElement(
+											'li',
+											null,
+											'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).'
+									),
+									_react2.default.createElement(
+											'li',
+											null,
+											'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.'
+									),
+									_react2.default.createElement(
+											'li',
+											null,
+											'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'
+									)
+							),
+							_react2.default.createElement(
+									'p',
+									null,
+									'I am committed to delivering the highest quality code, and work tirelessly to ensure my clients are satisfied.'
+							)
+					);
+			}
+	});
 
 /***/ },
 /* 261 */
@@ -29922,6 +30025,40 @@
 	    );
 	  }
 	});
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function NotFound() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h3',
+	      null,
+	      '404 page not found'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'We are sorry but the page you are looking for does not exist.'
+	    )
+	  );
+	} // components/NotFound.js
+	exports.default = NotFound;
 
 /***/ }
 /******/ ]);
