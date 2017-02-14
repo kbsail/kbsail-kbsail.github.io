@@ -80,11 +80,11 @@ li {
 // # Side Nav Container
 // ###
 .side-nav-container {
-  border-left: 2px solid $light-grey;
-  height: 100%;
-  position: fixed;
-  top: 0;
   background-color: #e6e6e6;
+  border-left: 2px solid $light-grey;
+  position: fixed;
+  top: -4rem;
+  width: 100%;
 }
 
 
@@ -92,7 +92,21 @@ li {
 // # Side Nav List
 // ###
 .side-nav-list {
+  display: flex;
+  height: 2rem;
   list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+// ###
+// # Side Container Open Transition
+// ###
+.side-open {
+  &.sliding-container {
+    // transform: translate(-12.5rem, 0);
+    transform: translate(0, 4rem);
+  }
 }
 
 
@@ -214,8 +228,17 @@ li {
 // Projects Tablet Size
 @media screen and (min-width: 600px) {
   .side-nav-container {
+    border-left: 2px solid $light-grey;
+    height: 100%;
     right: -12.5rem;
     width: 12.5rem;
+    top: 0;
+  }
+
+  .side-nav-list {
+    height: inherit;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .sliding-container {
