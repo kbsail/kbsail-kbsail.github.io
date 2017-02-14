@@ -27169,29 +27169,32 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _About = __webpack_require__(260);
+	var _About = __webpack_require__(261);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Projects = __webpack_require__(261);
+	var _Projects = __webpack_require__(262);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _ProjectsContainer = __webpack_require__(262);
+	var _ProjectsContainer = __webpack_require__(263);
 
 	var _ProjectsContainer2 = _interopRequireDefault(_ProjectsContainer);
 
-	var _Project = __webpack_require__(264);
+	var _Project = __webpack_require__(265);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Home = __webpack_require__(265);
+	var _Home = __webpack_require__(266);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
+	var _NotFound = __webpack_require__(260);
+
+	var _NotFound2 = _interopRequireDefault(_NotFound);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// modules/routes.js
 	function routes() {
 	  return _react2.default.createElement(
 	    _reactRouter.Route,
@@ -27204,10 +27207,9 @@
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _Projects2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: '/projects/:id', component: _Project2.default })
 	    ),
-	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _reactRouter.NoMatch, status: 404 })
+	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFound2.default })
 	  );
-	}
-
+	} // modules/routes.js
 	exports.default = routes;
 
 /***/ },
@@ -27238,7 +27240,7 @@
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _NotFound = __webpack_require__(268);
+	var _NotFound = __webpack_require__(260);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -29590,6 +29592,40 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function NotFound() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h3',
+	      null,
+	      '404 page not found'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'We are sorry but the page you are looking for does not exist.'
+	    )
+	  );
+	} // components/NotFound.js
+	exports.default = NotFound;
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
 			value: true
 	});
 
@@ -29696,7 +29732,7 @@
 	});
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29757,7 +29793,7 @@
 	});
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29770,7 +29806,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Modal = __webpack_require__(263);
+	var _Modal = __webpack_require__(264);
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -29814,7 +29850,7 @@
 	});
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29851,7 +29887,7 @@
 	exports.default = Modal;
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29879,7 +29915,7 @@
 	exports.default = Project;
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29892,7 +29928,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SocialLinks = __webpack_require__(266);
+	var _SocialLinks = __webpack_require__(267);
 
 	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
 
@@ -29959,7 +29995,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29972,7 +30008,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SocialLink = __webpack_require__(267);
+	var _SocialLink = __webpack_require__(268);
 
 	var _SocialLink2 = _interopRequireDefault(_SocialLink);
 
@@ -29994,7 +30030,7 @@
 	});
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30025,40 +30061,6 @@
 	    );
 	  }
 	});
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function NotFound() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'h3',
-	      null,
-	      '404 page not found'
-	    ),
-	    _react2.default.createElement(
-	      'p',
-	      null,
-	      'We are sorry but the page you are looking for does not exist.'
-	    )
-	  );
-	} // components/NotFound.js
-	exports.default = NotFound;
 
 /***/ }
 /******/ ]);

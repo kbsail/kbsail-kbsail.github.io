@@ -7,6 +7,7 @@ import Projects from './Projects'
 import ProjectsContainer from './ProjectsContainer'
 import Project from './Project'
 import Home from './Home'
+import NotFound from './NotFound'
 
 function routes () {
   return (
@@ -17,7 +18,7 @@ function routes () {
         <IndexRoute component={Projects}/>
         <Route path="/projects/:id" component={Project}/>
       </Route>
-      <Route path="*" component={NoMatch} status={404}/>
+      <Route path="*" component={NotFound}/>
     </Route>
   )
 }
