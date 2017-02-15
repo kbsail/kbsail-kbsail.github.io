@@ -29751,7 +29751,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }];
+	var PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }, { id: 3, src: 'http://placekitten.com/620/620' }, { id: 4, src: 'http://placekitten.com/620/620' }, { id: 5, src: 'http://placekitten.com/620/620' }];
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
@@ -29763,7 +29763,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'projects-row' },
 	        PROJECTS.map(function (project) {
 	          return _react2.default.createElement(
 	            _reactRouter.Link,
