@@ -29,10 +29,12 @@ export default React.createClass({
           {PROJECTS.map(project => (
             <Link
               key={project.id}
-              to={{
-                pathname: `/projects/${project.id}`,
-                state: { modal: true, returnTo: this.props.location.pathname }
-              }}
+              to="http://google.com"
+              // {{
+                // pathname: `/projects/${project.id}`,
+                // pathname: 'http://google.com',
+                // state: { modal: true, returnTo: this.props.location.pathname }
+              // }}
             >
               <img style={{ margin: 10 }} src={project.src} height="100" />
             </Link>

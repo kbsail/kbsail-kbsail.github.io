@@ -29756,8 +29756,6 @@
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
 	  render: function render() {
-	    var _this = this;
-
 	    return _react2.default.createElement(
 	      'div',
 	      null,
@@ -29779,10 +29777,12 @@
 	            _reactRouter.Link,
 	            {
 	              key: project.id,
-	              to: {
-	                pathname: '/projects/' + project.id,
-	                state: { modal: true, returnTo: _this.props.location.pathname }
-	              }
+	              to: 'http://google.com'
+	              // {{
+	              // pathname: `/projects/${project.id}`,
+	              // pathname: 'http://google.com',
+	              // state: { modal: true, returnTo: this.props.location.pathname }
+	              // }}
 	            },
 	            _react2.default.createElement('img', { style: { margin: 10 }, src: project.src, height: '100' })
 	          );
@@ -29867,24 +29867,37 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function Modal() {
-	  return _react2.default.createElement(
-	    'div',
-	    { style: this.styles, className: 'custom-modal' },
-	    _react2.default.createElement(
-	      'p',
-	      null,
-	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: this.props.returnTo },
-	        'Back'
-	      )
-	    ),
-	    this.props.children
-	  );
-	}
+	exports.default = _react2.default.createClass({
+	  displayName: 'Modal',
 
-	exports.default = Modal;
+	  styles: {
+	    position: 'fixed',
+	    top: '20%',
+	    right: '20%',
+	    bottom: '20%',
+	    left: '20%',
+	    padding: 20,
+	    boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
+	    overflow: 'auto',
+	    background: '#fff'
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { style: this.styles },
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: this.props.returnTo },
+	          'Back'
+	        )
+	      ),
+	      this.props.children
+	    );
+	  }
+	});
 
 /***/ },
 /* 265 */
