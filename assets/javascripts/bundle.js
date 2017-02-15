@@ -29756,19 +29756,11 @@
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
 	  render: function render() {
+	    var _this = this;
+
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'The url `/projects/:id` can be rendered anywhere in the app as a modal. Simply put `modal: true` in the location descriptor of the `to` prop.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Click on an item and see its rendered as a modal, then copy/paste the url into a different browser window (with a different session, like Chrome -> Firefox), and see that the image does not render inside the overlay. One URL, two session dependent screens :D'
-	      ),
 	      _react2.default.createElement(
 	        'div',
 	        null,
@@ -29777,14 +29769,12 @@
 	            _reactRouter.Link,
 	            {
 	              key: project.id,
-	              to: 'http://google.com'
-	              // {{
-	              // pathname: `/projects/${project.id}`,
-	              // pathname: 'http://google.com',
-	              // state: { modal: true, returnTo: this.props.location.pathname }
-	              // }}
+	              to: {
+	                pathname: '/projects/' + project.id,
+	                state: { modal: true, returnTo: _this.props.location.pathname }
+	              }
 	            },
-	            _react2.default.createElement('img', { style: { margin: 10 }, src: project.src, height: '100' })
+	            _react2.default.createElement('img', { className: 'responsive-image', style: { margin: 10 }, src: project.src, height: '250' })
 	          );
 	        })
 	      )
@@ -29906,7 +29896,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+			value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -29915,17 +29905,16 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }];
-
-	function Project() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement('img', { src: PROJECTS[this.props.params.id].src, style: { height: '80%' } })
-	  );
-	}
-
-	exports.default = Project;
+	exports.default = _react2.default.createClass({
+			displayName: 'Project',
+			render: function render() {
+					return _react2.default.createElement(
+							'div',
+							{ className: 'project-modal' },
+							_react2.default.createElement('img', { src: PROJECTS[this.props.params.id].src, style: { height: '80%' } })
+					);
+			}
+	});
 
 /***/ },
 /* 266 */
