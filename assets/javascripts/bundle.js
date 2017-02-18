@@ -21962,11 +21962,22 @@
 
 	var warned = {};
 
+<<<<<<< HEAD
 	function routerWarning(falseToWarn, message) {
 	  // Only issue deprecation warnings once.
 	  if (message.indexOf('deprecated') !== -1) {
 	    if (warned[message]) {
 	      return;
+=======
+	  _createClass(Hello, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'Hey, y\'all!!'
+	      );
+>>>>>>> parent of ab74751... removed hey yall
 	    }
 
 	    warned[message] = true;
