@@ -109,7 +109,7 @@ h2 {
   text-align: center;
 }
 
-.front-page {
+.main-page {
     clear: both;
     font-family: 'alright-sans', sans-serif;
     font-size: 1.5em;
@@ -202,7 +202,6 @@ li { margin-bottom: 0.2em; }
   h3 {
     padding-top: .4em;
     line-height: 1.2em;
-    // @include container(100%);
   }
 }
 
@@ -211,7 +210,6 @@ li { margin-bottom: 0.2em; }
 
 @media only screen and (max-width: 767px) {
   body {
-    // @include container;
     font-size: 85%;
     padding: 0 1em;
   }
@@ -221,10 +219,8 @@ li { margin-bottom: 0.2em; }
     top: 0;
   }
 
-  .front-page {
-    // @include container(100%);
+  .main-page {
     text-align: center;
-    width: 90%;
-    margin: 25% auto 1em;
+    margin: 25% auto;
   }
 }
