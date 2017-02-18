@@ -26,14 +26,6 @@ export default React.createClass({
     }
     return (
       <div className="react-container">
-        // <div className={slidingContainerClasses}>
-        //   <div className="header-container">
-        //     <Link className="side-bar-toggle-button" style={{color: "black"}} onClick={this.toggleActive} href="#">
-        //       <i className="fa fa-2x fa-bars" aria-hidden="true"></i>
-        //     </Link>
-        //   </div>
-        //   <SideBar sideBarClasses={sideBarClasses} />
-        // </div>
         <div className={mainPageClasses}>
           {this.props.children}
           <Footer/>

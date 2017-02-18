@@ -27270,28 +27270,6 @@
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'react-container' },
-	      '// ',
-	      _react2.default.createElement(
-	        'div',
-	        { className: slidingContainerClasses },
-	        '//   ',
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'header-container' },
-	          '//     ',
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { className: 'side-bar-toggle-button', style: { color: "black" }, onClick: this.toggleActive, href: '#' },
-	            '//       ',
-	            _react2.default.createElement('i', { className: 'fa fa-2x fa-bars', 'aria-hidden': 'true' }),
-	            '//     '
-	          ),
-	          '//   '
-	        ),
-	        '//   ',
-	        _react2.default.createElement(_SideBar2.default, { sideBarClasses: sideBarClasses }),
-	        '// '
-	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: mainPageClasses },
