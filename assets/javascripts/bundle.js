@@ -29641,8 +29641,21 @@
 	exports.default = _react2.default.createClass({
 			displayName: 'About',
 			render: function render() {
+					var cardList = ['Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", the first product for consumers.', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'];
 					var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
 					var resumeUrl = "";
+					var cards = [];
+					for (var i = 0; i < cardList.length; i++) {
+							cards.push(_react2.default.createElement(
+									'div',
+									{ className: 'about-card' },
+									_react2.default.createElement(
+											'p',
+											null,
+											cardList[i]
+									)
+							));
+					}
 					return _react2.default.createElement(
 							'div',
 							null,
@@ -29689,38 +29702,9 @@
 									'Some of the accomplishments I am most proud of include:'
 							),
 							_react2.default.createElement(
-									'ul',
-									null,
-									_react2.default.createElement(
-											'li',
-											null,
-											'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", the first product for consumers.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'
-									)
+									'div',
+									{ className: 'about-container' },
+									cards
 							),
 							_react2.default.createElement(
 									'p',

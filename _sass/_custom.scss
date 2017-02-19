@@ -164,6 +164,34 @@ li {
   border-radius: 100%;
 }
 
+// ###
+// # About Container
+// ###
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+
+// ###
+// # About Card
+// ###
+.about-card {
+  box-sizing: border-box;
+  height: 260px;
+  width: 260px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 45px;
+  margin: 0px 0px 10px;
+}
+
+
+
+
 
 .my-skills {
   h4 {
