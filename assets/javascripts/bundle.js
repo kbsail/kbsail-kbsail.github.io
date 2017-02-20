@@ -29626,7 +29626,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-			value: true
+		value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -29639,80 +29639,105 @@
 
 	// module/About.js
 	exports.default = _react2.default.createClass({
-			displayName: 'About',
-			render: function render() {
-					var cardList = ['Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", the first product for consumers.', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'];
-					var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
-					var resumeUrl = "";
-					var cards = [];
-					for (var i = 0; i < cardList.length; i++) {
-							cards.push(_react2.default.createElement(
-									'div',
-									{ className: 'about-card' },
-									_react2.default.createElement(
-											'p',
-											null,
-											cardList[i]
-									)
-							));
-					}
-					return _react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-									'p',
-									null,
-									'I am a web developer and user experience researcher with a passion for well designed, user centered websites and applications.'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'For more information, please see my ',
-									_react2.default.createElement(
-											_reactRouter.Link,
-											{ href: linkedInUrl },
-											'LinkedIn Profile'
-									),
-									' or ',
-									_react2.default.createElement(
-											_reactRouter.Link,
-											{ href: resumeUrl },
-											'Resume'
-									),
-									'.'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'My core technologies are Ruby (Rails, Sinatra), Python (Django, Flask) and React (with Redux)'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'I was fortunate to be one of only 8 Developers chosen for the 2016 Code for America Fellowship Program'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'I give back through volunteer teaching web development classes and mentoring new web developers, of all ages with a goal of promoting under-represented developers in the tech industry.'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'Some of the accomplishments I am most proud of include:'
-							),
-							_react2.default.createElement(
-									'div',
-									{ className: 'about-container' },
-									cards
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'I am committed to delivering the highest quality code, and work tirelessly to ensure my clients are satisfied.'
-							)
-					);
+		displayName: 'About',
+		render: function render() {
+			var cardList = ['Maintained environment and application level HIPAA compliance for a public health application.', 'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", the first product for consumers.', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'];
+			var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
+			var resumeUrl = "";
+			var cards = [];
+			for (var i = 0; i < cardList.length; i++) {
+				cards.push(_react2.default.createElement(
+					'div',
+					{ className: 'about-card' },
+					_react2.default.createElement(
+						'p',
+						null,
+						cardList[i]
+					)
+				));
 			}
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'h1',
+					null,
+					'About'
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'flex-container' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'front-photo' },
+						_react2.default.createElement('img', { src: '../profile-photo.jpg', className: 'profile-photo responsive-image', alt: 'Profile Photo' })
+					),
+					_react2.default.createElement(
+						'h5',
+						null,
+						'My name is Kevin Berry, and I am a web developer and user experience researcher passionate about building user centered applications.'
+					),
+					_react2.default.createElement(
+						'h5',
+						null,
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ href: linkedInUrl },
+							'LinkedIn Profile'
+						)
+					),
+					_react2.default.createElement(
+						'h5',
+						null,
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ href: resumeUrl },
+							'Resume'
+						)
+					),
+					_react2.default.createElement(
+						'h5',
+						null,
+						'My core technologies are Ruby (Rails, Sinatra), Python (Django, Flask) and React (with Redux)'
+					)
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					_react2.default.createElement(
+						'a',
+						{ href: 'https://codeforamerica.org' },
+						'2016 Code for America Engineering Fellow'
+					),
+					'Award winning application developer. I believe strongly in user-centered design and building iteratively. Spent a yearlong immersion in HIPAA compliant healthcare applications. Am active in the community through mentorship.'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'I was fortunate to be one of only 8 Developers chosen for the 2016 Code for America Fellowship Program'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'I give back through volunteer teaching web development classes and mentoring new web developers, of all ages with a goal of promoting under-represented developers in the tech industry.'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'Some of the accomplishments I am most proud of include:'
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'about-container' },
+					cards
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.'
+				)
+			);
+		}
 	});
 
 /***/ },

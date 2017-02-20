@@ -2,6 +2,7 @@
 // # Variable Declarations
 // ###
 
+$background: #fbfaf9;
 $white: #fff;
 $active-green: #008000;
 $light-grey: #f2f2f2;
@@ -38,6 +39,7 @@ li {
 
 
 .header-container {
+  background-color: $background;
   display: flex;
   flex-direction: row-reverse;
   padding: 1rem 2rem;
@@ -63,6 +65,14 @@ li {
   left: 0;
   width: 100%;
 }
+
+// ###
+// # Front Page
+// ###
+.front-page {
+  margin-top: calc(10% - 70px);
+}
+
 // ###
 // # Sliding Container
 // ###
@@ -168,11 +178,14 @@ li {
 // # About Container
 // ###
 .about-container {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   align-content: center;
+  margin: 0 auto;
 }
 
 
@@ -180,13 +193,13 @@ li {
 // # About Card
 // ###
 .about-card {
-  box-sizing: border-box;
-  height: 260px;
-  width: 260px;
+  // flex-basis: 33%;
+  box-sizing: content-box;
+  height: 200px;
+  width: 350px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
   background-color: rgb(255, 255, 255);
-  padding-bottom: 45px;
-  margin: 0px 0px 10px;
+  margin: 10px;
 }
 
 
