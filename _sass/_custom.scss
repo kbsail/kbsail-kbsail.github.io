@@ -37,6 +37,12 @@ li {
   text-align: left;
 }
 
+.name-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
 
 .header-container {
   background-color: $background;
@@ -134,7 +140,6 @@ li {
   top: 20%;
 }
 
-
 // ###
 // # Active Class
 // ###
@@ -142,6 +147,60 @@ li {
   // Green color
   color: $active-green;
 }
+
+// ###
+// # Front Photo
+// ###
+.front-photo {
+  display: none;
+}
+
+// ###
+// # About Page
+// ###
+.about-page {
+  h2, h5, p {
+    text-align: left;
+  }
+}
+
+// ###
+// # About Sections
+// ###
+.about-sections {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100;
+  margin: 0 auto;
+
+  div {
+    margin-top: 20px;
+    width: 100%;
+
+    p {
+      padding: .6em .8em;
+    }
+  }
+}
+
+// ###
+// # Front Title
+// ###
+.front-title {
+  width: 20%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+// ###
+// # Front About
+// ###
+.front-about {
+  width: 80%;
+  text-align: left;
+  margin-left: 10px;
+}
+
 
 // ###
 // # Projects Row
@@ -156,9 +215,6 @@ li {
   margin: 0 auto;
   max-width: 1000px;
 }
-
-
-
 
 // ###
 // # Bold and Heavy
@@ -202,8 +258,12 @@ li {
   margin: 10px;
 }
 
-
-
+// ###
+// # Mini Profile
+// ###
+.mini-profile {
+  width: 100%;
+}
 
 
 .my-skills {
@@ -243,11 +303,6 @@ li {
   }
 }
 
-// Profile Photo
-.front-photo {
-  display: None;
- }
-
 // Projects Container
 .projects-container {
   margin: 0 auto;
@@ -278,6 +333,8 @@ li {
   }
 }
 
+
+
 // Projects Tablet Size
 @media screen and (min-width: 600px) {
   .side-nav-container {
@@ -295,6 +352,18 @@ li {
     justify-content: flex-start;
   }
 
+  // ###
+  // # About Sections
+  // ###
+  .about-sections {
+    flex-wrap: no-wrap;
+    width: 80%;
+
+    div {
+      width: 33%;
+    }
+  }
+
 
   // ###
   // # Side Nav Open
@@ -306,6 +375,28 @@ li {
     }
   }
 
+  // ###
+  // # Front Photo
+  // ###
+  .front-photo {
+    display: block;
+    max-height: 8.75rem;
+    max-width: 8.75rem;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  // ###
+  // # Mini Profile
+  // ###
+  .mini-profile {
+    width: 80%;
+  }
+
+
 
   .grid {
     align-items: flex-start;
@@ -316,17 +407,6 @@ li {
 
   .cell {
     width: calc(50% - 2rem);
-  }
-
-  .front-photo {
-    display: block;
-    max-height: 8.75rem;
-    max-width: 8.75rem;
-
-    img {
-      max-height: 100%;
-      max-width: 100%;
-    }
   }
 }
 

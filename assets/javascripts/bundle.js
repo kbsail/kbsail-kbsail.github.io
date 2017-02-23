@@ -29641,7 +29641,11 @@
 	exports.default = _react2.default.createClass({
 		displayName: 'About',
 		render: function render() {
-			var cardList = ['Maintained environment and application level HIPAA compliance for a public health application.', 'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", the first product for consumers.', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'];
+			var cardList = ['Maintained environment and application level HIPAA compliance for a public health application.', 'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", a flight purchasing insurance product.', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.', 'Taught an afterschool class of 10 middle school public school students in coding and technology.', _react2.default.createElement(
+				'a',
+				{ href: 'https://codeforamerica.org' },
+				'2016 Code for America Engineering Fellow'
+			)];
 			var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
 			var resumeUrl = "";
 			var cards = [];
@@ -29658,73 +29662,108 @@
 			}
 			return _react2.default.createElement(
 				'div',
-				null,
-				_react2.default.createElement(
-					'h1',
-					null,
-					'About'
-				),
+				{ className: 'about-page' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'flex-container' },
+					{ className: 'flex-container mini-profile' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'front-photo' },
 						_react2.default.createElement('img', { src: '../profile-photo.jpg', className: 'profile-photo responsive-image', alt: 'Profile Photo' })
 					),
 					_react2.default.createElement(
-						'h5',
-						null,
-						'My name is Kevin Berry, and I am a web developer and user experience researcher passionate about building user centered applications.'
-					),
-					_react2.default.createElement(
-						'h5',
-						null,
+						'div',
+						{ className: 'front-title' },
 						_react2.default.createElement(
-							_reactRouter.Link,
-							{ href: linkedInUrl },
-							'LinkedIn Profile'
+							'h5',
+							{ className: 'name-title' },
+							'Kevin Berry'
+						),
+						_react2.default.createElement(
+							'h5',
+							null,
+							_react2.default.createElement(
+								_reactRouter.Link,
+								{ href: linkedInUrl },
+								'LinkedIn'
+							),
+							'\xA0\xA0\xA0\xA0',
+							_react2.default.createElement(
+								_reactRouter.Link,
+								{ href: resumeUrl },
+								'Resume'
+							)
 						)
 					),
 					_react2.default.createElement(
-						'h5',
-						null,
+						'div',
+						{ className: 'front-about' },
 						_react2.default.createElement(
-							_reactRouter.Link,
-							{ href: resumeUrl },
-							'Resume'
+							'p',
+							null,
+							'Web developer passionate about building user centered applications.'
 						)
-					),
-					_react2.default.createElement(
-						'h5',
-						null,
-						'My core technologies are Ruby (Rails, Sinatra), Python (Django, Flask) and React (with Redux)'
 					)
 				),
 				_react2.default.createElement(
-					'p',
-					null,
+					'div',
+					{ className: 'about-sections' },
 					_react2.default.createElement(
-						'a',
-						{ href: 'https://codeforamerica.org' },
-						'2016 Code for America Engineering Fellow'
+						'div',
+						{ className: 'core-tech' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Core Technologies'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'Ruby (Rails, Sinatra)',
+							_react2.default.createElement('br', null),
+							'Python (Django, Flask)',
+							_react2.default.createElement('br', null),
+							'React (with Redux)'
+						)
 					),
-					'Award winning application developer. I believe strongly in user-centered design and building iteratively. Spent a yearlong immersion in HIPAA compliant healthcare applications. Am active in the community through mentorship.'
+					_react2.default.createElement(
+						'div',
+						{ className: 'hobies' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Hobbies'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'Enjoy volunteering, learning new technologies, skiing, sailing and playing soccer.'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'Fluent in English and Spanish.'
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'awards' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Awards'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'So many. So, so many.'
+						)
+					)
 				),
 				_react2.default.createElement(
-					'p',
+					'h2',
 					null,
-					'I was fortunate to be one of only 8 Developers chosen for the 2016 Code for America Fellowship Program'
-				),
-				_react2.default.createElement(
-					'p',
-					null,
-					'I give back through volunteer teaching web development classes and mentoring new web developers, of all ages with a goal of promoting under-represented developers in the tech industry.'
-				),
-				_react2.default.createElement(
-					'p',
-					null,
-					'Some of the accomplishments I am most proud of include:'
+					'Accomplishments'
 				),
 				_react2.default.createElement(
 					'div',
