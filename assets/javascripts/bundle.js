@@ -29699,9 +29699,13 @@
 						'div',
 						{ className: 'front-about' },
 						_react2.default.createElement(
-							'p',
+							'div',
 							null,
-							'Web developer passionate about building user centered applications.'
+							_react2.default.createElement(
+								'p',
+								null,
+								'Web developer passionate about building user centered applications.'
+							)
 						)
 					)
 				),

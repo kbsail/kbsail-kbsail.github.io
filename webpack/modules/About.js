@@ -32,7 +32,9 @@ export default React.createClass({
 	  				<h5><Link href={linkedInUrl}>LinkedIn</Link>&nbsp;&nbsp;&nbsp;&nbsp;<Link href={resumeUrl}>Resume</Link></h5>
 					</div>
 					<div className="front-about">
-						<p>Web developer passionate about building user centered applications.</p>
+						<div>
+							<p>Web developer passionate about building user centered applications.</p>
+						</div>
 					</div>
 				</div>
 				<div className="about-sections">

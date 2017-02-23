@@ -152,7 +152,17 @@ li {
 // # Front Photo
 // ###
 .front-photo {
-  display: none;
+  display: block;
+  max-height: 8.75rem;
+  max-width: 8.75rem;
+  min-height: 8.75rem;
+  min-width: 8.75rem;
+  margin-left: 20px;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 // ###
@@ -182,25 +192,6 @@ li {
     }
   }
 }
-
-// ###
-// # Front Title
-// ###
-.front-title {
-  width: 20%;
-  text-align: left;
-  margin-left: 10px;
-}
-
-// ###
-// # Front About
-// ###
-.front-about {
-  width: 80%;
-  text-align: left;
-  margin-left: 10px;
-}
-
 
 // ###
 // # Projects Row
@@ -303,6 +294,27 @@ li {
   }
 }
 
+
+// ###
+// # Front Title
+// ###
+.front-title {
+  text-align: left;
+  margin-left: 20px;
+}
+
+// ###
+// # Front About
+// ###
+.front-about {
+  flex-basis: 100% !important;
+  text-align: left;
+  margin-left: 50px;
+}
+
+
+
+
 // Projects Container
 .projects-container {
   margin: 0 auto;
@@ -356,7 +368,7 @@ li {
   // # About Sections
   // ###
   .about-sections {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     width: 80%;
 
     div {
@@ -382,6 +394,8 @@ li {
     display: block;
     max-height: 8.75rem;
     max-width: 8.75rem;
+    min-height: 8.75rem;
+    min-width: 8.75rem;
 
     img {
       max-height: 100%;
@@ -390,10 +404,29 @@ li {
   }
 
   // ###
+  // # Front Title
+  // ###
+  .front-title {
+  }
+
+  // ###
+  // # Front About
+  // ###
+  .front-about {
+    flex-basis: 60% !important;
+    
+    // p {
+    //   max-width: 100%;
+    // }
+  }
+
+
+  // ###
   // # Mini Profile
   // ###
   .mini-profile {
     width: 80%;
+    flex-wrap: nowrap;
   }
 
 
