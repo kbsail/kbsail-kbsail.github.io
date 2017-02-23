@@ -29641,11 +29641,11 @@
 	exports.default = _react2.default.createClass({
 		displayName: 'About',
 		render: function render() {
-			var cardList = ['Maintained environment and application level HIPAA compliance for a public health application.', 'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", a flight purchasing insurance product.', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.', 'Taught an afterschool class of 10 middle school public school students in coding and technology.', _react2.default.createElement(
+			var cardList = [['Resource', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Resource', 'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Resource', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.'], ['Resource', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", a flight purchasing insurance product.'], ['Resource', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).'], ['Resource', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.'], ['Resource', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'], ['Resource', 'Taught an afterschool class of 10 middle school public school students in coding and technology.'], ['Resource', _react2.default.createElement(
 				'a',
 				{ href: 'https://codeforamerica.org' },
 				'2016 Code for America Engineering Fellow'
-			)];
+			)]];
 			var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
 			var resumeUrl = "";
 			var cards = [];
@@ -29654,9 +29654,14 @@
 					'div',
 					{ className: 'about-card' },
 					_react2.default.createElement(
+						'h5',
+						null,
+						cardList[i][0]
+					),
+					_react2.default.createElement(
 						'p',
 						null,
-						cardList[i]
+						cardList[i][1]
 					)
 				));
 			}
