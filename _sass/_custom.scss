@@ -48,7 +48,9 @@ li {
   background-color: $background;
   display: flex;
   flex-direction: row-reverse;
+  margin-top: -6px;
   padding: 1rem 2rem;
+  padding-top: calc(1rem + 6px);
   width: 100%;
 }
 
@@ -96,7 +98,7 @@ li {
 // ###
 .side-nav-container {
   background-color: #e6e6e6;
-  border-left: 2px solid $light-grey;
+  border-bottom: 2px solid $light-grey;
   position: fixed;
   top: -4rem;
   width: 100%;
@@ -367,6 +369,10 @@ li {
 
 // Projects Tablet Size
 @media screen and (min-width: 600px) {
+  .header-container {
+    margin-top: 0;
+    padding-top: 1rem;
+  }
   .side-nav-container {
     border-left: 2px solid $light-grey;
     height: calc(100vh);

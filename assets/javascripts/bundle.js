@@ -29796,7 +29796,7 @@
 	                state: { modal: true, returnTo: _this.props.location.pathname }
 	              }
 	            },
-	            _react2.default.createElement('img', { className: 'responsive-image', style: { margin: 10 }, src: project.src, height: '250' })
+	            _react2.default.createElement('img', { className: 'responsive-image', style: { margin: 10, borderRadius: '3px' }, src: project.src, height: '250' })
 	          );
 	        })
 	      )
@@ -29885,10 +29885,10 @@
 	  styles: {
 	    borderRadius: '5px',
 	    position: 'fixed',
-	    top: '20%',
-	    right: '20%',
-	    bottom: '20%',
-	    left: '20%',
+	    top: '85px',
+	    right: '10%',
+	    bottom: '10%',
+	    left: '10%',
 	    padding: 20,
 	    boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
 	    overflow: 'auto',
@@ -29936,7 +29936,7 @@
 					return _react2.default.createElement(
 							'div',
 							{ className: 'project-modal' },
-							_react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { height: '80%' } })
+							_react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { height: '80%', borderRadius: '3px' } })
 					);
 			}
 	});

@@ -25,7 +25,7 @@ export default React.createClass({
                 state: { modal: true, returnTo: this.props.location.pathname }
               }}
             >
-              <img className="responsive-image" style={{ margin: 10 }} src={project.src} height="250" />
+              <img className="responsive-image" style={{ margin: 10, borderRadius: '3px' }} src={project.src} height="250" />
             </Link>
           ))}
         </div>

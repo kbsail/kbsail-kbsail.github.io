@@ -5,7 +5,7 @@ export default React.createClass({
   render() {
 	return (
 	  <div className="project-modal">
-	    <img src={PROJECTS[this.props.params.id].src} style={{ height: '80%' }} />
+	    <img src={PROJECTS[this.props.params.id].src} style={{ height: '80%', borderRadius: '3px' }} />
 	  </div>
 	)
   }
