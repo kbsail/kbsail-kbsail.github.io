@@ -222,6 +222,17 @@ li {
 }
 
 // ###
+// # Personal Highlights
+// ###
+.personal-highlights {
+  margin-top: 40px;
+
+  h2 {
+    text-align: center !important;
+  }
+}
+
+// ###
 // # About Container
 // ###
 .about-container {
@@ -242,8 +253,8 @@ li {
 .about-card {
   // flex-basis: 33%;
   box-sizing: content-box;
-  height: 200px;
-  width: 350px;
+  height: 100px;
+  width: 175px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
   background-color: rgb(255, 255, 255);
   margin: 10px;
@@ -251,7 +262,8 @@ li {
   padding-left: 30px;
 
   p {
-    font-size: .9rem !important;
+    font-size: .8rem !important;
+    line-height: 1.5em;
   }
 }
 
@@ -285,7 +297,7 @@ li {
   // Flex settings
   align-content: center;
   align-items: center;
-  border: 1px solid $black;
+  // border: 1px solid $black;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

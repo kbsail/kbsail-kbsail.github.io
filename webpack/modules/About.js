@@ -5,15 +5,19 @@ import { Link } from 'react-router'
 export default React.createClass({
   render() {
 		var cardList = [
-			['Resource', 'Maintained environment and application level HIPAA compliance for a public health application.'],
-			['Resource', 'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.'],
-			['Resource', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.'],
-			['Resource', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", a flight purchasing insurance product.'],
-			['Resource', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).'],
-			['Resource', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.'],
-			['Resource', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'],
-			['Resource', 'Taught an afterschool class of 10 middle school public school students in coding and technology.'],
-			['Resource', <a href="https://codeforamerica.org">2016 Code for America Engineering Fellow</a>]
+			['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'],
+			['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'],
+			['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'],
+			['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'],
+			['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'],
+			['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'],
+			['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'],
+			['Award', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 (2015) for \'SafeBridge\'.'],
+			['Award', 'Won Chime for Change\'s Best Product at ChimeHack (2013) for \'ReSound\'.'],
+			['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'],
+			['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'],
+			['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'],
+			['Technical', <a href="https://codeforamerica.org">2016 Code for America Engineering Fellow</a>]
 	  ]
 	  var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/"
 	  var resumeUrl = ""
@@ -33,7 +37,7 @@ export default React.createClass({
 					</div>
 					<div className="front-about">
 						<div>
-							<p>Web developer passionate about building user centered applications.</p>
+							<p>Web developer passionate about user centered design.</p>
 						</div>
 					</div>
 				</div>
@@ -42,21 +46,21 @@ export default React.createClass({
 						<h2>Core Technologies</h2>
 						<p>Ruby (Rails, Sinatra)<br/>Python (Django, Flask)<br/>React (with Redux)</p>
 					</div>
-					<div className="hobies">
-					<h2>Hobbies</h2>
-						<p>Enjoy volunteering, learning new technologies, skiing, sailing and playing soccer.</p>
-						<p>Fluent in English and Spanish.</p>
-					</div>
 					<div className="awards">
-		  			<h2>Awards</h2>
-						<p>So many. So, so many.</p>
+		  			<h2>Skills</h2>
+						<p>Have a strong interest in teaching and mentorship.<br/>Fluent in Spanish.</p>
 	  			</div>
+					<div className="hobies">
+						<h2>Additional</h2>
+						<p>Enjoy volunteering, learning new technologies, skiing, sailing and playing soccer.</p>
+					</div>
 				</div>
-	  		<h2>Accomplishments</h2>
-				<div className='about-container'>
-	  			{cards}
-	  		</div>
-
+	  		<div className="personal-highlights">
+		  		<h2>Some Highlights</h2>
+					<div className='about-container'>
+		  			{cards}
+		  		</div>
+				</div>
 	  		<p>I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.</p>
 	  	</div>
 	  )

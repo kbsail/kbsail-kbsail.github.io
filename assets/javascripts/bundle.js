@@ -29641,7 +29641,7 @@
 	exports.default = _react2.default.createClass({
 		displayName: 'About',
 		render: function render() {
-			var cardList = [['Resource', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Resource', 'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Resource', 'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.'], ['Resource', 'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", a flight purchasing insurance product.'], ['Resource', 'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).'], ['Resource', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.'], ['Resource', 'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'], ['Resource', 'Taught an afterschool class of 10 middle school public school students in coding and technology.'], ['Resource', _react2.default.createElement(
+			var cardList = [['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'], ['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'], ['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'], ['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'], ['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'], ['Award', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 (2015) for \'SafeBridge\'.'], ['Award', 'Won Chime for Change\'s Best Product at ChimeHack (2013) for \'ReSound\'.'], ['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'], ['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'], ['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'], ['Technical', _react2.default.createElement(
 				'a',
 				{ href: 'https://codeforamerica.org' },
 				'2016 Code for America Engineering Fellow'
@@ -29709,7 +29709,7 @@
 							_react2.default.createElement(
 								'p',
 								null,
-								'Web developer passionate about building user centered applications.'
+								'Web developer passionate about user centered design.'
 							)
 						)
 					)
@@ -29737,47 +29737,48 @@
 					),
 					_react2.default.createElement(
 						'div',
+						{ className: 'awards' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Skills'
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							'Have a strong interest in teaching and mentorship.',
+							_react2.default.createElement('br', null),
+							'Fluent in Spanish.'
+						)
+					),
+					_react2.default.createElement(
+						'div',
 						{ className: 'hobies' },
 						_react2.default.createElement(
 							'h2',
 							null,
-							'Hobbies'
+							'Additional'
 						),
 						_react2.default.createElement(
 							'p',
 							null,
 							'Enjoy volunteering, learning new technologies, skiing, sailing and playing soccer.'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'Fluent in English and Spanish.'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'awards' },
-						_react2.default.createElement(
-							'h2',
-							null,
-							'Awards'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'So many. So, so many.'
 						)
 					)
 				),
 				_react2.default.createElement(
-					'h2',
-					null,
-					'Accomplishments'
-				),
-				_react2.default.createElement(
 					'div',
-					{ className: 'about-container' },
-					cards
+					{ className: 'personal-highlights' },
+					_react2.default.createElement(
+						'h2',
+						null,
+						'Some Highlights'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'about-container' },
+						cards
+					)
 				),
 				_react2.default.createElement(
 					'p',
