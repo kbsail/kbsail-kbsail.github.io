@@ -1,4 +1,5 @@
 import React from 'react'
+import {PROJECTS} from './Projects'
 
 export default React.createClass({
   render() {

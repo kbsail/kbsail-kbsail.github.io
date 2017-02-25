@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 
 export default React.createClass({
   styles: {
+    borderRadius: '5px',
     position: 'fixed',
     top: '20%',
     right: '20%',

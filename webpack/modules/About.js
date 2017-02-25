@@ -38,21 +38,11 @@ export default React.createClass({
 					<div className="front-about">
 						<div>
 							<p>Web developer passionate about user centered design.</p>
+							<p>Code mostly in Ruby, Python and React</p>
+							<p>Have a strong interest in teaching and mentorship.</p>
+							<p>Fluent in Spanish.</p>
+							<p>I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.</p>
 						</div>
-					</div>
-				</div>
-				<div className="about-sections">
-	  			<div className="core-tech">
-						<h2>Core Technologies</h2>
-						<p>Ruby (Rails, Sinatra)<br/>Python (Django, Flask)<br/>React (with Redux)</p>
-					</div>
-					<div className="awards">
-		  			<h2>Skills</h2>
-						<p>Have a strong interest in teaching and mentorship.<br/>Fluent in Spanish.</p>
-	  			</div>
-					<div className="hobies">
-						<h2>Additional</h2>
-						<p>Enjoy volunteering, learning new technologies, skiing, sailing and playing soccer.</p>
 					</div>
 				</div>
 	  		<div className="personal-highlights">
@@ -61,7 +51,6 @@ export default React.createClass({
 		  			{cards}
 		  		</div>
 				</div>
-	  		<p>I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.</p>
 	  	</div>
 	  )
   }

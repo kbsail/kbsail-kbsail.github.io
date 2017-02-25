@@ -29710,59 +29710,27 @@
 								'p',
 								null,
 								'Web developer passionate about user centered design.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Code mostly in Ruby, Python and React'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Have a strong interest in teaching and mentorship.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Fluent in Spanish.'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.'
 							)
-						)
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'about-sections' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'core-tech' },
-						_react2.default.createElement(
-							'h2',
-							null,
-							'Core Technologies'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'Ruby (Rails, Sinatra)',
-							_react2.default.createElement('br', null),
-							'Python (Django, Flask)',
-							_react2.default.createElement('br', null),
-							'React (with Redux)'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'awards' },
-						_react2.default.createElement(
-							'h2',
-							null,
-							'Skills'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'Have a strong interest in teaching and mentorship.',
-							_react2.default.createElement('br', null),
-							'Fluent in Spanish.'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'hobies' },
-						_react2.default.createElement(
-							'h2',
-							null,
-							'Additional'
-						),
-						_react2.default.createElement(
-							'p',
-							null,
-							'Enjoy volunteering, learning new technologies, skiing, sailing and playing soccer.'
 						)
 					)
 				),
@@ -29779,11 +29747,6 @@
 						{ className: 'about-container' },
 						cards
 					)
-				),
-				_react2.default.createElement(
-					'p',
-					null,
-					'I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.'
 				)
 			);
 		}
@@ -29798,6 +29761,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.PROJECTS = undefined;
 
 	var _react = __webpack_require__(1);
 
@@ -29809,7 +29773,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }, { id: 3, src: 'http://placekitten.com/620/620' }, { id: 4, src: 'http://placekitten.com/620/620' }, { id: 5, src: 'http://placekitten.com/620/620' }];
+	var PROJECTS = exports.PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }, { id: 3, src: 'http://placekitten.com/620/620' }, { id: 4, src: 'http://placekitten.com/620/620' }, { id: 5, src: 'http://placekitten.com/620/620' }];
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
@@ -29919,6 +29883,7 @@
 	  displayName: 'Modal',
 
 	  styles: {
+	    borderRadius: '5px',
 	    position: 'fixed',
 	    top: '20%',
 	    right: '20%',
@@ -29961,6 +29926,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _Projects = __webpack_require__(262);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
@@ -29969,7 +29936,7 @@
 					return _react2.default.createElement(
 							'div',
 							{ className: 'project-modal' },
-							_react2.default.createElement('img', { src: PROJECTS[this.props.params.id].src, style: { height: '80%' } })
+							_react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { height: '80%' } })
 					);
 			}
 	});
