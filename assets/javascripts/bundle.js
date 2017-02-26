@@ -29714,22 +29714,17 @@
 							_react2.default.createElement(
 								'p',
 								null,
-								'Code mostly in Ruby, Python and React'
+								'Main languages are Ruby, Python and React.'
 							),
 							_react2.default.createElement(
 								'p',
 								null,
-								'Have a strong interest in teaching and mentorship.'
+								'Active teacher and mentor.'
 							),
 							_react2.default.createElement(
 								'p',
 								null,
 								'Fluent in Spanish.'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.'
 							)
 						)
 					)
@@ -29740,7 +29735,7 @@
 					_react2.default.createElement(
 						'h2',
 						null,
-						'Some Highlights'
+						'Some Achievements'
 					),
 					_react2.default.createElement(
 						'div',
@@ -29751,6 +29746,8 @@
 			);
 		}
 	});
+
+	// <p>I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.</p>
 
 /***/ },
 /* 262 */
@@ -29773,7 +29770,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var PROJECTS = exports.PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }, { id: 3, src: 'http://placekitten.com/620/620' }, { id: 4, src: 'http://placekitten.com/620/620' }, { id: 5, src: 'http://placekitten.com/620/620' }];
+	var PROJECTS = exports.PROJECTS = [{ id: 0, title: 'Project #1', description: 'Placeholder kittens', src: 'http://placekitten.com/601/601' }, { id: 1, title: 'Project #2', description: 'Placeholder kittens', src: 'http://placekitten.com/610/610' }, { id: 2, title: 'Project #3', description: 'Placeholder kittens', src: 'http://placekitten.com/620/620' }, { id: 3, title: 'Project #4', description: 'Placeholder kittens', src: 'http://placekitten.com/620/620' }, { id: 4, title: 'Project #5', description: 'Placeholder kittens', src: 'http://placekitten.com/620/620' }, { id: 5, title: 'Project #6', description: 'Placeholder kittens', src: 'http://placekitten.com/620/620' }];
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
@@ -29796,7 +29793,17 @@
 	                state: { modal: true, returnTo: _this.props.location.pathname }
 	              }
 	            },
-	            _react2.default.createElement('img', { className: 'responsive-image', style: { margin: 10, borderRadius: '3px' }, src: project.src, height: '250' })
+	            _react2.default.createElement(
+	              'h5',
+	              null,
+	              project.title
+	            ),
+	            _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0 10px', borderRadius: '3px' }, src: project.src, height: '250' }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              project.description
+	            )
 	          );
 	        })
 	      )
@@ -29919,7 +29926,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-			value: true
+	     value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -29931,14 +29938,24 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = _react2.default.createClass({
-			displayName: 'Project',
-			render: function render() {
-					return _react2.default.createElement(
-							'div',
-							{ className: 'project-modal' },
-							_react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { height: '80%', borderRadius: '3px' } })
-					);
-			}
+	     displayName: 'Project',
+	     render: function render() {
+	          return _react2.default.createElement(
+	               'div',
+	               { className: 'project-modal' },
+	               _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    _Projects.PROJECTS[this.props.params.id].title
+	               ),
+	               _react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { height: '80%', borderRadius: '3px' } }),
+	               _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    _Projects.PROJECTS[this.props.params.id].description
+	               )
+	          );
+	     }
 	});
 
 /***/ },

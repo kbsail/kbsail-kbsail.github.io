@@ -207,6 +207,10 @@ li {
   justify-content: center;
   margin: 0 auto;
   max-width: 1000px;
+
+  h5, p {
+    color: $black;
+  }
 }
 
 // ###

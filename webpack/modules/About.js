@@ -38,15 +38,15 @@ export default React.createClass({
 					<div className="front-about">
 						<div>
 							<p>Web developer passionate about user centered design.</p>
-							<p>Code mostly in Ruby, Python and React</p>
-							<p>Have a strong interest in teaching and mentorship.</p>
+							<p>Main languages are Ruby, Python and React.</p>
+							<p>Active teacher and mentor.</p>
 							<p>Fluent in Spanish.</p>
-							<p>I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.</p>
+							
 						</div>
 					</div>
 				</div>
 	  		<div className="personal-highlights">
-		  		<h2>Some Highlights</h2>
+		  		<h2>Some Achievements</h2>
 					<div className='about-container'>
 		  			{cards}
 		  		</div>
@@ -55,3 +55,5 @@ export default React.createClass({
 	  )
   }
 })
+
+// <p>I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.</p>
