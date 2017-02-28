@@ -6,10 +6,10 @@ import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router'
 export const PROJECTS = [
   { id: 0, type: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' },
   { id: 1, type: 'Workshop', title: 'Recruiting and Retaining Technical Talent', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' },
-  { id: 2, type: 'Content', title: 'Creating a Digital Services Team', description: 'A talent initiative workshop and writeup, focused on helping governments hire technical talent effectively', src: '../assets/img/CreatingADigitalServicesTeam.png' },
+  { id: 2, type: 'Content', title: 'Creating a Digital Services Team', description: 'Created a guide to help Kansas City build out their digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' },
   { id: 3, type: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' },
-  { id: 4, type: 'Workshop', title: 'Working with Government', description: 'Placeholder kittens', src: '../assets/img/CforBrazil.png' },
-  { id: 5, type: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous ETL from legacy SQL Server to Cloud PostgreSQL Database', src: '../assets/img/ReqCheckExtractorWeb.png' }
+  { id: 4, type: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' },
+  { id: 5, type: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }
 ]
 
 export default React.createClass({
