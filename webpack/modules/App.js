@@ -24,8 +24,13 @@ export default React.createClass({
       mainPageClasses = 'side-open main-page'
       slidingContainerClasses = "side-open sliding-container";
     }
-    return (
-      <div className="react-container">
+    let headerContent = (
+      <div className="header-container">
+        <SideBar />
+      </div>
+    )
+    if (!window.matchMedia('(min-width: 600px)').matches) {
+      headerContent = (
         <div className={slidingContainerClasses}>
           <div className="header-container">
             <Link className="side-bar-toggle-button" style={{color: "black"}} onClick={this.toggleActive} href="#">
@@ -34,6 +39,11 @@ export default React.createClass({
           </div>
           <SideBar sideBarClasses={sideBarClasses} />
         </div>
+      )
+    }
+    return (
+      <div className="react-container">
+        {headerContent}
         <div className={mainPageClasses}>
           {this.props.children}
           <Footer/>

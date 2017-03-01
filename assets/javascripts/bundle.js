@@ -27267,10 +27267,13 @@
 	      mainPageClasses = 'side-open main-page';
 	      slidingContainerClasses = "side-open sliding-container";
 	    }
-	    return _react2.default.createElement(
+	    var headerContent = _react2.default.createElement(
 	      'div',
-	      { className: 'react-container' },
-	      _react2.default.createElement(
+	      { className: 'header-container' },
+	      _react2.default.createElement(_SideBar2.default, null)
+	    );
+	    if (!window.matchMedia('(min-width: 600px)').matches) {
+	      headerContent = _react2.default.createElement(
 	        'div',
 	        { className: slidingContainerClasses },
 	        _react2.default.createElement(
@@ -27283,7 +27286,12 @@
 	          )
 	        ),
 	        _react2.default.createElement(_SideBar2.default, { sideBarClasses: sideBarClasses })
-	      ),
+	      );
+	    }
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'react-container' },
+	      headerContent,
 	      _react2.default.createElement(
 	        'div',
 	        { className: mainPageClasses },
@@ -29635,36 +29643,67 @@
 
 	var _reactRouter = __webpack_require__(178);
 
+	var _reactTweetEmbed = __webpack_require__(269);
+
+	var _reactTweetEmbed2 = _interopRequireDefault(_reactTweetEmbed);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// module/About.js
 	exports.default = _react2.default.createClass({
 		displayName: 'About',
 		render: function render() {
-			var cardList = [['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'], ['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'], ['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'], ['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'], ['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'], ['Award', 'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 (2015) for \'SafeBridge\'.'], ['Award', 'Won Chime for Change\'s Best Product at ChimeHack (2013) for \'ReSound\'.'], ['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'], ['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'], ['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'], ['Technical', _react2.default.createElement(
+			var aboutList = [['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'], ['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'], ['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'], ['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'], ['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'], ['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'], ['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'], ['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'], ['Technical', _react2.default.createElement(
 				'a',
 				{ href: 'https://codeforamerica.org' },
 				'2016 Code for America Engineering Fellow'
 			)]];
-			var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
-			var resumeUrl = "";
-			var cards = [];
-			for (var i = 0; i < cardList.length; i++) {
-				cards.push(_react2.default.createElement(
-					'div',
-					{ className: 'about-card' },
-					_react2.default.createElement(
-						'h5',
-						null,
-						cardList[i][0]
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						cardList[i][1]
-					)
-				));
+			var linkedInUrl = 'https://www.linkedin.com/in/kevinberry1/',
+			    resumeUrl = '',
+			    cardDict = {
+				technical: [],
+				leadership: [],
+				mentorship: []
+			};
+			for (var i = 0; i < aboutList.length; i++) {
+				var item = _react2.default.createElement(
+					'li',
+					{ key: [i] },
+					aboutList[i][1]
+				);
+				switch (aboutList[i][0]) {
+					case 'Technical':
+						cardDict['technical'].push(item);
+						break;
+					case 'Leadership':
+						cardDict['leadership'].push(item);
+						break;
+					case 'Mentorship':
+						cardDict['mentorship'].push(item);
+						break;
+					default:
+						break;
+				}
 			}
+			var content = [];
+			for (var key in cardDict) {
+				if (cardDict.hasOwnProperty(key)) {
+					content.push(_react2.default.createElement(
+						'div',
+						{ key: key, className: 'about-content' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							key.charAt(0).toUpperCase() + key.slice(1)
+						),
+						_react2.default.createElement(
+							'ul',
+							{ className: 'about-details' },
+							cardDict[key]
+						)
+					));
+				}
+			}
+
 			return _react2.default.createElement(
 				'div',
 				{ className: 'about-page' },
@@ -29714,7 +29753,7 @@
 							_react2.default.createElement(
 								'p',
 								null,
-								'Main languages are Ruby, Python and React.'
+								'Specializing in Ruby, Python and React.'
 							),
 							_react2.default.createElement(
 								'p',
@@ -29732,15 +29771,100 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'personal-highlights' },
+					content
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'awards' },
 					_react2.default.createElement(
 						'h2',
 						null,
-						'Some Achievements'
+						'Awards'
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'about-container' },
-						cards
+						{ className: 'award-container' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'award-item' },
+							_react2.default.createElement(
+								'div',
+								null,
+								_react2.default.createElement(
+									'h5',
+									null,
+									'Best Product for Incubation'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Awarded for \'SafeBridge\''
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'chime-tweet' },
+									_react2.default.createElement('img', { src: '../assets/img/chimehack.JPG', className: 'award-photo responsive-image', alt: 'ChimeHack2 Award Photo' })
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Presented by Hearst Magazine and Twitter'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									_react2.default.createElement(
+										_reactRouter.Link,
+										{ href: 'http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/' },
+										'ChimeHack2'
+									),
+									', 2015'
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'award-item' },
+							_react2.default.createElement(
+								'div',
+								null,
+								_react2.default.createElement(
+									'h5',
+									null,
+									'Best Product'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Awarded for \'ResSound\''
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'chime-tweet' },
+									_react2.default.createElement(_reactTweetEmbed2.default, { id: '409531616990478336' })
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Presented by Chime for Change and Twitter'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									_react2.default.createElement(
+										_reactRouter.Link,
+										{ href: 'https://www.youtube.com/watch?v=WpHRSi0JFKY' },
+										'ChimeHack'
+									),
+									', 2013'
+								),
+								_react2.default.createElement(
+									'p',
+									null,
+									'https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue'
+								)
+							)
+						)
 					)
 				)
 			);
@@ -29748,6 +29872,7 @@
 	});
 
 	// <p>I follow coding best practices, communicate effectively and am committed to delivering the highest quality code.</p>
+	// module/About.js
 
 /***/ },
 /* 262 */
@@ -29780,6 +29905,7 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
+	      _react2.default.createElement('div', { className: 'projects-main-image' }),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'projects-row' },
@@ -29864,7 +29990,7 @@
 	      _react2.default.createElement(
 	        'h1',
 	        null,
-	        'Projects'
+	        'Recent Projects'
 	      ),
 	      _react2.default.createElement(
 	        'div',
@@ -30117,6 +30243,94 @@
 	    );
 	  }
 	});
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var callbacks = [];
+
+	function addScript(src, cb) {
+	  if (callbacks.length === 0) {
+	    callbacks.push(cb);
+	    var s = document.createElement('script');
+	    s.setAttribute('src', src);
+	    s.onload = function () {
+	      return callbacks.forEach(function (cb) {
+	        return cb();
+	      });
+	    };
+	    document.body.appendChild(s);
+	  } else {
+	    callbacks.push(cb);
+	  }
+	}
+
+	var TweetEmbed = function (_React$Component) {
+	  _inherits(TweetEmbed, _React$Component);
+
+	  function TweetEmbed() {
+	    _classCallCheck(this, TweetEmbed);
+
+	    return _possibleConstructorReturn(this, (TweetEmbed.__proto__ || Object.getPrototypeOf(TweetEmbed)).apply(this, arguments));
+	  }
+
+	  _createClass(TweetEmbed, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      var options = this.props.options || {};
+
+	      var renderTweet = function renderTweet() {
+	        window.twttr.widgets.createTweetEmbed(_this2.props.id, _this2._div, options);
+	      };
+	      if (!window.twttr) {
+	        addScript('//platform.twitter.com/widgets.js', renderTweet);
+	      } else {
+	        renderTweet();
+	      }
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this3 = this;
+
+	      return _react2.default.createElement('div', { ref: function ref(c) {
+	          _this3._div = c;
+	        } });
+	    }
+	  }]);
+
+	  return TweetEmbed;
+	}(_react2.default.Component);
+
+	TweetEmbed.propTypes = {
+	  id: _react.PropTypes.string,
+	  options: _react.PropTypes.object
+	};
+
+	exports.default = TweetEmbed;
 
 /***/ }
 /******/ ]);

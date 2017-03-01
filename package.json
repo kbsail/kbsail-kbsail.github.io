@@ -40,5 +40,9 @@
     "react-router": "^2.0.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react-responsive": "^1.2.6",
+    "react-tweet-embed": "^1.0.3"
   }
 }

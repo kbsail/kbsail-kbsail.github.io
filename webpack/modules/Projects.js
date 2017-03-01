@@ -16,6 +16,8 @@ export default React.createClass({
   render() {
     return (
       <div>
+        <div className="projects-main-image">
+        </div>
         <div className="projects-row">
           {PROJECTS.map(project => (  
             <Link

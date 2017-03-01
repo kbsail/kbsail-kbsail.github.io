@@ -26,7 +26,7 @@ export default React.createClass({
 
     return (
       <div>
-        <h1>Projects</h1>
+        <h1>Recent Projects</h1>
 
         <div>
           {isModal ?
