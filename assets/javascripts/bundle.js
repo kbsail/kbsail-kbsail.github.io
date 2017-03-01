@@ -29652,17 +29652,23 @@
 	exports.default = _react2.default.createClass({
 		displayName: 'About',
 		render: function render() {
-			var aboutList = [['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'], ['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'], ['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'], ['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'], ['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'], ['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'], ['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'], ['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'], ['Technical', _react2.default.createElement(
+			var aboutList = [['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'], ['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'], ['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'], ['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'], ['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'], ['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'], ['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'], ['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'], ['Technical', _react2.default.createElement(
 				'a',
 				{ href: 'https://codeforamerica.org' },
 				'2016 Code for America Engineering Fellow'
 			)]];
+			var iconDict = {
+				Technical: 'fa-laptop',
+				Mentorship: 'fa-handshake-o',
+				Leadership: 'fa-users',
+				Awards: 'fa-star'
+			};
 			var linkedInUrl = 'https://www.linkedin.com/in/kevinberry1/',
 			    resumeUrl = '',
 			    cardDict = {
-				technical: [],
-				leadership: [],
-				mentorship: []
+				Technical: [],
+				Leadership: [],
+				Mentorship: []
 			};
 			for (var i = 0; i < aboutList.length; i++) {
 				var item = _react2.default.createElement(
@@ -29672,13 +29678,13 @@
 				);
 				switch (aboutList[i][0]) {
 					case 'Technical':
-						cardDict['technical'].push(item);
+						cardDict['Technical'].push(item);
 						break;
 					case 'Leadership':
-						cardDict['leadership'].push(item);
+						cardDict['Leadership'].push(item);
 						break;
 					case 'Mentorship':
-						cardDict['mentorship'].push(item);
+						cardDict['Mentorship'].push(item);
 						break;
 					default:
 						break;
@@ -29690,10 +29696,11 @@
 					content.push(_react2.default.createElement(
 						'div',
 						{ key: key, className: 'about-content' },
+						_react2.default.createElement('i', { className: 'fa fa-2x ' + iconDict[key], 'aria-hidden': 'true' }),
 						_react2.default.createElement(
 							'h2',
 							null,
-							key.charAt(0).toUpperCase() + key.slice(1)
+							key
 						),
 						_react2.default.createElement(
 							'ul',
@@ -29777,92 +29784,89 @@
 					'div',
 					{ className: 'awards' },
 					_react2.default.createElement(
-						'h2',
+						'div',
 						null,
-						'Awards'
+						_react2.default.createElement('i', { className: 'fa fa-2x fa-star', 'aria-hidden': 'true' }),
+						_react2.default.createElement(
+							'h2',
+							null,
+							'Honors and Awards'
+						)
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'award-container' },
+						{ className: 'awards-container' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'award-item' },
 							_react2.default.createElement(
+								'h5',
+								null,
+								'Best Product for Incubation'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Awarded for \'SafeBridge\''
+							),
+							_react2.default.createElement(
 								'div',
+								{ className: 'chime-tweet' },
+								_react2.default.createElement('img', { src: '../assets/img/chimehack.JPG', className: 'award-photo responsive-image', alt: 'ChimeHack2 Award Photo' })
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Presented by Hearst Magazine and Twitter'
+							),
+							_react2.default.createElement(
+								'p',
 								null,
 								_react2.default.createElement(
-									'h5',
-									null,
-									'Best Product for Incubation'
+									_reactRouter.Link,
+									{ href: 'http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/' },
+									'ChimeHack2'
 								),
-								_react2.default.createElement(
-									'p',
-									null,
-									'Awarded for \'SafeBridge\''
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'chime-tweet' },
-									_react2.default.createElement('img', { src: '../assets/img/chimehack.JPG', className: 'award-photo responsive-image', alt: 'ChimeHack2 Award Photo' })
-								),
-								_react2.default.createElement(
-									'p',
-									null,
-									'Presented by Hearst Magazine and Twitter'
-								),
-								_react2.default.createElement(
-									'p',
-									null,
-									_react2.default.createElement(
-										_reactRouter.Link,
-										{ href: 'http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/' },
-										'ChimeHack2'
-									),
-									', 2015'
-								)
+								', 2015'
 							)
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'award-item' },
 							_react2.default.createElement(
+								'h5',
+								null,
+								'Best Product'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Awarded for \'ResSound\''
+							),
+							_react2.default.createElement(
 								'div',
+								{ className: 'chime-tweet' },
+								_react2.default.createElement(_reactTweetEmbed2.default, { id: '409531616990478336' })
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Presented by Chime for Change and Twitter'
+							),
+							_react2.default.createElement(
+								'p',
 								null,
 								_react2.default.createElement(
-									'h5',
-									null,
-									'Best Product'
+									_reactRouter.Link,
+									{ href: 'https://www.youtube.com/watch?v=WpHRSi0JFKY' },
+									'ChimeHack'
 								),
-								_react2.default.createElement(
-									'p',
-									null,
-									'Awarded for \'ResSound\''
-								),
-								_react2.default.createElement(
-									'div',
-									{ className: 'chime-tweet' },
-									_react2.default.createElement(_reactTweetEmbed2.default, { id: '409531616990478336' })
-								),
-								_react2.default.createElement(
-									'p',
-									null,
-									'Presented by Chime for Change and Twitter'
-								),
-								_react2.default.createElement(
-									'p',
-									null,
-									_react2.default.createElement(
-										_reactRouter.Link,
-										{ href: 'https://www.youtube.com/watch?v=WpHRSi0JFKY' },
-										'ChimeHack'
-									),
-									', 2013'
-								),
-								_react2.default.createElement(
-									'p',
-									null,
-									'https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue'
-								)
+								', 2013'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue'
 							)
 						)
 					)
@@ -30229,8 +30233,6 @@
 	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	// import { Link } from 'react-router'
 
 	exports.default = _react2.default.createClass({
 	  displayName: "SocialLink",

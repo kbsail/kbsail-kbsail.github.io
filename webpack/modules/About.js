@@ -9,33 +9,39 @@ export default React.createClass({
 			['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'],
 			['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'],
 			['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'],
-			['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'],
-			['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'],
 			['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'],
 			['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'],
+			['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'],
+			['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'],
 			['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'],
 			['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'],
 			['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'],
 			['Technical', <a href="https://codeforamerica.org">2016 Code for America Engineering Fellow</a>]
 	  ]
+	  var iconDict = {
+	  	Technical: 'fa-laptop',
+	  	Mentorship: 'fa-handshake-o',
+	  	Leadership: 'fa-users',
+	  	Awards: 'fa-star'
+	  }
 	  var linkedInUrl = 'https://www.linkedin.com/in/kevinberry1/',
 	  	resumeUrl = '',
 	  cardDict = {
-	  	technical: [],
-	  	leadership: [],
-	  	mentorship: []
+	  	Technical: [],
+	  	Leadership: [],
+	  	Mentorship: []
 	  }
 	  for (var i=0; i < aboutList.length; i++) {
 	  	var item = <li key={[i]}>{aboutList[i][1]}</li>
 	  	switch (aboutList[i][0]) {
 	  		case 'Technical':
-	  			cardDict['technical'].push(item);
+	  			cardDict['Technical'].push(item);
 	  			break;
 	  		case 'Leadership':
-	  			cardDict['leadership'].push(item);
+	  			cardDict['Leadership'].push(item);
 	  			break;
 	  		case 'Mentorship':
-	  			cardDict['mentorship'].push(item);
+	  			cardDict['Mentorship'].push(item);
 	  			break;
 	  		default:
 	  			break
@@ -46,7 +52,8 @@ export default React.createClass({
   		if (cardDict.hasOwnProperty(key)) {
     		content.push(
     			<div key={key} className="about-content">
-    				<h2>{key.charAt(0).toUpperCase() + key.slice(1)}</h2>
+    				<i className={`fa fa-2x ${iconDict[key]}`} aria-hidden="true" />
+    				<h2>{key}</h2>
     				<ul className="about-details">
     					{cardDict[key]}
     				</ul>
@@ -79,30 +86,28 @@ export default React.createClass({
 		  		{content}
 				</div>
 				<div className="awards">
-					<h2>Awards</h2>
-					<div className="award-container">
+					<div>
+						<i className="fa fa-2x fa-star" aria-hidden="true" /><h2>Honors and Awards</h2>
+					</div>
+					<div className="awards-container">
 						<div className="award-item">
-							<div>
-								<h5>Best Product for Incubation</h5>
-								<p>Awarded for 'SafeBridge'</p>
-								<div className="chime-tweet">
-									<img src="../assets/img/chimehack.JPG" className="award-photo responsive-image" alt="ChimeHack2 Award Photo" />
-								</div>
-								<p>Presented by Hearst Magazine and Twitter</p>
-								<p><Link href="http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/">ChimeHack2</Link>, 2015</p>
+							<h5>Best Product for Incubation</h5>
+							<p>Awarded for 'SafeBridge'</p>
+							<div className="chime-tweet">
+								<img src="../assets/img/chimehack.JPG" className="award-photo responsive-image" alt="ChimeHack2 Award Photo" />
 							</div>
+							<p>Presented by Hearst Magazine and Twitter</p>
+							<p><Link href="http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/">ChimeHack2</Link>, 2015</p>
 						</div>
 						<div className="award-item">
-							<div>
-								<h5>Best Product</h5>
-								<p>Awarded for 'ResSound'</p>
-								<div className="chime-tweet">
-									<TweetEmbed id='409531616990478336'></TweetEmbed>
-								</div>
-								<p>Presented by Chime for Change and Twitter</p>
-								<p><Link href="https://www.youtube.com/watch?v=WpHRSi0JFKY">ChimeHack</Link>, 2013</p>
-								<p>https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue</p>
+							<h5>Best Product</h5>
+							<p>Awarded for 'ResSound'</p>
+							<div className="chime-tweet">
+								<TweetEmbed id='409531616990478336'></TweetEmbed>
 							</div>
+							<p>Presented by Chime for Change and Twitter</p>
+							<p><Link href="https://www.youtube.com/watch?v=WpHRSi0JFKY">ChimeHack</Link>, 2013</p>
+							<p>https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue</p>
 						</div>
 					</div>
 				</div>

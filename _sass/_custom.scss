@@ -308,14 +308,20 @@ li {
 // ###
 .awards-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
 }
 
 // ###
 // # Award Item
 // ###
 .award-item {
+  flex-basis: 40% ;
 
-  img, {
+  img {
     max-width: 250px;
     max-height: 150px;
     width: 250px;
