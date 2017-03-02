@@ -86,7 +86,7 @@ export default React.createClass({
 		  		{content}
 				</div>
 				<div className="awards">
-					<div>
+					<div className="awards-title">
 						<i className="fa fa-2x fa-star" aria-hidden="true" /><h2>Honors and Awards</h2>
 					</div>
 					<div className="awards-container">
@@ -94,14 +94,14 @@ export default React.createClass({
 							<h5>Best Product for Incubation</h5>
 							<p>Awarded for 'SafeBridge'</p>
 							<div className="chime-tweet">
-								<img src="../assets/img/chimehack.JPG" className="award-photo responsive-image" alt="ChimeHack2 Award Photo" />
+								<TweetEmbed id='620390041789968385'></TweetEmbed>
 							</div>
-							<p>Presented by Hearst Magazine and Twitter</p>
+							<p>Presented by Hearst Magazines and Twitter</p>
 							<p><Link href="http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/">ChimeHack2</Link>, 2015</p>
 						</div>
 						<div className="award-item">
 							<h5>Best Product</h5>
-							<p>Awarded for 'ResSound'</p>
+							<p>Awarded for 'ReSound'</p>
 							<div className="chime-tweet">
 								<TweetEmbed id='409531616990478336'></TweetEmbed>
 							</div>

@@ -1,9 +1,15 @@
+    // overflow: hidden;
+    // /* height: 800px; */
+    // margin-top: -66.844px
+
 // ###
 // # Variable Declarations
 // ###
 
 $background: #fbfaf9;
 $white: #fff;
+$back-white: rgb(255, 255, 255);
+$border-shade: rgba(0, 0, 0, 0.2);
 $active-green: #008000;
 $light-grey: #f2f2f2;
 $dark-grey: #5c5c5c;
@@ -242,8 +248,8 @@ li {
 .project-title {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  height: 64px;
+  align-items: center;
+  height: 3rem;
 }
 
 // ###
@@ -280,6 +286,8 @@ li {
   align-items: flex-start;
   align-content: center;
   margin: 0 auto;
+  padding: 4rem 0;
+  background-color: $light-grey;
 
   h2 {
     text-align: center !important;
@@ -297,10 +305,19 @@ li {
 // # Awards
 // ###
 .awards {
+  padding: 4rem 0;
+
 
   h2 {
     text-align: center;
   }
+}
+
+// ###
+// # Awards Title
+// ###
+.awards-title {
+  margin-bottom: 1rem;
 }
 
 // ###
@@ -310,7 +327,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;;
   align-content: center;
   margin: 0 auto;
 }
@@ -319,7 +336,15 @@ li {
 // # Award Item
 // ###
 .award-item {
-  flex-basis: 40% ;
+  flex-basis: 40%;
+  background-color: $back-white;
+  box-shadow: $border-shade 0px 0px 6px;
+  border-radius: .3rem;
+  margin: 20px;
+
+  p, h5 {
+    text-align: center;
+  }
 
   img {
     max-width: 250px;
@@ -330,6 +355,7 @@ li {
 
   .chime-tweet {
     max-width: 350px;
+    margin: 0 auto;
   }
 }
 

@@ -29785,7 +29785,7 @@
 					{ className: 'awards' },
 					_react2.default.createElement(
 						'div',
-						null,
+						{ className: 'awards-title' },
 						_react2.default.createElement('i', { className: 'fa fa-2x fa-star', 'aria-hidden': 'true' }),
 						_react2.default.createElement(
 							'h2',
@@ -29812,12 +29812,12 @@
 							_react2.default.createElement(
 								'div',
 								{ className: 'chime-tweet' },
-								_react2.default.createElement('img', { src: '../assets/img/chimehack.JPG', className: 'award-photo responsive-image', alt: 'ChimeHack2 Award Photo' })
+								_react2.default.createElement(_reactTweetEmbed2.default, { id: '620390041789968385' })
 							),
 							_react2.default.createElement(
 								'p',
 								null,
-								'Presented by Hearst Magazine and Twitter'
+								'Presented by Hearst Magazines and Twitter'
 							),
 							_react2.default.createElement(
 								'p',
@@ -29841,7 +29841,7 @@
 							_react2.default.createElement(
 								'p',
 								null,
-								'Awarded for \'ResSound\''
+								'Awarded for \'ReSound\''
 							),
 							_react2.default.createElement(
 								'div',
@@ -29899,7 +29899,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var PROJECTS = exports.PROJECTS = [{ id: 0, type: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' }, { id: 1, type: 'Workshop', title: 'Recruiting and Retaining Technical Talent', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' }, { id: 2, type: 'Content', title: 'Creating a Digital Services Team', description: 'Created a guide to help Kansas City build out their digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' }, { id: 3, type: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' }, { id: 4, type: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' }, { id: 5, type: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }];
+	var PROJECTS = exports.PROJECTS = [{ id: 0, type: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' }, { id: 1, type: 'Workshop', title: 'Technical Talent Initiative', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' }, { id: 2, type: 'Content', title: 'Hiring a Digital Services Team', description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' }, { id: 3, type: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' }, { id: 4, type: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' }, { id: 5, type: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }];
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
