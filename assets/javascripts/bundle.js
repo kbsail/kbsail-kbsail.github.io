@@ -27173,19 +27173,19 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Projects = __webpack_require__(262);
+	var _Projects = __webpack_require__(263);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _ProjectsContainer = __webpack_require__(263);
+	var _ProjectsContainer = __webpack_require__(264);
 
 	var _ProjectsContainer2 = _interopRequireDefault(_ProjectsContainer);
 
-	var _Project = __webpack_require__(265);
+	var _Project = __webpack_require__(266);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Home = __webpack_require__(266);
+	var _Home = __webpack_require__(267);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -29643,7 +29643,7 @@
 
 	var _reactRouter = __webpack_require__(178);
 
-	var _reactTweetEmbed = __webpack_require__(269);
+	var _reactTweetEmbed = __webpack_require__(262);
 
 	var _reactTweetEmbed2 = _interopRequireDefault(_reactTweetEmbed);
 
@@ -29652,14 +29652,11 @@
 	exports.default = _react2.default.createClass({
 		displayName: 'About',
 		render: function render() {
-			var aboutList = [['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'], ['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'], ['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'], ['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'], ['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'], ['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'], ['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'], ['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'], ['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'], ['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'], ['Technical', _react2.default.createElement(
-				'a',
-				{ href: 'https://codeforamerica.org' },
-				'2016 Code for America Engineering Fellow'
-			)]];
+			var aboutList = [['Technical', 'Maintained HIPAA compliance for a public health application.'], ['Technical', 'Built algorithm with CDC information to analyze patient health records.'], ['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'], ['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'], ['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'], ['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'], ['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'], ['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'], ['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.']];
 			var iconDict = {
 				Technical: 'fa-laptop',
-				Mentorship: 'fa-handshake-o',
+				// Mentorship: 'fa-handshake-o',
+				Mentorship: 'fa-graduation-cap',
 				Leadership: 'fa-users',
 				Awards: 'fa-star'
 			};
@@ -29674,6 +29671,8 @@
 				var item = _react2.default.createElement(
 					'li',
 					{ key: [i] },
+					_react2.default.createElement('i', { className: 'fa fa-angle-double-right', 'aria-hidden': 'true' }),
+					'\xA0\xA0',
 					aboutList[i][1]
 				);
 				switch (aboutList[i][0]) {
@@ -29802,6 +29801,49 @@
 							_react2.default.createElement(
 								'h5',
 								null,
+								'Code for America Fellowship'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'2016 Engineering Fellow'
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'chime-tweet' },
+								_react2.default.createElement(_reactTweetEmbed2.default, { id: '684781001101414400' })
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Less than 2% of applicants are accepted'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'https://www.codeforamerica.org' },
+									'Code for America'
+								),
+								', 2016'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'http://archive.codeforamerica.org/about/fellowship/' },
+									'More Information'
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'award-item safebridge' },
+							_react2.default.createElement(
+								'h5',
+								null,
 								'Best Product for Incubation'
 							),
 							_react2.default.createElement(
@@ -29817,7 +29859,28 @@
 							_react2.default.createElement(
 								'p',
 								null,
-								'Presented by Hearst Magazines and Twitter'
+								'Presented by ',
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'https://www.hearst.com/' },
+									'Hearst Magazines'
+								),
+								' and ',
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'https://twitter.com/' },
+									'Twitter'
+								)
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'https://www.youtube.com/watch?v=PzbminSEayU' },
+									'ChimeHack2'
+								),
+								', 2015'
 							),
 							_react2.default.createElement(
 								'p',
@@ -29825,9 +29888,8 @@
 								_react2.default.createElement(
 									_reactRouter.Link,
 									{ href: 'http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/' },
-									'ChimeHack2'
-								),
-								', 2015'
+									'More Information'
+								)
 							)
 						),
 						_react2.default.createElement(
@@ -29851,7 +29913,18 @@
 							_react2.default.createElement(
 								'p',
 								null,
-								'Presented by Chime for Change and Twitter'
+								'Presented by ',
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'http://www.chimeforchange.org/' },
+									'Chime for Change'
+								),
+								' and ',
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'https://twitter.com/' },
+									'Twitter'
+								)
 							),
 							_react2.default.createElement(
 								'p',
@@ -29866,7 +29939,11 @@
 							_react2.default.createElement(
 								'p',
 								null,
-								'https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue'
+								_react2.default.createElement(
+									_reactRouter.Link,
+									{ href: 'https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue' },
+									'More Information'
+								)
 							)
 						)
 					)
@@ -29880,374 +29957,6 @@
 
 /***/ },
 /* 262 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.PROJECTS = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(32);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var PROJECTS = exports.PROJECTS = [{ id: 0, type: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' }, { id: 1, type: 'Workshop', title: 'Technical Talent Initiative', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' }, { id: 2, type: 'Content', title: 'Hiring a Digital Services Team', description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' }, { id: 3, type: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' }, { id: 4, type: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' }, { id: 5, type: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }];
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'Projects',
-	  render: function render() {
-	    var _this = this;
-
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement('div', { className: 'projects-main-image' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'projects-row' },
-	        PROJECTS.map(function (project) {
-	          return _react2.default.createElement(
-	            _reactRouter.Link,
-	            {
-	              key: project.id,
-	              to: {
-	                pathname: '/projects/' + project.id,
-	                state: { modal: true, returnTo: _this.props.location.pathname }
-	              }
-	            },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'project-container' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'project-title' },
-	                _react2.default.createElement(
-	                  'h5',
-	                  null,
-	                  project.title
-	                )
-	              ),
-	              _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0 10px', borderRadius: '3px' }, src: project.src }),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'project-description' },
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  project.description
-	                )
-	              )
-	            )
-	          );
-	        })
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 263 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Modal = __webpack_require__(264);
-
-	var _Modal2 = _interopRequireDefault(_Modal);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'ProjectsContainer',
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    // if we changed routes...
-	    if (nextProps.location.key !== this.props.location.key && nextProps.location.state && nextProps.location.state.modal) {
-	      // save the old children (just like animation)
-	      this.previousChildren = this.props.children;
-	    }
-	  },
-	  render: function render() {
-	    var location = this.props.location;
-
-
-	    var isModal = location.state && location.state.modal && this.previousChildren;
-
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Recent Projects'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        isModal ? this.previousChildren : this.props.children,
-	        isModal && _react2.default.createElement(
-	          _Modal2.default,
-	          { isOpen: true, returnTo: location.state.returnTo },
-	          this.props.children
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'Modal',
-
-	  styles: {
-	    borderRadius: '5px',
-	    position: 'fixed',
-	    top: '85px',
-	    right: '10%',
-	    bottom: '10%',
-	    left: '10%',
-	    padding: 20,
-	    boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
-	    overflow: 'auto',
-	    background: '#fff'
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { style: this.styles },
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: this.props.returnTo },
-	          'Back'
-	        )
-	      ),
-	      this.props.children
-	    );
-	  }
-	});
-
-/***/ },
-/* 265 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	     value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Projects = __webpack_require__(262);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	     displayName: 'Project',
-	     render: function render() {
-	          return _react2.default.createElement(
-	               'div',
-	               { className: 'project-modal' },
-	               _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    _Projects.PROJECTS[this.props.params.id].title
-	               ),
-	               _react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { width: '100%', borderRadius: '3px' } }),
-	               _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    _Projects.PROJECTS[this.props.params.id].description
-	               )
-	          );
-	     }
-	});
-
-/***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _SocialLinks = __webpack_require__(267);
-
-	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
-
-	var _OutsideLink = __webpack_require__(246);
-
-	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function Home() {
-	    return _react2.default.createElement(
-	        'div',
-	        { className: 'front-page' },
-	        _react2.default.createElement(
-	            'div',
-	            { className: 'front-info' },
-	            _react2.default.createElement(
-	                'h1',
-	                null,
-	                'Kevin Berry'
-	            ),
-	            _react2.default.createElement(_SocialLinks2.default, null),
-	            _react2.default.createElement(
-	                'h2',
-	                null,
-	                'Web Developer'
-	            ),
-	            _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Specializing in Python & Ruby'
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                'Formerly of ',
-	                _react2.default.createElement(
-	                    _OutsideLink2.default,
-	                    { to: 'https://codeforamerica.org', alt: 'Code for America' },
-	                    'Code for America'
-	                ),
-	                ' & ',
-	                _react2.default.createElement(
-	                    _OutsideLink2.default,
-	                    { to: 'https://flyrlabs.com', alt: 'FlyrLabs' },
-	                    'FlyrLabs'
-	                ),
-	                '.'
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                'Mentorship with ',
-	                _react2.default.createElement(
-	                    _OutsideLink2.default,
-	                    { to: 'https://missionbit.org', alt: 'MissionBit' },
-	                    'MissionBit'
-	                ),
-	                '.'
-	            )
-	        )
-	    );
-	} // modules/Home.js
-	exports.default = Home;
-
-/***/ },
-/* 267 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _SocialLink = __webpack_require__(268);
-
-	var _SocialLink2 = _interopRequireDefault(_SocialLink);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	// modules/Home.js
-	exports.default = _react2.default.createClass({
-	    displayName: 'SocialLinks',
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'nav',
-	            null,
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-linkedin', href: 'http://www.linkedin.com/in/kevinberry1', title: 'LinkedIn' }),
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-twitter', href: 'http://twitter.com/lostmarinero', title: 'Twitter' }),
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-github', href: 'http://github.com/lostmarinero', title: 'Github' }),
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-envelope', href: 'mailto:berry.kevinw@gmail.com', title: 'Email' })
-	        );
-	    }
-	});
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/SocialLink.js
-
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: "SocialLink",
-	  render: function render() {
-	    var linkType = this.props.linkType;
-	    return _react2.default.createElement(
-	      "a",
-	      _extends({}, this.props, { target: "_blank" }),
-	      _react2.default.createElement("i", { className: "fa fa-2x " + linkType, "aria-hidden": "true" })
-	    );
-	  }
-	});
-
-/***/ },
-/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30333,6 +30042,374 @@
 	};
 
 	exports.default = TweetEmbed;
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PROJECTS = undefined;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var PROJECTS = exports.PROJECTS = [{ id: 0, type: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' }, { id: 1, type: 'Workshop', title: 'Technical Talent Initiative', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' }, { id: 2, type: 'Content', title: 'Hiring a Digital Services Team', description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' }, { id: 3, type: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' }, { id: 4, type: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' }, { id: 5, type: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }];
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'Projects',
+	  render: function render() {
+	    var _this = this;
+
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement('div', { className: 'projects-main-image' }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'projects-row' },
+	        PROJECTS.map(function (project) {
+	          return _react2.default.createElement(
+	            _reactRouter.Link,
+	            {
+	              key: project.id,
+	              to: {
+	                pathname: '/projects/' + project.id,
+	                state: { modal: true, returnTo: _this.props.location.pathname }
+	              }
+	            },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'project-container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'project-title' },
+	                _react2.default.createElement(
+	                  'h5',
+	                  null,
+	                  project.title
+	                )
+	              ),
+	              _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0 10px', borderRadius: '3px' }, src: project.src }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'project-description' },
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  project.description
+	                )
+	              )
+	            )
+	          );
+	        })
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Modal = __webpack_require__(265);
+
+	var _Modal2 = _interopRequireDefault(_Modal);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'ProjectsContainer',
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    // if we changed routes...
+	    if (nextProps.location.key !== this.props.location.key && nextProps.location.state && nextProps.location.state.modal) {
+	      // save the old children (just like animation)
+	      this.previousChildren = this.props.children;
+	    }
+	  },
+	  render: function render() {
+	    var location = this.props.location;
+
+
+	    var isModal = location.state && location.state.modal && this.previousChildren;
+
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Recent Projects'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        isModal ? this.previousChildren : this.props.children,
+	        isModal && _react2.default.createElement(
+	          _Modal2.default,
+	          { isOpen: true, returnTo: location.state.returnTo },
+	          this.props.children
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'Modal',
+
+	  styles: {
+	    borderRadius: '5px',
+	    position: 'fixed',
+	    top: '85px',
+	    right: '10%',
+	    bottom: '10%',
+	    left: '10%',
+	    padding: 20,
+	    boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
+	    overflow: 'auto',
+	    background: '#fff'
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { style: this.styles },
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: this.props.returnTo },
+	          'Back'
+	        )
+	      ),
+	      this.props.children
+	    );
+	  }
+	});
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	     value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Projects = __webpack_require__(263);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	     displayName: 'Project',
+	     render: function render() {
+	          return _react2.default.createElement(
+	               'div',
+	               { className: 'project-modal' },
+	               _react2.default.createElement(
+	                    'h5',
+	                    null,
+	                    _Projects.PROJECTS[this.props.params.id].title
+	               ),
+	               _react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { width: '100%', borderRadius: '3px' } }),
+	               _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    _Projects.PROJECTS[this.props.params.id].description
+	               )
+	          );
+	     }
+	});
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _SocialLinks = __webpack_require__(268);
+
+	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
+
+	var _OutsideLink = __webpack_require__(246);
+
+	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function Home() {
+	    return _react2.default.createElement(
+	        'div',
+	        { className: 'front-page' },
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'front-info' },
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Kevin Berry'
+	            ),
+	            _react2.default.createElement(_SocialLinks2.default, null),
+	            _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Web Developer'
+	            ),
+	            _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Specializing in Python & Ruby'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Formerly of ',
+	                _react2.default.createElement(
+	                    _OutsideLink2.default,
+	                    { to: 'https://codeforamerica.org', alt: 'Code for America' },
+	                    'Code for America'
+	                ),
+	                ' & ',
+	                _react2.default.createElement(
+	                    _OutsideLink2.default,
+	                    { to: 'https://flyrlabs.com', alt: 'FlyrLabs' },
+	                    'FlyrLabs'
+	                ),
+	                '.'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Mentorship with ',
+	                _react2.default.createElement(
+	                    _OutsideLink2.default,
+	                    { to: 'https://missionbit.org', alt: 'MissionBit' },
+	                    'MissionBit'
+	                ),
+	                '.'
+	            )
+	        )
+	    );
+	} // modules/Home.js
+	exports.default = Home;
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _SocialLink = __webpack_require__(269);
+
+	var _SocialLink2 = _interopRequireDefault(_SocialLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// modules/Home.js
+	exports.default = _react2.default.createClass({
+	    displayName: 'SocialLinks',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'nav',
+	            null,
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-linkedin', href: 'http://www.linkedin.com/in/kevinberry1', title: 'LinkedIn' }),
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-twitter', href: 'http://twitter.com/lostmarinero', title: 'Twitter' }),
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-github', href: 'http://github.com/lostmarinero', title: 'Github' }),
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-envelope', href: 'mailto:berry.kevinw@gmail.com', title: 'Email' })
+	        );
+	    }
+	});
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/SocialLink.js
+
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "SocialLink",
+	  render: function render() {
+	    var linkType = this.props.linkType;
+	    return _react2.default.createElement(
+	      "a",
+	      _extends({}, this.props, { target: "_blank" }),
+	      _react2.default.createElement("i", { className: "fa fa-2x " + linkType, "aria-hidden": "true" })
+	    );
+	  }
+	});
 
 /***/ }
 /******/ ]);

@@ -6,21 +6,20 @@ import TweetEmbed from 'react-tweet-embed'
 export default React.createClass({
   render() {
 		var aboutList = [
-			['Technical', 'Maintained environment and application level HIPAA compliance for a public health application.'],
-			['Technical', 'Built Algorithm using CDC data to analyze patient health records and respond with necessary vaccines.'],
+			['Technical', 'Maintained HIPAA compliance for a public health application.'],
+			['Technical', 'Built algorithm with CDC information to analyze patient health records.'],
 			['Technical', 'Built a Clinical Decision Support for Immunizations web application to evaluate vaccine records.'],
-			['Technical', 'Built the core pricing and purchasing APIs for Flyr\'s "FareKeep", a flight insurance product.'],
 			['Technical', 'Integrated 3rd party, legacy airline pricing XML APIs into our APIs using Python.'],
 			['Leadership', 'Created onboarding process at Flyr to integrate new hires into the engineering as we grew from 2 to 7.'],
 			['Leadership', 'Wrote and completed technical interview for engineering candidates at Flyer.'],
 			['Leadership', 'Co-founding Board Member and elected Board Vice President of non-profit community sailing center.'],
 			['Mentorship', 'Taught coding afterschool program for students from under-represented communities in technology.'],
 			['Mentorship', 'Advise Code for Brazil on iterative building, government partnerships and stakeholder management.'],
-			['Technical', <a href="https://codeforamerica.org">2016 Code for America Engineering Fellow</a>]
 	  ]
 	  var iconDict = {
 	  	Technical: 'fa-laptop',
-	  	Mentorship: 'fa-handshake-o',
+	  	// Mentorship: 'fa-handshake-o',
+	  	Mentorship: 'fa-graduation-cap',
 	  	Leadership: 'fa-users',
 	  	Awards: 'fa-star'
 	  }
@@ -32,7 +31,7 @@ export default React.createClass({
 	  	Mentorship: []
 	  }
 	  for (var i=0; i < aboutList.length; i++) {
-	  	var item = <li key={[i]}>{aboutList[i][1]}</li>
+	  	var item = <li key={[i]}><i className="fa fa-angle-double-right" aria-hidden="true"/>&nbsp;&nbsp;{aboutList[i][1]}</li>
 	  	switch (aboutList[i][0]) {
 	  		case 'Technical':
 	  			cardDict['Technical'].push(item);
@@ -78,7 +77,6 @@ export default React.createClass({
 							<p>Specializing in Ruby, Python and React.</p>
 							<p>Active teacher and mentor.</p>
 							<p>Fluent in Spanish.</p>
-							
 						</div>
 					</div>
 				</div>
@@ -91,13 +89,25 @@ export default React.createClass({
 					</div>
 					<div className="awards-container">
 						<div className="award-item">
+							<h5>Code for America Fellowship</h5>
+							<p>2016 Engineering Fellow</p>
+							<div className="chime-tweet">
+								<TweetEmbed id='684781001101414400'></TweetEmbed>
+							</div>
+							<p>Less than 2% of applicants are accepted</p>
+							<p><Link href="https://www.codeforamerica.org">Code for America</Link>, 2016</p>
+							<p><Link href="http://archive.codeforamerica.org/about/fellowship/">More Information</Link></p>
+						</div>
+						<div className="award-item safebridge">
 							<h5>Best Product for Incubation</h5>
 							<p>Awarded for 'SafeBridge'</p>
 							<div className="chime-tweet">
 								<TweetEmbed id='620390041789968385'></TweetEmbed>
 							</div>
-							<p>Presented by Hearst Magazines and Twitter</p>
-							<p><Link href="http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/">ChimeHack2</Link>, 2015</p>
+							<p>Presented by <Link href="https://www.hearst.com/">Hearst Magazines</Link> and <Link href="https://twitter.com/">Twitter</Link></p>
+							<p><Link href="https://www.youtube.com/watch?v=PzbminSEayU">ChimeHack2</Link>, 2015</p>
+							<p><Link href="http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/">More Information</Link></p>
+
 						</div>
 						<div className="award-item">
 							<h5>Best Product</h5>
@@ -105,9 +115,9 @@ export default React.createClass({
 							<div className="chime-tweet">
 								<TweetEmbed id='409531616990478336'></TweetEmbed>
 							</div>
-							<p>Presented by Chime for Change and Twitter</p>
+							<p>Presented by <Link href="http://www.chimeforchange.org/">Chime for Change</Link> and <Link href="https://twitter.com/">Twitter</Link></p>
 							<p><Link href="https://www.youtube.com/watch?v=WpHRSi0JFKY">ChimeHack</Link>, 2013</p>
-							<p>https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue</p>
+							<p><Link href="https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue">More Information</Link></p>
 						</div>
 					</div>
 				</div>

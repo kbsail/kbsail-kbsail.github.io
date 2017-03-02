@@ -1,6 +1,26 @@
-    // overflow: hidden;
-    // /* height: 800px; */
-    // margin-top: -66.844px
+// .safebridge {
+//   .MediaCard.customisable-border {
+//     overflow: hidden;
+//     height: 195.156px;
+//     margin-top: -66.844px;
+//   }
+// }
+
+// #twitter-widget-0 {
+//   article.MediaCard.MediaCard--mediaForward.customisable-border {
+//     min-height: 1000px !important;
+//   }
+// }
+
+#twitter-widget-1::shadow .EmbeddedTweet {
+  img.NaturalImage-image {
+    overflow: hidden;
+    margin-top: -66.844px;
+  }
+  .MediaCard-media {
+    max-height: 197.156px;
+  }
+}
 
 // ###
 // # Variable Declarations
@@ -336,11 +356,12 @@ li {
 // # Award Item
 // ###
 .award-item {
-  flex-basis: 40%;
+  flex-basis: 30%;
   background-color: $back-white;
   box-shadow: $border-shade 0px 0px 6px;
   border-radius: .3rem;
   margin: 20px;
+  padding-top: 1.5rem;
 
   p, h5 {
     text-align: center;
