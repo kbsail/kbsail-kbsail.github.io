@@ -27349,15 +27349,6 @@
 	          null,
 	          _react2.default.createElement(
 	            _NavLink2.default,
-	            { to: '/about' },
-	            'About'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            _NavLink2.default,
 	            { to: '/projects' },
 	            'Projects'
 	          )
@@ -29746,12 +29737,12 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var PROJECTS = exports.PROJECTS = [{ id: 0, type: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' }, { id: 1, type: 'Workshop', title: 'Technical Talent Initiative', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' }, { id: 2, type: 'Content', title: 'Hiring a Digital Services Team', description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' }, { id: 3, type: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' }, { id: 4, type: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' }, { id: 5, type: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }];
+	var PROJECTS = exports.PROJECTS = [{ id: 0, link: 'hi', github: 'bye', subtitle: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' }, { id: 1, link: '', github: '', subtitle: 'Workshop', title: 'Technical Talent Initiative', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' }, { id: 2, link: '', github: '', subtitle: 'Content', title: 'Hiring a Digital Services Team', description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' }, { id: 3, link: '', github: '', subtitle: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' }, { id: 4, link: '', github: '', subtitle: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' }, { id: 5, link: '', github: '', subtitle: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }];
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
 	  render: function render() {
-	    var _this = this;
+	    var linkText = '';
 
 	    return _react2.default.createElement(
 	      'div',
@@ -29764,15 +29755,15 @@
 	          return _react2.default.createElement(
 	            _reactRouter.Link,
 	            {
+	              className: 'project-container',
 	              key: project.id,
 	              to: {
-	                pathname: '/projects/' + project.id,
-	                state: { modal: true, returnTo: _this.props.location.pathname }
+	                pathname: '/projects/' + project.id
 	              }
 	            },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'project-container' },
+	              { className: 'project-details' },
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'project-title' },
@@ -29780,9 +29771,13 @@
 	                  'h5',
 	                  null,
 	                  project.title
+	                ),
+	                _react2.default.createElement(
+	                  'h6',
+	                  null,
+	                  project.subtitle
 	                )
 	              ),
-	              _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0 10px', borderRadius: '3px' }, src: project.src }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'project-description' },
@@ -29791,7 +29786,23 @@
 	                  null,
 	                  project.description
 	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'project-links' },
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  project.link ? 'Live: ' + project.link + '     ' : '',
+	                  '\xA0 \xA0 \xA0',
+	                  project.github ? 'Github: ' + project.github + '     ' : ''
+	                )
 	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'project-image' },
+	              _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0' }, src: project.src })
 	            )
 	          );
 	        })
