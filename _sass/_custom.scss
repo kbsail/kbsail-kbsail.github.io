@@ -102,6 +102,25 @@ li {
 }
 
 // ###
+// # Profile
+// ###
+.mini-profile {
+  clear: both;
+  font-family: 'alright-sans', sans-serif;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  float: none;
+  width: 80%;
+  flex-wrap: nowrap !important;
+
+  p {
+    margin: 0 auto;
+  }
+}
+
+// ###
 // # Front Page
 // ###
 .front-page {
@@ -416,13 +435,6 @@ li {
   }
 }
 
-// ###
-// # Mini Profile
-// ###
-.mini-profile {
-  width: 100%;
-}
-
 
 .my-skills {
   h4 {
@@ -607,17 +619,6 @@ li {
     //   max-width: 100%;
     // }
   }
-
-
-  // ###
-  // # Mini Profile
-  // ###
-  .mini-profile {
-    width: 80%;
-    flex-wrap: nowrap;
-  }
-
-
 
   .grid {
     align-items: flex-start;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import SideBar from './SideBar'
+import Profile from './Profile'
 import Footer from './Footer'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import NotFound from './NotFound';
@@ -44,6 +45,7 @@ export default React.createClass({
     return (
       <div className="react-container">
         {headerContent}
+        <Profile/>
         <div className={mainPageClasses}>
           {this.props.children}
           <Footer/>

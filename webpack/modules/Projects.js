@@ -43,3 +43,44 @@ export default React.createClass({
     )
   }
 })
+
+// <p>Formerly of <OutsideLink to="https://codeforamerica.org" alt="Code for America">Code for America</OutsideLink> & <OutsideLink to="https://flyrlabs.com" alt="FlyrLabs">FlyrLabs</OutsideLink>.</p>
+// <p>Mentorship with <OutsideLink to="https://missionbit.org" alt="MissionBit">MissionBit</OutsideLink>.</p>
+        // <div className="awards">
+        //   <div className="awards-title">
+        //     <i className="fa fa-2x fa-star" aria-hidden="true" /><h2>Honors and Awards</h2>
+        //   </div>
+        //   <div className="awards-container">
+        //     <div className="award-item">
+        //       <h5>Code for America Fellowship</h5>
+        //       <p>2016 Engineering Fellow</p>
+        //       <div className="chime-tweet">
+        //         <TweetEmbed id='684781001101414400'></TweetEmbed>
+        //       </div>
+        //       <p>Less than 2% of applicants are accepted</p>
+        //       <p><Link href="https://www.codeforamerica.org">Code for America</Link>, 2016</p>
+        //       <p><Link href="http://archive.codeforamerica.org/about/fellowship/">More Information</Link></p>
+        //     </div>
+        //     <div className="award-item safebridge">
+        //       <h5>Best Product for Incubation</h5>
+        //       <p>Awarded for 'SafeBridge'</p>
+        //       <div className="chime-tweet">
+        //         <TweetEmbed id='620390041789968385'></TweetEmbed>
+        //       </div>
+        //       <p>Presented by <Link href="https://www.hearst.com/">Hearst Magazines</Link> and <Link href="https://twitter.com/">Twitter</Link></p>
+        //       <p><Link href="https://www.youtube.com/watch?v=PzbminSEayU">ChimeHack2</Link>, 2015</p>
+        //       <p><Link href="http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/">More Information</Link></p>
+
+        //     </div>
+        //     <div className="award-item">
+        //       <h5>Best Product</h5>
+        //       <p>Awarded for 'ReSound'</p>
+        //       <div className="chime-tweet">
+        //         <TweetEmbed id='409531616990478336'></TweetEmbed>
+        //       </div>
+        //       <p>Presented by <Link href="http://www.chimeforchange.org/">Chime for Change</Link> and <Link href="https://twitter.com/">Twitter</Link></p>
+        //       <p><Link href="https://www.youtube.com/watch?v=WpHRSi0JFKY">ChimeHack</Link>, 2013</p>
+        //       <p><Link href="https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue">More Information</Link></p>
+        //     </div>
+        //   </div>
+        // </div>
