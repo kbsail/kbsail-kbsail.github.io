@@ -6,7 +6,8 @@ import OutsideLink from './OutsideLink.js'
 function Home() {
     return (
         <div className="about-page">
-            <h1>New Content</h1>            
+            <h1>About</h1>
+            <p>I am a web developer passionate about user centered design, mentoring and teaching.</p>
         </div>
     )
 }

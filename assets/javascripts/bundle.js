@@ -27173,19 +27173,19 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Projects = __webpack_require__(264);
+	var _Projects = __webpack_require__(263);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _ProjectsContainer = __webpack_require__(265);
+	var _ProjectsContainer = __webpack_require__(264);
 
 	var _ProjectsContainer2 = _interopRequireDefault(_ProjectsContainer);
 
-	var _Project = __webpack_require__(267);
+	var _Project = __webpack_require__(266);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Home = __webpack_require__(268);
+	var _Home = __webpack_require__(267);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -27200,7 +27200,6 @@
 	    _reactRouter.Route,
 	    { path: '/', component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
 	    _react2.default.createElement(
 	      _reactRouter.Route,
 	      { path: '/projects', component: _ProjectsContainer2.default },
@@ -29727,8 +29726,7 @@
 	"use strict";
 
 /***/ },
-/* 263 */,
-/* 264 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29844,7 +29842,7 @@
 	// </div>
 
 /***/ },
-/* 265 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29857,7 +29855,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Modal = __webpack_require__(266);
+	var _Modal = __webpack_require__(265);
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -29901,7 +29899,7 @@
 	});
 
 /***/ },
-/* 266 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29952,7 +29950,7 @@
 	});
 
 /***/ },
-/* 267 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29965,7 +29963,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Projects = __webpack_require__(264);
+	var _Projects = __webpack_require__(263);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29991,7 +29989,7 @@
 	});
 
 /***/ },
-/* 268 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30004,7 +30002,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SocialLinks = __webpack_require__(269);
+	var _SocialLinks = __webpack_require__(268);
 
 	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
 
@@ -30021,14 +30019,19 @@
 	        _react2.default.createElement(
 	            'h1',
 	            null,
-	            'New Content'
+	            'About'
+	        ),
+	        _react2.default.createElement(
+	            'p',
+	            null,
+	            'I am a web developer passionate about user centered design, mentoring and teaching.'
 	        )
 	    );
 	} // modules/Home.js
 	exports.default = Home;
 
 /***/ },
-/* 269 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30041,7 +30044,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SocialLink = __webpack_require__(270);
+	var _SocialLink = __webpack_require__(269);
 
 	var _SocialLink2 = _interopRequireDefault(_SocialLink);
 
@@ -30063,7 +30066,7 @@
 	});
 
 /***/ },
-/* 270 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

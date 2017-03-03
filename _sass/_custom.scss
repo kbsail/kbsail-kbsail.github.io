@@ -107,13 +107,14 @@ li {
 .mini-profile {
   clear: both;
   font-family: 'alright-sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0 auto;
   text-align: center;
   display: block;
   float: none;
   width: 80%;
   flex-wrap: nowrap !important;
+  line-height: 150%;
 
   p {
     margin: 0 auto;
@@ -434,23 +435,6 @@ li {
     line-height: 1.5em;
   }
 }
-
-
-.my-skills {
-  h4 {
-    margin: 0 auto;
-    text-decoration: underline;
-  }
-
-  ul {
-    margin-top: 0;
-
-    li {
-      line-height: 120%;
-    }
-  }
-}
-
 
 // Info Section
 
