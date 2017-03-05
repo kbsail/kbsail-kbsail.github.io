@@ -61,6 +61,26 @@ export const PROJECTS = [
     title: 'ReqCheck Extractor',
     description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
     img: ''
+  },
+  { 
+    id: 6,
+    link: '',
+    live: '',
+    github: '',
+    subtitle: 'Award',
+    title: 'ChimeHack2',
+    description: 'Best product',
+    img: ''
+  },
+  {
+    id: 7,
+    link: '',
+    live: '',
+    github: '',
+    subtitle: 'Award',
+    title: 'ChimeHack',
+    description: 'Best product',
+    img: ''
   }
 ]
 
