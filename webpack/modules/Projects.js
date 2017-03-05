@@ -4,15 +4,74 @@ import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router'
 
 
 export const PROJECTS = [
-  { id: 0, link: 'hi', github: 'bye', subtitle: 'Coding', title: 'ReqCheck', description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record', src: '../assets/img/ReqCheckWeb.png' },
-  { id: 1, link: '', github: '', subtitle: 'Workshop', title: 'Technical Talent Initiative', description: 'Co-facilitated a workshop at the 2016 Code for America Summit', src: '../assets/img/TalentWorkshop.jpg' },
-  { id: 2, link: '', github: '', subtitle: 'Content', title: 'Hiring a Digital Services Team', description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team', src: '../assets/img/CreatingADigitalServicesTeam.png' },
-  { id: 3, link: '', github: '', subtitle: 'Coding', title: 'Flyr FairKeep Pricing APIs ', description: 'Built pricing and purchasing APIs for core product', src: '../assets/img/GetFlyrWeb.png' },
-  { id: 4, link: '', github: '', subtitle: 'Workshop', title: 'Code for Brazil', description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design', src: '../assets/img/CforBrazil.png' },
-  { id: 5, link: '', github: '', subtitle: 'Coding', title: 'ReqCheck Extractor', description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database', src: '../assets/img/ReqCheckExtractorWeb.png' }
+  {
+    id: 0,
+    link: '',
+    live: 'http://reqcheck.healthkc.org',
+    github: 'https://github.com/codeforamerica/ReqCheck',
+    subtitle: 'Coding',
+    title: 'ReqCheck',
+    description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
+    img: '../assets/img/ReqCheckWeb.png'
+  },
+  {
+    id: 1,
+    link: 'https://www.codeforamerica.org/summit/workshops/#1955',
+    live: '',
+    github: '',
+    subtitle: 'Workshop',
+    title: 'Technical Talent Initiative',
+    description: 'Co-facilitated a workshop at the 2016 Code for America Summit',
+    img: '../assets/img/TalentWorkshop.jpg'
+  },
+  {
+    id: 2,
+    link: '',
+    live: '',
+    github: '',
+    subtitle: 'Content',
+    title: 'Hiring a Digital Services Team',
+    description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
+    img: '' },
+  { 
+    id: 3,
+    link: '',
+    live: '',
+    github: '',
+    subtitle: 'Coding',
+    title: 'Flyr FairKeep Pricing APIs ',
+    description: 'Built pricing and purchasing APIs for core product',
+    img: '../assets/img/GetFlyrWeb.png' },
+  { 
+    id: 4,
+    link: '',
+    live: '',
+    github: '',
+    subtitle: 'Workshop',
+    title: 'Code for Brazil',
+    description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design',
+    img: '../assets/img/CforBrazil.png'
+  },
+  {
+    id: 5,
+    link: '',
+    live: '',
+    github: '',
+    subtitle: 'Coding',
+    title: 'ReqCheck Extractor',
+    description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
+    img: ''
+  }
 ]
 
 export default React.createClass({
+  bindProjectClick(projectID) {
+    function handleProjectClick(e) {
+      e.stopPropagation();
+      window.location = `/projects/${projectID}`
+    }
+    return handleProjectClick
+  },
   render() {
     var linkText = ''
     
@@ -22,9 +81,11 @@ export default React.createClass({
         </div>
         <div className="projects-row">
           {PROJECTS.map(project => (  
-            <Link
+            <div
               className="project-container"
               key={project.id}
+              style={{cursor: "pointer"}}
+              onClick={this.bindProjectClick(project.id)}
               to={{
                 pathname: `/projects/${project.id}`
               }}
@@ -38,23 +99,23 @@ export default React.createClass({
                   <p>{project.description}</p>
                 </div>
                 <div className="project-links">
-                  <p>
-                    {
-                      project.link ? `Live: ${project.link}     ` : ''
-                    }
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    {
-                      project.github ? `Github: ${project.github}     ` : ''
-                    }
-                  </p>
+                  {
+                    project.live ? <Link href={`${project.live}`} target="_blank">Live</Link> : <div/>
+                  }
+                  {
+                    project.link ? <Link href={`${project.link}`} target="_blank">Info</Link> : <div/>
+                  }
+                  {
+                    project.github ? <Link href={`Github: ${project.github}`} target="_blank">Github</Link>: ''
+                  }
                 </div>
               </div>
               <div className="project-image">
-                <img className="responsive-image" style={{ margin: '0' }} src={project.src} />
+                {
+                  project.img ? <img className="responsive-image" style={{ margin: '0' }} src={project.img} /> : <div/>
+                }
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
