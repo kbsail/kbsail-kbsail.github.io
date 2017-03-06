@@ -29725,18 +29725,18 @@
 
 	var PROJECTS = exports.PROJECTS = [{
 	  id: 0,
-	  link: '',
+	  info: '',
 	  live: 'http://reqcheck.healthkc.org',
 	  title: 'ReqCheck',
 	  github: 'https://github.com/codeforamerica/ReqCheck',
 	  languages: 'Ruby, Rails, PostgreSQL, Docker',
 	  role: 'Sole Developer',
-	  type: 'Coding Project',
+	  type: 'Technical Project',
 	  description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
 	  img: '../assets/img/ReqCheckWeb.png'
 	}, {
 	  id: 1,
-	  link: 'https://www.codeforamerica.org/summit/workshops/#1955',
+	  info: 'https://www.codeforamerica.org/summit/workshops/#1955',
 	  live: '',
 	  github: '',
 	  role: 'Co-Leader',
@@ -29746,7 +29746,7 @@
 	  img: '../assets/img/TalentWorkshop.jpg'
 	}, {
 	  id: 2,
-	  link: '',
+	  info: '',
 	  live: '',
 	  github: '',
 	  role: 'Consultant',
@@ -29756,16 +29756,17 @@
 	  description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
 	  img: '' }, {
 	  id: 3,
-	  link: '',
-	  live: '',
+	  info: '',
+	  website: 'http://flyrlabs.com/',
 	  github: '',
 	  role: 'Software Engineer',
-	  type: 'Coding Project',
+	  type: 'Technical Project',
 	  title: 'Flyr FairKeep Pricing APIs ',
 	  description: 'Built pricing and purchasing APIs for core product',
 	  img: '../assets/img/GetFlyrWeb.png' }, {
 	  id: 4,
-	  link: '',
+	  info: '',
+	  website: 'http://www.openbrazil.org/',
 	  live: '',
 	  github: '',
 	  role: 'Advisor',
@@ -29775,17 +29776,17 @@
 	  img: '../assets/img/CforBrazil.png'
 	}, {
 	  id: 5,
-	  link: '',
+	  info: '',
 	  live: '',
-	  github: '',
+	  github: 'https://github.com/lostmarinero/reqcheck-extractor-readme',
 	  role: 'Sole Developer',
-	  type: 'Coding Project',
+	  type: 'Technical Project',
 	  title: 'ReqCheck Extractor',
 	  description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
 	  img: ''
 	}, {
 	  id: 6,
-	  link: '',
+	  info: '',
 	  live: '',
 	  github: '',
 	  role: 'Web Developer',
@@ -29795,7 +29796,7 @@
 	  img: ''
 	}, {
 	  id: 7,
-	  link: '',
+	  info: '',
 	  live: '',
 	  github: '',
 	  role: 'Web Developer',
@@ -29839,22 +29840,13 @@
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'project-description' },
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  project.description
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
 	                { className: 'project-skills' },
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  project.role,
+	                  project.type,
 	                  ', ',
-	                  project.type
+	                  project.role
 	                ),
 	                _react2.default.createElement(
 	                  'p',
@@ -29864,15 +29856,29 @@
 	              ),
 	              _react2.default.createElement(
 	                'div',
+	                { className: 'project-description' },
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  project.description
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
 	                { className: 'project-links' },
+	                project.website ? _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { href: '' + project.website, target: '_blank' },
+	                  'Website'
+	                ) : _react2.default.createElement('div', null),
 	                project.live ? _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { href: '' + project.live, target: '_blank' },
 	                  'Live'
 	                ) : _react2.default.createElement('div', null),
-	                project.link ? _react2.default.createElement(
+	                project.info ? _react2.default.createElement(
 	                  _reactRouter.Link,
-	                  { href: '' + project.link, target: '_blank' },
+	                  { href: '' + project.info, target: '_blank' },
 	                  'Info'
 	                ) : _react2.default.createElement('div', null),
 	                project.github ? _react2.default.createElement(

@@ -369,6 +369,10 @@ a, a:visited, a:hover, a:active {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+
+  p {
+    font-size: .6em !important;
+  }
 }
 
 // ###

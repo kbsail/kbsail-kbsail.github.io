@@ -6,19 +6,19 @@ import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router'
 export const PROJECTS = [
   {
     id: 0,
-    link: '',
+    info: '',
     live: 'http://reqcheck.healthkc.org',
     title: 'ReqCheck',
     github: 'https://github.com/codeforamerica/ReqCheck',
     languages: 'Ruby, Rails, PostgreSQL, Docker',
     role: 'Sole Developer',
-    type: 'Coding Project',
+    type: 'Technical Project',
     description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
     img: '../assets/img/ReqCheckWeb.png'
   },
   {
     id: 1,
-    link: 'https://www.codeforamerica.org/summit/workshops/#1955',
+    info: 'https://www.codeforamerica.org/summit/workshops/#1955',
     live: '',
     github: '',
     role: 'Co-Leader',
@@ -29,7 +29,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    link: '',
+    info: '',
     live: '',
     github: '',
     role: 'Consultant',
@@ -40,17 +40,18 @@ export const PROJECTS = [
     img: '' },
   { 
     id: 3,
-    link: '',
-    live: '',
+    info: '',
+    website: 'http://flyrlabs.com/',
     github: '',
     role: 'Software Engineer',
-    type: 'Coding Project',
+    type: 'Technical Project',
     title: 'Flyr FairKeep Pricing APIs ',
     description: 'Built pricing and purchasing APIs for core product',
     img: '../assets/img/GetFlyrWeb.png' },
   { 
     id: 4,
-    link: '',
+    info: '',
+    website: 'http://www.openbrazil.org/',
     live: '',
     github: '',
     role: 'Advisor',
@@ -61,18 +62,18 @@ export const PROJECTS = [
   },
   {
     id: 5,
-    link: '',
+    info: '',
     live: '',
-    github: '',
+    github: 'https://github.com/lostmarinero/reqcheck-extractor-readme',
     role: 'Sole Developer',
-    type: 'Coding Project',
+    type: 'Technical Project',
     title: 'ReqCheck Extractor',
     description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
     img: ''
   },
   { 
     id: 6,
-    link: '',
+    info: '',
     live: '',
     github: '',
     role: 'Web Developer',
@@ -83,7 +84,7 @@ export const PROJECTS = [
   },
   {
     id: 7,
-    link: '',
+    info: '',
     live: '',
     github: '',
     role: 'Web Developer',
@@ -113,23 +114,26 @@ export default React.createClass({
                 <div className="project-title">
                   <h4>{project.title}</h4>
                 </div>
-                <div className="project-description">
-                  <p>{project.description}</p>
-                </div>
                 <div className="project-skills">
-                  <p>{project.role}, {project.type}</p>
+                  <p>{project.type}, {project.role}</p>
                   <p>
                     {
                       project.languages ? project.languages : ''
                     }
                   </p>
                 </div>
+                <div className="project-description">
+                  <p>{project.description}</p>
+                </div>
                 <div className="project-links">
+                  {
+                    project.website ? <Link href={`${project.website}`} target="_blank">Website</Link> : <div/>
+                  }
                   {
                     project.live ? <Link href={`${project.live}`} target="_blank">Live</Link> : <div/>
                   }
                   {
-                    project.link ? <Link href={`${project.link}`} target="_blank">Info</Link> : <div/>
+                    project.info ? <Link href={`${project.info}`} target="_blank">Info</Link> : <div/>
                   }
                   {
                     project.github ? <Link href={`${project.github}`} target="_blank">Github</Link>: ''
