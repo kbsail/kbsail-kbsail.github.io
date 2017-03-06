@@ -8,9 +8,11 @@ export const PROJECTS = [
     id: 0,
     link: '',
     live: 'http://reqcheck.healthkc.org',
-    github: 'https://github.com/codeforamerica/ReqCheck',
-    subtitle: 'Coding',
     title: 'ReqCheck',
+    github: 'https://github.com/codeforamerica/ReqCheck',
+    languages: 'Ruby, Rails, PostgreSQL, Docker',
+    role: 'Sole Developer',
+    type: 'Coding Project',
     description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
     img: '../assets/img/ReqCheckWeb.png'
   },
@@ -19,7 +21,8 @@ export const PROJECTS = [
     link: 'https://www.codeforamerica.org/summit/workshops/#1955',
     live: '',
     github: '',
-    subtitle: 'Workshop',
+    role: 'Co-Leader',
+    type: 'Professional Workshop',
     title: 'Technical Talent Initiative',
     description: 'Co-facilitated a workshop at the 2016 Code for America Summit',
     img: '../assets/img/TalentWorkshop.jpg'
@@ -29,6 +32,8 @@ export const PROJECTS = [
     link: '',
     live: '',
     github: '',
+    role: 'Consultant',
+    type: 'Hiring Initiative',
     subtitle: 'Content',
     title: 'Hiring a Digital Services Team',
     description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
@@ -38,7 +43,8 @@ export const PROJECTS = [
     link: '',
     live: '',
     github: '',
-    subtitle: 'Coding',
+    role: 'Software Engineer',
+    type: 'Coding Project',
     title: 'Flyr FairKeep Pricing APIs ',
     description: 'Built pricing and purchasing APIs for core product',
     img: '../assets/img/GetFlyrWeb.png' },
@@ -47,7 +53,8 @@ export const PROJECTS = [
     link: '',
     live: '',
     github: '',
-    subtitle: 'Workshop',
+    role: 'Advisor',
+    type: 'Professional Workshop',
     title: 'Code for Brazil',
     description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design',
     img: '../assets/img/CforBrazil.png'
@@ -57,7 +64,8 @@ export const PROJECTS = [
     link: '',
     live: '',
     github: '',
-    subtitle: 'Coding',
+    role: 'Sole Developer',
+    type: 'Coding Project',
     title: 'ReqCheck Extractor',
     description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
     img: ''
@@ -67,8 +75,9 @@ export const PROJECTS = [
     link: '',
     live: '',
     github: '',
-    subtitle: 'Award',
-    title: 'ChimeHack2',
+    role: 'Web Developer',
+    type: 'Hackathon',
+    title: 'ChimeHack2 Best Product for Innovation',
     description: 'Best product',
     img: ''
   },
@@ -77,21 +86,15 @@ export const PROJECTS = [
     link: '',
     live: '',
     github: '',
-    subtitle: 'Award',
-    title: 'ChimeHack',
+    role: 'Web Developer',
+    type: 'Hackathon',
+    title: 'ChimeHack Best Product',
     description: 'Best product',
     img: ''
   }
 ]
 
 export default React.createClass({
-  bindProjectClick(projectID) {
-    function handleProjectClick(e) {
-      e.stopPropagation();
-      window.location = `/projects/${projectID}`
-    }
-    return handleProjectClick
-  },
   render() {
     var linkText = ''
     
@@ -101,22 +104,25 @@ export default React.createClass({
         </div>
         <div className="projects-row">
           {PROJECTS.map(project => (  
-            <div
+            <a
               className="project-container"
               key={project.id}
-              style={{cursor: "pointer"}}
-              onClick={this.bindProjectClick(project.id)}
-              to={{
-                pathname: `/projects/${project.id}`
-              }}
+              href={`/projects/${project.id}`}
             >
               <div className="project-details">
                 <div className="project-title">
-                  <h5>{project.title}</h5>
-                  <h6>{project.subtitle}</h6>
+                  <h4>{project.title}</h4>
                 </div>
                 <div className="project-description">
                   <p>{project.description}</p>
+                </div>
+                <div className="project-skills">
+                  <p>{project.role}, {project.type}</p>
+                  <p>
+                    {
+                      project.languages ? project.languages : ''
+                    }
+                  </p>
                 </div>
                 <div className="project-links">
                   {
@@ -126,7 +132,7 @@ export default React.createClass({
                     project.link ? <Link href={`${project.link}`} target="_blank">Info</Link> : <div/>
                   }
                   {
-                    project.github ? <Link href={`Github: ${project.github}`} target="_blank">Github</Link>: ''
+                    project.github ? <Link href={`${project.github}`} target="_blank">Github</Link>: ''
                   }
                 </div>
               </div>
@@ -135,7 +141,7 @@ export default React.createClass({
                   project.img ? <img className="responsive-image" style={{ margin: '0' }} src={project.img} /> : <div/>
                 }
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

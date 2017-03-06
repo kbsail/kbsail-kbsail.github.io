@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import OutsideLink from './OutsideLink'
 
 function Footer() {
@@ -7,7 +8,7 @@ function Footer() {
       <br/>
       <div className="reach-out">
         <div id="hello" className="alinks">
-          <p>Currently accepting proposals for freelance projects. To inquire, please reach out at <span className="bold-heavy">berry.kevinw</span> at <span className="bold-heavy">gmail.com</span> or <OutsideLink href="http://www.twitter.com/lostmarinero" alt="lostmarinero twitter">@lostmarinero</OutsideLink>.</p>
+          <p>Currently accepting proposals for freelance projects. To inquire, email <Link href="mailto:berry.kevinw@gmail.com">berry.kevinw@gmail.com</Link> or tweet <OutsideLink href="http://www.twitter.com/lostmarinero" alt="lostmarinero twitter">@lostmarinero</OutsideLink>.</p>
         </div>
       </div>
     </div>

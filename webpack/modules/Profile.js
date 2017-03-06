@@ -19,8 +19,6 @@ export default React.createClass({
           <div>
             <p>Web developer passionate about user centered design.</p>
             <p>Specializing in Ruby, Python and React.</p>
-            <p>Active teacher and mentor.</p>
-            <p>Fluent in Spanish.</p>
           </div>
         </div>
       </div>

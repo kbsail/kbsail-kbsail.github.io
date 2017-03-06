@@ -27457,16 +27457,6 @@
 	            'p',
 	            null,
 	            'Specializing in Ruby, Python and React.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Active teacher and mentor.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Fluent in Spanish.'
 	          )
 	        )
 	      )
@@ -27488,6 +27478,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(178);
+
 	var _OutsideLink = __webpack_require__(247);
 
 	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
@@ -27508,19 +27500,13 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Currently accepting proposals for freelance projects. To inquire, please reach out at ',
+	          'Currently accepting proposals for freelance projects. To inquire, email ',
 	          _react2.default.createElement(
-	            'span',
-	            { className: 'bold-heavy' },
-	            'berry.kevinw'
+	            _reactRouter.Link,
+	            { href: 'mailto:berry.kevinw@gmail.com' },
+	            'berry.kevinw@gmail.com'
 	          ),
-	          ' at ',
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'bold-heavy' },
-	            'gmail.com'
-	          ),
-	          ' or ',
+	          ' or tweet ',
 	          _react2.default.createElement(
 	            _OutsideLink2.default,
 	            { href: 'http://www.twitter.com/lostmarinero', alt: 'lostmarinero twitter' },
@@ -29741,9 +29727,11 @@
 	  id: 0,
 	  link: '',
 	  live: 'http://reqcheck.healthkc.org',
-	  github: 'https://github.com/codeforamerica/ReqCheck',
-	  subtitle: 'Coding',
 	  title: 'ReqCheck',
+	  github: 'https://github.com/codeforamerica/ReqCheck',
+	  languages: 'Ruby, Rails, PostgreSQL, Docker',
+	  role: 'Sole Developer',
+	  type: 'Coding Project',
 	  description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
 	  img: '../assets/img/ReqCheckWeb.png'
 	}, {
@@ -29751,7 +29739,8 @@
 	  link: 'https://www.codeforamerica.org/summit/workshops/#1955',
 	  live: '',
 	  github: '',
-	  subtitle: 'Workshop',
+	  role: 'Co-Leader',
+	  type: 'Professional Workshop',
 	  title: 'Technical Talent Initiative',
 	  description: 'Co-facilitated a workshop at the 2016 Code for America Summit',
 	  img: '../assets/img/TalentWorkshop.jpg'
@@ -29760,6 +29749,8 @@
 	  link: '',
 	  live: '',
 	  github: '',
+	  role: 'Consultant',
+	  type: 'Hiring Initiative',
 	  subtitle: 'Content',
 	  title: 'Hiring a Digital Services Team',
 	  description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
@@ -29768,7 +29759,8 @@
 	  link: '',
 	  live: '',
 	  github: '',
-	  subtitle: 'Coding',
+	  role: 'Software Engineer',
+	  type: 'Coding Project',
 	  title: 'Flyr FairKeep Pricing APIs ',
 	  description: 'Built pricing and purchasing APIs for core product',
 	  img: '../assets/img/GetFlyrWeb.png' }, {
@@ -29776,7 +29768,8 @@
 	  link: '',
 	  live: '',
 	  github: '',
-	  subtitle: 'Workshop',
+	  role: 'Advisor',
+	  type: 'Professional Workshop',
 	  title: 'Code for Brazil',
 	  description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design',
 	  img: '../assets/img/CforBrazil.png'
@@ -29785,7 +29778,8 @@
 	  link: '',
 	  live: '',
 	  github: '',
-	  subtitle: 'Coding',
+	  role: 'Sole Developer',
+	  type: 'Coding Project',
 	  title: 'ReqCheck Extractor',
 	  description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
 	  img: ''
@@ -29794,8 +29788,9 @@
 	  link: '',
 	  live: '',
 	  github: '',
-	  subtitle: 'Award',
-	  title: 'ChimeHack2',
+	  role: 'Web Developer',
+	  type: 'Hackathon',
+	  title: 'ChimeHack2 Best Product for Innovation',
 	  description: 'Best product',
 	  img: ''
 	}, {
@@ -29803,24 +29798,16 @@
 	  link: '',
 	  live: '',
 	  github: '',
-	  subtitle: 'Award',
-	  title: 'ChimeHack',
+	  role: 'Web Developer',
+	  type: 'Hackathon',
+	  title: 'ChimeHack Best Product',
 	  description: 'Best product',
 	  img: ''
 	}];
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'Projects',
-	  bindProjectClick: function bindProjectClick(projectID) {
-	    function handleProjectClick(e) {
-	      e.stopPropagation();
-	      window.location = '/projects/' + projectID;
-	    }
-	    return handleProjectClick;
-	  },
 	  render: function render() {
-	    var _this = this;
-
 	    var linkText = '';
 
 	    return _react2.default.createElement(
@@ -29832,15 +29819,11 @@
 	        { className: 'projects-row' },
 	        PROJECTS.map(function (project) {
 	          return _react2.default.createElement(
-	            'div',
+	            'a',
 	            {
 	              className: 'project-container',
 	              key: project.id,
-	              style: { cursor: "pointer" },
-	              onClick: _this.bindProjectClick(project.id),
-	              to: {
-	                pathname: '/projects/' + project.id
-	              }
+	              href: '/projects/' + project.id
 	            },
 	            _react2.default.createElement(
 	              'div',
@@ -29849,14 +29832,9 @@
 	                'div',
 	                { className: 'project-title' },
 	                _react2.default.createElement(
-	                  'h5',
+	                  'h4',
 	                  null,
 	                  project.title
-	                ),
-	                _react2.default.createElement(
-	                  'h6',
-	                  null,
-	                  project.subtitle
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -29866,6 +29844,22 @@
 	                  'p',
 	                  null,
 	                  project.description
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'project-skills' },
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  project.role,
+	                  ', ',
+	                  project.type
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  project.languages ? project.languages : ''
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -29883,7 +29877,7 @@
 	                ) : _react2.default.createElement('div', null),
 	                project.github ? _react2.default.createElement(
 	                  _reactRouter.Link,
-	                  { href: 'Github: ' + project.github, target: '_blank' },
+	                  { href: '' + project.github, target: '_blank' },
 	                  'Github'
 	                ) : ''
 	              )
@@ -30122,9 +30116,23 @@
 	            'About'
 	        ),
 	        _react2.default.createElement(
-	            'p',
+	            'div',
 	            null,
-	            'I am a web developer passionate about user centered design, mentoring and teaching.'
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'I am a web developer passionate about user centered design, mentoring and teaching.'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Active teacher and mentor.'
+	            ),
+	            _react2.default.createElement(
+	                'p',
+	                null,
+	                'Fluent in Spanish.'
+	            )
 	        )
 	    );
 	} // modules/Home.js
