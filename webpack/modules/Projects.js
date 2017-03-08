@@ -16,19 +16,30 @@ export const PROJECTS = [
     description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
     img: '../assets/img/ReqCheckWeb.png'
   },
-  {
+  { 
     id: 1,
+    info: '',
+    website: 'http://flyrlabs.com/',
+    github: '',
+    role: 'Software Engineer',
+    type: 'Technical Project',
+    title: 'Flyr FairKeep Pricing APIs ',
+    description: 'Built pricing and purchasing APIs for core product',
+    img: '../assets/img/GetFlyrWeb.png'
+  },
+  {
+    id: 2,
     info: 'https://www.codeforamerica.org/summit/workshops/#1955',
     live: '',
     github: '',
     role: 'Co-Leader',
     type: 'Professional Workshop',
     title: 'Technical Talent Initiative',
-    description: 'Co-facilitated a workshop at the 2016 Code for America Summit',
-    img: '../assets/img/TalentWorkshop.jpg'
+    description: 'Led a professional development workshop, "Hiring and retaining technical talent", at the 2016 Code for America Summit',
+    img: '../assets/img/TalentWorkshop.JPG'
   },
   {
-    id: 2,
+    id: 3,
     info: '',
     live: 'https://drive.google.com/file/d/0B1NiEZqYOerQV0lJMHVIa3J0N2s/view',
     github: '',
@@ -39,19 +50,19 @@ export const PROJECTS = [
     description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
     img: '../assets/img/CreatingADigitalServicesTeam.png'
   },
-  { 
-    id: 3,
+  {
+    id: 4,
     info: '',
-    website: 'http://flyrlabs.com/',
-    github: '',
-    role: 'Software Engineer',
+    live: '',
+    github: 'https://github.com/lostmarinero/reqcheck-extractor-readme',
+    role: 'Sole Developer',
     type: 'Technical Project',
-    title: 'Flyr FairKeep Pricing APIs ',
-    description: 'Built pricing and purchasing APIs for core product',
-    img: '../assets/img/GetFlyrWeb.png'
+    title: 'ReqCheck Extractor',
+    description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
+    img: ''
   },
   { 
-    id: 4,
+    id: 5,
     info: '',
     website: 'http://www.openbrazil.org/',
     live: '',
@@ -61,17 +72,6 @@ export const PROJECTS = [
     title: 'Code for Brazil',
     description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design',
     img: '../assets/img/CforBrazil.png'
-  },
-  {
-    id: 5,
-    info: '',
-    live: '',
-    github: 'https://github.com/lostmarinero/reqcheck-extractor-readme',
-    role: 'Sole Developer',
-    type: 'Technical Project',
-    title: 'ReqCheck Extractor',
-    description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
-    img: ''
   },
   { 
     id: 6,
@@ -83,7 +83,7 @@ export const PROJECTS = [
     languages: 'NodeJS with ExpressJS',
     type: 'Hackathon',
     title: 'Best Product for Innovation',
-    description: 'Winner of #ChimeHack2\'s Best Product for Innovation for the application \'SafeBridge\'.',
+    description: 'Winner of #ChimeHack2 (2015), \'Best Product for Innovation\' for the application \'SafeBridge\'.',
     img: '../assets/img/chimehack1.jpg'
   },
   {
@@ -96,7 +96,7 @@ export const PROJECTS = [
     languages: 'Ruby on Rails, JavaScript',
     type: 'Hackathon',
     title: 'Best Product',
-    description: 'Winner of #Chimehack\'s Best Product for the application \'ReSound\'.',
+    description: 'Winner of #Chimehack (2013), \'Best Product\' for the application \'ReSound\'.',
     img: '../assets/img/chimehack2Web.png'
   }
 ]
