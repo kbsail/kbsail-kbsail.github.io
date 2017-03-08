@@ -27409,7 +27409,7 @@
 	  displayName: 'Profile',
 	  render: function render() {
 	    var linkedInUrl = 'https://www.linkedin.com/in/kevinberry1/',
-	        resumeUrl = '';
+	        resumeUrl = 'https://drive.google.com/file/d/0B1NiEZqYOerQb2Jjb1o1ZzlxUFU/view?usp=sharing';
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'flex-container mini-profile' },
@@ -27431,13 +27431,13 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { href: linkedInUrl },
+	            { href: linkedInUrl, target: '_blank' },
 	            'LinkedIn'
 	          ),
 	          '\xA0\xA0\xA0\xA0',
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { href: resumeUrl },
+	            { href: resumeUrl, target: '_blank' },
 	            'Resume'
 	          )
 	        )
@@ -29747,14 +29747,14 @@
 	}, {
 	  id: 2,
 	  info: '',
-	  live: '',
+	  live: 'https://drive.google.com/file/d/0B1NiEZqYOerQV0lJMHVIa3J0N2s/view',
 	  github: '',
 	  role: 'Consultant',
 	  type: 'Hiring Initiative',
 	  subtitle: 'Content',
-	  title: 'Hiring a Digital Services Team',
+	  title: 'KCMO Hiring Initiative',
 	  description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
-	  img: '' }, {
+	  img: '../assets/img/CreatingADigitalServicesTeam.png' }, {
 	  id: 3,
 	  info: '',
 	  website: 'http://flyrlabs.com/',
@@ -29825,12 +29825,8 @@
 	        { className: 'projects-row' },
 	        PROJECTS.map(function (project) {
 	          return _react2.default.createElement(
-	            _reactRouter.Link,
-	            {
-	              className: 'project-container',
-	              key: project.id,
-	              href: '/projects/' + project.id
-	            },
+	            'div',
+	            { className: 'project-container', key: project.id },
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'project-details' },
@@ -29838,9 +29834,13 @@
 	                'div',
 	                { className: 'project-title' },
 	                _react2.default.createElement(
-	                  'h4',
-	                  null,
-	                  project.title
+	                  _reactRouter.Link,
+	                  { href: '/projects/' + project.id },
+	                  _react2.default.createElement(
+	                    'h4',
+	                    null,
+	                    project.title
+	                  )
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -29875,22 +29875,38 @@
 	                  project.website ? _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { href: '' + project.website, target: '_blank' },
-	                    'Website'
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Website'
+	                    )
 	                  ) : _react2.default.createElement('div', null),
 	                  project.live ? _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { href: '' + project.live, target: '_blank' },
-	                    'Live'
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Live'
+	                    )
 	                  ) : _react2.default.createElement('div', null),
 	                  project.info ? _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { href: '' + project.info, target: '_blank' },
-	                    'Info'
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Info'
+	                    )
 	                  ) : _react2.default.createElement('div', null),
 	                  project.github ? _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { href: '' + project.github, target: '_blank' },
-	                    'Github'
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Github'
+	                    )
 	                  ) : ''
 	                )
 	              )
@@ -29898,7 +29914,11 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'project-image' },
-	              project.img ? _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0' }, src: project.img }) : _react2.default.createElement('div', null)
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { href: '/projects/' + project.id },
+	                project.img ? _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0' }, src: project.img }) : _react2.default.createElement('div', null)
+	              )
 	            )
 	          );
 	        })

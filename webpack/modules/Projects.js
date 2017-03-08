@@ -30,14 +30,14 @@ export const PROJECTS = [
   {
     id: 2,
     info: '',
-    live: '',
+    live: 'https://drive.google.com/file/d/0B1NiEZqYOerQV0lJMHVIa3J0N2s/view',
     github: '',
     role: 'Consultant',
     type: 'Hiring Initiative',
     subtitle: 'Content',
-    title: 'Hiring a Digital Services Team',
+    title: 'KCMO Hiring Initiative',
     description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
-    img: '' },
+    img: '../assets/img/CreatingADigitalServicesTeam.png' },
   { 
     id: 3,
     info: '',
@@ -106,14 +106,12 @@ export default React.createClass({
         </div>
         <div className="projects-row">
           {PROJECTS.map(project => (  
-            <Link
-              className="project-container"
-              key={project.id}
-              href={`/projects/${project.id}`}
-            >
+            <div className="project-container" key={project.id}>
               <div className="project-details">
                 <div className="project-title">
-                  <h4>{project.title}</h4>
+                  <Link href={`/projects/${project.id}`}>
+                    <h4>{project.title}</h4>
+                  </Link>
                 </div>
                 <div className="project-content">
                   <div className="project-skills">
@@ -127,26 +125,28 @@ export default React.createClass({
                   </div>
                   <div className="project-links">
                     {
-                      project.website ? <Link href={`${project.website}`} target="_blank">Website</Link> : <div/>
+                      project.website ? <Link href={`${project.website}`} target="_blank"><p>Website</p></Link> : <div/>
                     }
                     {
-                      project.live ? <Link href={`${project.live}`} target="_blank">Live</Link> : <div/>
+                      project.live ? <Link href={`${project.live}`} target="_blank"><p>Live</p></Link> : <div/>
                     }
                     {
-                      project.info ? <Link href={`${project.info}`} target="_blank">Info</Link> : <div/>
+                      project.info ? <Link href={`${project.info}`} target="_blank"><p>Info</p></Link> : <div/>
                     }
                     {
-                      project.github ? <Link href={`${project.github}`} target="_blank">Github</Link>: ''
+                      project.github ? <Link href={`${project.github}`} target="_blank"><p>Github</p></Link>: ''
                     }
                   </div>
                 </div>
               </div>
               <div className="project-image">
-                {
-                  project.img ? <img className="responsive-image" style={{ margin: '0' }} src={project.img} /> : <div/>
-                }
+                <Link href={`/projects/${project.id}`}>
+                  {
+                    project.img ? <img className="responsive-image" style={{ margin: '0' }} src={project.img} /> : <div/>
+                  }
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
