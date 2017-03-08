@@ -8,6 +8,7 @@ url: "http://kevin-berry.com"
 permalink:   none
 highlighter: rouge
 description: The personal website of Kevin Berry, a ruby and python focused developer.
+include: ["_pages"]
 
 
 source: .

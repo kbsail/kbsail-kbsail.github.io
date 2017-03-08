@@ -27169,27 +27169,27 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _About = __webpack_require__(261);
+	var _About = __webpack_require__(243);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Projects = __webpack_require__(262);
+	var _Projects = __webpack_require__(244);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _ProjectsContainer = __webpack_require__(263);
+	var _ProjectsContainer = __webpack_require__(245);
 
 	var _ProjectsContainer2 = _interopRequireDefault(_ProjectsContainer);
 
-	var _Project = __webpack_require__(265);
+	var _Project = __webpack_require__(247);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Home = __webpack_require__(266);
+	var _Home = __webpack_require__(248);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _NotFound = __webpack_require__(260);
+	var _NotFound = __webpack_require__(252);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -27200,7 +27200,6 @@
 	    _reactRouter.Route,
 	    { path: '/', component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
 	    _react2.default.createElement(
 	      _reactRouter.Route,
 	      { path: '/projects', component: _ProjectsContainer2.default },
@@ -27228,19 +27227,23 @@
 
 	var _reactRouter = __webpack_require__(178);
 
-	var _SideBar = __webpack_require__(243);
+	var _SideBar = __webpack_require__(253);
 
 	var _SideBar2 = _interopRequireDefault(_SideBar);
 
-	var _Footer = __webpack_require__(245);
+	var _Profile = __webpack_require__(255);
+
+	var _Profile2 = _interopRequireDefault(_Profile);
+
+	var _Footer = __webpack_require__(256);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _reactAddonsCssTransitionGroup = __webpack_require__(247);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(257);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _NotFound = __webpack_require__(260);
+	var _NotFound = __webpack_require__(252);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -27267,9 +27270,32 @@
 	      mainPageClasses = 'side-open main-page';
 	      slidingContainerClasses = "side-open sliding-container";
 	    }
+	    var headerContent = _react2.default.createElement(
+	      'div',
+	      { className: 'header-container' },
+	      _react2.default.createElement(_SideBar2.default, null)
+	    );
+	    if (!window.matchMedia('(min-width: 600px)').matches) {
+	      headerContent = _react2.default.createElement(
+	        'div',
+	        { className: slidingContainerClasses },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'header-container' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { className: 'side-bar-toggle-button', style: { color: "black" }, onClick: this.toggleActive, href: '#' },
+	            _react2.default.createElement('i', { className: 'fa fa-2x fa-bars', 'aria-hidden': 'true' })
+	          )
+	        ),
+	        _react2.default.createElement(_SideBar2.default, { sideBarClasses: sideBarClasses })
+	      );
+	    }
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'react-container' },
+	      headerContent,
+	      _react2.default.createElement(_Profile2.default, null),
 	      _react2.default.createElement(
 	        'div',
 	        { className: mainPageClasses },
@@ -27282,6 +27308,278 @@
 
 /***/ },
 /* 243 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PROJECTS = undefined;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var PROJECTS = exports.PROJECTS = [{
+	  id: 0,
+	  info: '',
+	  live: 'http://reqcheck.healthkc.org',
+	  title: 'ReqCheck',
+	  github: 'https://github.com/codeforamerica/ReqCheck',
+	  languages: 'Ruby, Rails, PostgreSQL, Docker',
+	  role: 'Lead Developer',
+	  type: 'Technical Project',
+	  description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
+	  img: '../assets/img/ReqCheckWeb.png'
+	}, {
+	  id: 1,
+	  info: 'https://www.codeforamerica.org/summit/workshops/#1955',
+	  live: '',
+	  github: '',
+	  role: 'Co-Leader',
+	  type: 'Professional Workshop',
+	  title: 'Technical Talent Initiative',
+	  description: 'Co-facilitated a workshop at the 2016 Code for America Summit',
+	  img: '../assets/img/TalentWorkshop.jpg'
+	}, {
+	  id: 2,
+	  info: '',
+	  live: 'https://drive.google.com/file/d/0B1NiEZqYOerQV0lJMHVIa3J0N2s/view',
+	  github: '',
+	  role: 'Consultant',
+	  type: 'Hiring Initiative',
+	  subtitle: 'Content',
+	  title: 'KCMO Hiring Initiative',
+	  description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
+	  img: '../assets/img/CreatingADigitalServicesTeam.png' }, {
+	  id: 3,
+	  info: '',
+	  website: 'http://flyrlabs.com/',
+	  github: '',
+	  role: 'Software Engineer',
+	  type: 'Technical Project',
+	  title: 'Flyr FairKeep Pricing APIs ',
+	  description: 'Built pricing and purchasing APIs for core product',
+	  img: '../assets/img/GetFlyrWeb.png' }, {
+	  id: 4,
+	  info: '',
+	  website: 'http://www.openbrazil.org/',
+	  live: '',
+	  github: '',
+	  role: 'Advisor',
+	  type: 'Professional Workshop',
+	  title: 'Code for Brazil',
+	  description: 'Mentored Code for Brazil in stakeholder management, iterative building and user centered design',
+	  img: '../assets/img/CforBrazil.png'
+	}, {
+	  id: 5,
+	  info: '',
+	  live: '',
+	  github: 'https://github.com/lostmarinero/reqcheck-extractor-readme',
+	  role: 'Sole Developer',
+	  type: 'Technical Project',
+	  title: 'ReqCheck Extractor',
+	  description: 'Continuous https based ETL from legacy SQL Server to Cloud based PostgreSQL database',
+	  img: ''
+	}, {
+	  id: 6,
+	  info: '',
+	  live: '',
+	  github: '',
+	  role: 'Web Developer',
+	  type: 'Hackathon',
+	  title: 'Best Product for Innovation',
+	  description: '#ChimeHack2 Best product',
+	  img: ''
+	}, {
+	  id: 7,
+	  info: '',
+	  live: '',
+	  github: '',
+	  role: 'Web Developer',
+	  type: 'Hackathon',
+	  title: 'Best Product',
+	  description: 'Chimehack Best product',
+	  img: ''
+	}];
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'Projects',
+	  render: function render() {
+	    var linkText = '';
+
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Recent Projects'
+	      ),
+	      _react2.default.createElement('div', { className: 'projects-main-image' }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'projects-row' },
+	        PROJECTS.map(function (project) {
+	          return _react2.default.createElement(
+	            'div',
+	            { className: 'project-container', key: project.id },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'project-details' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'project-title' },
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { href: '/projects/' + project.id },
+	                  _react2.default.createElement(
+	                    'h4',
+	                    null,
+	                    project.title
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'project-content' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'project-skills' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    project.role
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'project-description' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    project.description
+	                  ),
+	                  project.languages ? _react2.default.createElement(
+	                    'p',
+	                    { className: 'project-languages' },
+	                    project.languages
+	                  ) : null
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'project-links' },
+	                  project.website ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.website, target: '_blank' },
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Website'
+	                    )
+	                  ) : _react2.default.createElement('div', null),
+	                  project.live ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.live, target: '_blank' },
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Live'
+	                    )
+	                  ) : _react2.default.createElement('div', null),
+	                  project.info ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.info, target: '_blank' },
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Info'
+	                    )
+	                  ) : _react2.default.createElement('div', null),
+	                  project.github ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.github, target: '_blank' },
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Github'
+	                    )
+	                  ) : ''
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'project-image' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { href: '/projects/' + project.id },
+	                project.img ? _react2.default.createElement('img', { className: 'responsive-image', style: { margin: '0' }, src: project.img }) : _react2.default.createElement('div', null)
+	              )
+	            )
+	          );
+	        })
+	      )
+	    );
+	  }
+	});
+
+	// <p>Formerly of <OutsideLink to="https://codeforamerica.org" alt="Code for America">Code for America</OutsideLink> & <OutsideLink to="https://flyrlabs.com" alt="FlyrLabs">FlyrLabs</OutsideLink>.</p>
+	// <p>Mentorship with <OutsideLink to="https://missionbit.org" alt="MissionBit">MissionBit</OutsideLink>.</p>
+	// <div className="awards">
+	//   <div className="awards-title">
+	//     <i className="fa fa-2x fa-star" aria-hidden="true" /><h2>Honors and Awards</h2>
+	//   </div>
+	//   <div className="awards-container">
+	//     <div className="award-item">
+	//       <h5>Code for America Fellowship</h5>
+	//       <p>2016 Engineering Fellow</p>
+	//       <div className="chime-tweet">
+	//         <TweetEmbed id='684781001101414400'></TweetEmbed>
+	//       </div>
+	//       <p>Less than 2% of applicants are accepted</p>
+	//       <p><Link href="https://www.codeforamerica.org">Code for America</Link>, 2016</p>
+	//       <p><Link href="http://archive.codeforamerica.org/about/fellowship/">More Information</Link></p>
+	//     </div>
+	//     <div className="award-item safebridge">
+	//       <h5>Best Product for Incubation</h5>
+	//       <p>Awarded for 'SafeBridge'</p>
+	//       <div className="chime-tweet">
+	//         <TweetEmbed id='620390041789968385'></TweetEmbed>
+	//       </div>
+	//       <p>Presented by <Link href="https://www.hearst.com/">Hearst Magazines</Link> and <Link href="https://twitter.com/">Twitter</Link></p>
+	//       <p><Link href="https://www.youtube.com/watch?v=PzbminSEayU">ChimeHack2</Link>, 2015</p>
+	//       <p><Link href="http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/">More Information</Link></p>
+
+	//     </div>
+	//     <div className="award-item">
+	//       <h5>Best Product</h5>
+	//       <p>Awarded for 'ReSound'</p>
+	//       <div className="chime-tweet">
+	//         <TweetEmbed id='409531616990478336'></TweetEmbed>
+	//       </div>
+	//       <p>Presented by <Link href="http://www.chimeforchange.org/">Chime for Change</Link> and <Link href="https://twitter.com/">Twitter</Link></p>
+	//       <p><Link href="https://www.youtube.com/watch?v=WpHRSi0JFKY">ChimeHack</Link>, 2013</p>
+	//       <p><Link href="https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue">More Information</Link></p>
+	//     </div>
+	//   </div>
+	// </div>
+
+/***/ },
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27294,7 +27592,318 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NavLink = __webpack_require__(244);
+	var _Modal = __webpack_require__(246);
+
+	var _Modal2 = _interopRequireDefault(_Modal);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'ProjectsContainer',
+	  render: function render() {
+	    var location = this.props.location;
+
+
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      this.props.children
+	    );
+	  }
+	});
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'Modal',
+
+	  styles: {
+	    borderRadius: '5px',
+	    position: 'fixed',
+	    top: '85px',
+	    right: '10%',
+	    bottom: '10%',
+	    left: '10%',
+	    padding: 20,
+	    boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
+	    overflow: 'auto',
+	    background: '#fff'
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { style: this.styles },
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: this.props.returnTo },
+	          'Back'
+	        )
+	      ),
+	      this.props.children
+	    );
+	  }
+	});
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	     value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Projects = __webpack_require__(244);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	     displayName: 'Project',
+	     render: function render() {
+	          return _react2.default.createElement(
+	               'div',
+	               { className: 'project-individual' },
+	               _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _Projects.PROJECTS[this.props.params.id].title
+	               ),
+	               _react2.default.createElement('img', { src: _Projects.PROJECTS[this.props.params.id].src, style: { width: '100%', borderRadius: '3px' } }),
+	               _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    _Projects.PROJECTS[this.props.params.id].description
+	               )
+	          );
+	     }
+	});
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _SocialLinks = __webpack_require__(249);
+
+	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
+
+	var _OutsideLink = __webpack_require__(251);
+
+	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function Home() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'about-page' },
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I am a web developer passionate about user centered design, mentoring and teaching. Technology\'s potential for large scale impact motivates my daily learning. I enjoy working on impact based projects, and am motivated by tough technical challenges that require problem solving.'
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I primarily work with Ruby on Rails, Python with Flask, and React. I am open to new languages and frameworks and often experiment with other langauges in my free time. I write well designed, DRY code following best practices, and can adapt to different coding styles. Testing is a must, and I write code through TDD.'
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I have a passion for education, and am active in teaching and mentoring. I hope to use my skills as a web developer and teacher to better promote diversity in the technology sector.'
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I am fluent in Spanish, and enjoy traveling to countries where I can connect with the communities through shared language.'
+	    )
+	  );
+	} // modules/Home.js
+	exports.default = Home;
+
+	// Draw to the work
+	// Type of projects
+	// What drives you
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _SocialLink = __webpack_require__(250);
+
+	var _SocialLink2 = _interopRequireDefault(_SocialLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// modules/Home.js
+	exports.default = _react2.default.createClass({
+	    displayName: 'SocialLinks',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'nav',
+	            null,
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-linkedin', href: 'http://www.linkedin.com/in/kevinberry1', title: 'LinkedIn' }),
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-twitter', href: 'http://twitter.com/lostmarinero', title: 'Twitter' }),
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-github', href: 'http://github.com/lostmarinero', title: 'Github' }),
+	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-envelope', href: 'mailto:berry.kevinw@gmail.com', title: 'Email' })
+	        );
+	    }
+	});
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/SocialLink.js
+
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "SocialLink",
+	  render: function render() {
+	    var linkType = this.props.linkType;
+	    return _react2.default.createElement(
+	      "a",
+	      _extends({}, this.props, { target: "_blank" }),
+	      _react2.default.createElement("i", { className: "fa fa-2x " + linkType, "aria-hidden": "true" })
+	    );
+	  }
+	});
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/Navlink.js
+
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'OutsideLink',
+	  render: function render() {
+	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { target: '_blank' }));
+	  }
+	});
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function NotFound() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h3',
+	      null,
+	      '404 page not found'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'We are sorry but the page you are looking for does not exist.'
+	    )
+	  );
+	} // components/NotFound.js
+	exports.default = NotFound;
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _NavLink = __webpack_require__(254);
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
@@ -27323,15 +27932,6 @@
 	          null,
 	          _react2.default.createElement(
 	            _NavLink2.default,
-	            { to: '/about' },
-	            'About'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            _NavLink2.default,
 	            { to: '/projects' },
 	            'Projects'
 	          )
@@ -27342,7 +27942,7 @@
 	});
 
 /***/ },
-/* 244 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27370,7 +27970,7 @@
 	});
 
 /***/ },
-/* 245 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27383,7 +27983,87 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _OutsideLink = __webpack_require__(246);
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// module/About.js
+	exports.default = _react2.default.createClass({
+	  displayName: 'Profile',
+	  render: function render() {
+	    var linkedInUrl = 'https://www.linkedin.com/in/kevinberry1/',
+	        resumeUrl = 'https://drive.google.com/file/d/0B1NiEZqYOerQb2Jjb1o1ZzlxUFU/view?usp=sharing';
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'flex-container mini-profile' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'front-photo' },
+	        _react2.default.createElement('img', { src: '../profile-photo.jpg', className: 'profile-photo responsive-image', alt: 'Profile Photo' })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'front-title' },
+	        _react2.default.createElement(
+	          'h5',
+	          { className: 'name-title' },
+	          'Kevin Berry'
+	        ),
+	        _react2.default.createElement(
+	          'h5',
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { href: linkedInUrl, target: '_blank' },
+	            'LinkedIn'
+	          ),
+	          '\xA0\xA0\xA0\xA0',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { href: resumeUrl, target: '_blank' },
+	            'Resume'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'front-about' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Web developer passionate about user centered design.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Specializing in Ruby, Python and React.'
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(178);
+
+	var _OutsideLink = __webpack_require__(251);
 
 	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
 
@@ -27399,23 +28079,17 @@
 	      { className: 'reach-out' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'alinks' },
+	        { id: 'hello', className: 'alinks' },
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Currently accepting proposals for freelance projects. To inquire, please reach out at ',
+	          'Currently accepting proposals for freelance projects. To inquire, email ',
 	          _react2.default.createElement(
-	            'span',
-	            { className: 'bold-heavy' },
-	            'berry.kevinw'
+	            _reactRouter.Link,
+	            { href: 'mailto:berry.kevinw@gmail.com' },
+	            'berry.kevinw@gmail.com'
 	          ),
-	          ' at ',
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'bold-heavy' },
-	            'gmail.com'
-	          ),
-	          ' or ',
+	          ' or tweet ',
 	          _react2.default.createElement(
 	            _OutsideLink2.default,
 	            { href: 'http://www.twitter.com/lostmarinero', alt: 'lostmarinero twitter' },
@@ -27431,41 +28105,13 @@
 	exports.default = Footer;
 
 /***/ },
-/* 246 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/Navlink.js
-
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'OutsideLink',
-	  render: function render() {
-	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { target: '_blank' }));
-	  }
-	});
+	module.exports = __webpack_require__(258);
 
 /***/ },
-/* 247 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(248);
-
-/***/ },
-/* 248 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27490,8 +28136,8 @@
 
 	var React = __webpack_require__(2);
 
-	var ReactTransitionGroup = __webpack_require__(249);
-	var ReactCSSTransitionGroupChild = __webpack_require__(252);
+	var ReactTransitionGroup = __webpack_require__(259);
+	var ReactCSSTransitionGroupChild = __webpack_require__(262);
 
 	function createTransitionTimeoutPropValidator(transitionType) {
 	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
@@ -27574,7 +28220,7 @@
 	module.exports = ReactCSSTransitionGroup;
 
 /***/ },
-/* 249 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27598,7 +28244,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(2);
-	var ReactTransitionChildMapping = __webpack_require__(250);
+	var ReactTransitionChildMapping = __webpack_require__(260);
 
 	var emptyFunction = __webpack_require__(12);
 
@@ -27807,7 +28453,7 @@
 	module.exports = ReactTransitionGroup;
 
 /***/ },
-/* 250 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -27822,7 +28468,7 @@
 
 	'use strict';
 
-	var flattenChildren = __webpack_require__(251);
+	var flattenChildren = __webpack_require__(261);
 
 	var ReactTransitionChildMapping = {
 	  /**
@@ -27915,7 +28561,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 251 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -27996,7 +28642,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 252 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28012,10 +28658,10 @@
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var ReactAddonsDOMDependencies = __webpack_require__(253);
+	var ReactAddonsDOMDependencies = __webpack_require__(263);
 
-	var CSSCore = __webpack_require__(258);
-	var ReactTransitionEvents = __webpack_require__(259);
+	var CSSCore = __webpack_require__(268);
+	var ReactTransitionEvents = __webpack_require__(269);
 
 	var onlyChild = __webpack_require__(31);
 
@@ -28167,7 +28813,7 @@
 	module.exports = ReactCSSTransitionGroupChild;
 
 /***/ },
-/* 253 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -28194,14 +28840,14 @@
 
 	  exports.getReactPerf = function () {
 	    if (!ReactPerf) {
-	      ReactPerf = __webpack_require__(254);
+	      ReactPerf = __webpack_require__(264);
 	    }
 	    return ReactPerf;
 	  };
 
 	  exports.getReactTestUtils = function () {
 	    if (!ReactTestUtils) {
-	      ReactTestUtils = __webpack_require__(255);
+	      ReactTestUtils = __webpack_require__(265);
 	    }
 	    return ReactTestUtils;
 	  };
@@ -28209,7 +28855,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 254 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -28715,7 +29361,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 255 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -28733,7 +29379,7 @@
 	var _prodInvariant = __webpack_require__(35),
 	    _assign = __webpack_require__(4);
 
-	var EventConstants = __webpack_require__(256);
+	var EventConstants = __webpack_require__(266);
 	var EventPluginHub = __webpack_require__(42);
 	var EventPluginRegistry = __webpack_require__(43);
 	var EventPropagators = __webpack_require__(41);
@@ -28744,7 +29390,7 @@
 	var ReactInstanceMap = __webpack_require__(116);
 	var ReactUpdates = __webpack_require__(56);
 	var SyntheticEvent = __webpack_require__(53);
-	var ReactShallowRenderer = __webpack_require__(257);
+	var ReactShallowRenderer = __webpack_require__(267);
 
 	var findDOMNode = __webpack_require__(172);
 	var invariant = __webpack_require__(8);
@@ -29132,7 +29778,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 256 */
+/* 266 */
 /***/ function(module, exports) {
 
 	/**
@@ -29228,7 +29874,7 @@
 	module.exports = EventConstants;
 
 /***/ },
-/* 257 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -29368,7 +30014,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 258 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -29495,7 +30141,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 259 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -29570,485 +30216,6 @@
 	};
 
 	module.exports = ReactTransitionEvents;
-
-/***/ },
-/* 260 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function NotFound() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'h3',
-	      null,
-	      '404 page not found'
-	    ),
-	    _react2.default.createElement(
-	      'p',
-	      null,
-	      'We are sorry but the page you are looking for does not exist.'
-	    )
-	  );
-	} // components/NotFound.js
-	exports.default = NotFound;
-
-/***/ },
-/* 261 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-			value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	// module/About.js
-	exports.default = _react2.default.createClass({
-			displayName: 'About',
-			render: function render() {
-					var linkedInUrl = "https://www.linkedin.com/in/kevinberry1/";
-					var resumeUrl = "";
-					return _react2.default.createElement(
-							'div',
-							null,
-							_react2.default.createElement(
-									'p',
-									null,
-									'I am a web developer and user experience researcher with a passion for well designed, user centered websites and applications.'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'For more information, please see my ',
-									_react2.default.createElement(
-											_reactRouter.Link,
-											{ href: linkedInUrl },
-											'LinkedIn Profile'
-									),
-									' or ',
-									_react2.default.createElement(
-											_reactRouter.Link,
-											{ href: resumeUrl },
-											'Resume'
-									),
-									'.'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'My core technologies are Ruby (Rails, Sinatra), Python (Django, Flask) and React (with Redux)'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'I was fortunate to be one of only 8 Developers chosen for the 2016 Code for America Fellowship Program'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'I give back through volunteer teaching web development classes and mentoring new web developers, of all ages with a goal of promoting under-represented developers in the tech industry.'
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'Some of the accomplishments I am most proud of include:'
-							),
-							_react2.default.createElement(
-									'ul',
-									null,
-									_react2.default.createElement(
-											'li',
-											null,
-											'Built a Clinical Decision Support for Immunizations Algorithm (and web application) using CDC data to analyze patient health records and respond with necessary vaccines.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Designed and wrote the interview and onboarding process for new developers at Flyr, to help integrate them into the engineering team as we grew.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Built the core pricing and purchasing APIs for Flyr to sell "FareKeep", the first product for consumers.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Integrated our APIs with a 3rd party, legacy airline pricing XML API to stream data using ExpressJS (Node).'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Won Hearst Magazine\'s Best Product for Incubation Award at ChimeHack2 in July 2015. We built SafeBridge, an anonymous SMS to chat for survivors of domestic violence and their advocates. Hackathon was organized by twitter, ChimeForChange, and Kering Foundation.'
-									),
-									_react2.default.createElement(
-											'li',
-											null,
-											'Won Chime for Change\'s Best Product Award at ChimeHack in December of 2013. We built ReSound, a product connecting women globally to support Education, Health and Justice. Organized by twitter, Chime for Change, Women Who Code and Gucci.'
-									)
-							),
-							_react2.default.createElement(
-									'p',
-									null,
-									'I am committed to delivering the highest quality code, and work tirelessly to ensure my clients are satisfied.'
-							)
-					);
-			}
-	});
-
-/***/ },
-/* 262 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(32);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var PROJECTS = [{ id: 0, src: 'http://placekitten.com/601/601' }, { id: 1, src: 'http://placekitten.com/610/610' }, { id: 2, src: 'http://placekitten.com/620/620' }, { id: 3, src: 'http://placekitten.com/620/620' }, { id: 4, src: 'http://placekitten.com/620/620' }, { id: 5, src: 'http://placekitten.com/620/620' }];
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'Projects',
-	  render: function render() {
-	    var _this = this;
-
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'projects-row' },
-	        PROJECTS.map(function (project) {
-	          return _react2.default.createElement(
-	            _reactRouter.Link,
-	            {
-	              key: project.id,
-	              to: {
-	                pathname: '/projects/' + project.id,
-	                state: { modal: true, returnTo: _this.props.location.pathname }
-	              }
-	            },
-	            _react2.default.createElement('img', { className: 'responsive-image', style: { margin: 10 }, src: project.src, height: '250' })
-	          );
-	        })
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 263 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Modal = __webpack_require__(264);
-
-	var _Modal2 = _interopRequireDefault(_Modal);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'ProjectsContainer',
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    // if we changed routes...
-	    if (nextProps.location.key !== this.props.location.key && nextProps.location.state && nextProps.location.state.modal) {
-	      // save the old children (just like animation)
-	      this.previousChildren = this.props.children;
-	    }
-	  },
-	  render: function render() {
-	    var location = this.props.location;
-
-
-	    var isModal = location.state && location.state.modal && this.previousChildren;
-
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Projects'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        isModal ? this.previousChildren : this.props.children,
-	        isModal && _react2.default.createElement(
-	          _Modal2.default,
-	          { isOpen: true, returnTo: location.state.returnTo },
-	          this.props.children
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'Modal',
-
-	  styles: {
-	    position: 'fixed',
-	    top: '20%',
-	    right: '20%',
-	    bottom: '20%',
-	    left: '20%',
-	    padding: 20,
-	    boxShadow: '0px 0px 150px 130px rgba(0, 0, 0, 0.5)',
-	    overflow: 'auto',
-	    background: '#fff'
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { style: this.styles },
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: this.props.returnTo },
-	          'Back'
-	        )
-	      ),
-	      this.props.children
-	    );
-	  }
-	});
-
-/***/ },
-/* 265 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-			value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-			displayName: 'Project',
-			render: function render() {
-					return _react2.default.createElement(
-							'div',
-							{ className: 'project-modal' },
-							_react2.default.createElement('img', { src: PROJECTS[this.props.params.id].src, style: { height: '80%' } })
-					);
-			}
-	});
-
-/***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _SocialLinks = __webpack_require__(267);
-
-	var _SocialLinks2 = _interopRequireDefault(_SocialLinks);
-
-	var _OutsideLink = __webpack_require__(246);
-
-	var _OutsideLink2 = _interopRequireDefault(_OutsideLink);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function Home() {
-	    return _react2.default.createElement(
-	        'div',
-	        { className: 'front-page' },
-	        _react2.default.createElement(
-	            'div',
-	            { className: 'front-info' },
-	            _react2.default.createElement(
-	                'h1',
-	                null,
-	                'Kevin Berry'
-	            ),
-	            _react2.default.createElement(_SocialLinks2.default, null),
-	            _react2.default.createElement(
-	                'h2',
-	                null,
-	                'Web Developer'
-	            ),
-	            _react2.default.createElement(
-	                'h5',
-	                null,
-	                'Specializing in Python & Ruby'
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                'Formerly of ',
-	                _react2.default.createElement(
-	                    _OutsideLink2.default,
-	                    { to: 'https://codeforamerica.org', alt: 'Code for America' },
-	                    'Code for America'
-	                ),
-	                ' & ',
-	                _react2.default.createElement(
-	                    _OutsideLink2.default,
-	                    { to: 'https://flyrlabs.com', alt: 'FlyrLabs' },
-	                    'FlyrLabs'
-	                ),
-	                '.'
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                'Mentorship with ',
-	                _react2.default.createElement(
-	                    _OutsideLink2.default,
-	                    { to: 'https://missionbit.org', alt: 'MissionBit' },
-	                    'MissionBit'
-	                ),
-	                '.'
-	            )
-	        )
-	    );
-	} // modules/Home.js
-	exports.default = Home;
-
-/***/ },
-/* 267 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _SocialLink = __webpack_require__(268);
-
-	var _SocialLink2 = _interopRequireDefault(_SocialLink);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	// modules/Home.js
-	exports.default = _react2.default.createClass({
-	    displayName: 'SocialLinks',
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'nav',
-	            null,
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-linkedin', href: 'http://www.linkedin.com/in/kevinberry1', title: 'LinkedIn' }),
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-twitter', href: 'http://twitter.com/lostmarinero', title: 'Twitter' }),
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-github', href: 'http://github.com/lostmarinero', title: 'Github' }),
-	            _react2.default.createElement(_SocialLink2.default, { linkType: 'fa-envelope', href: 'mailto:berry.kevinw@gmail.com', title: 'Email' })
-	        );
-	    }
-	});
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // modules/SocialLink.js
-
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	// import { Link } from 'react-router'
-
-	exports.default = _react2.default.createClass({
-	  displayName: "SocialLink",
-	  render: function render() {
-	    var linkType = this.props.linkType;
-	    return _react2.default.createElement(
-	      "a",
-	      _extends({}, this.props, { target: "_blank" }),
-	      _react2.default.createElement("i", { className: "fa fa-2x " + linkType, "aria-hidden": "true" })
-	    );
-	  }
-	});
 
 /***/ }
 /******/ ]);

@@ -17,12 +17,7 @@
 // ---------------------------------------------------------------------------
 // IMPORTS
 
-// Variables to modify font folders
-$fa-font-path:  "../fonts/font-awesome";
-
-
 @import 'normalize',
-        '_font-awesome/font-awesome',
         'custom';
 
 /* -------------------------------------------------------------------------*/
@@ -116,7 +111,6 @@ h2 {
     font-weight: bold;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10%;
     display: block;
     float: none;
     h1 {

@@ -13,7 +13,6 @@ function routes () {
   return (
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
-      <Route path="/about" component={About}/>
       <Route path="/projects" component={ProjectsContainer}>
         <IndexRoute component={Projects}/>
         <Route path="/projects/:id" component={Project}/>

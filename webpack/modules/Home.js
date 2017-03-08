@@ -5,17 +5,35 @@ import OutsideLink from './OutsideLink.js'
 
 function Home() {
     return (
-        <div className="front-page">
-            <div className="front-info">
-                <h1>Kevin Berry</h1>
-                <SocialLinks></SocialLinks>
-                <h2>Web Developer</h2>
-                <h5>Specializing in Python & Ruby</h5>
-                <p>Formerly of <OutsideLink to="https://codeforamerica.org" alt="Code for America">Code for America</OutsideLink> & <OutsideLink to="https://flyrlabs.com" alt="FlyrLabs">FlyrLabs</OutsideLink>.</p>
-                <p>Mentorship with <OutsideLink to="https://missionbit.org" alt="MissionBit">MissionBit</OutsideLink>.</p>
-            </div>
+        <div className="about-page">
+          <p>
+            I am a web developer passionate about user centered design, mentoring and teaching. 
+            Technology's potential for large scale impact motivates my daily learning.
+            I enjoy working on impact based projects, and am motivated by tough technical challenges that require problem solving.
+          </p>
+          <br/>
+          <p>
+            I primarily work with Ruby on Rails, Python with Flask, and React.
+            I am open to new languages and frameworks and often experiment with other langauges in my free time.
+            I write well designed, DRY code following best practices, and can adapt to different coding styles.
+            Testing is a must, and I write code through TDD. 
+          </p>
+          <br/>
+          <p>
+            I have a passion for education, and am active in teaching and mentoring.
+            I hope to use my skills as a web developer and teacher to better promote diversity in the technology sector.
+          </p>
+          <br/>
+          <p>
+            I am fluent in Spanish, and enjoy traveling to countries where I can connect with the communities through shared language.
+          </p>
         </div>
     )
 }
 
 export default Home;
+
+
+// Draw to the work
+// Type of projects
+// What drives you
