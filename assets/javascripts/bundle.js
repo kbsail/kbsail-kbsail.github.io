@@ -29730,7 +29730,7 @@
 	  title: 'ReqCheck',
 	  github: 'https://github.com/codeforamerica/ReqCheck',
 	  languages: 'Ruby, Rails, PostgreSQL, Docker',
-	  role: 'Sole Developer',
+	  role: 'Lead Developer',
 	  type: 'Technical Project',
 	  description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
 	  img: '../assets/img/ReqCheckWeb.png'
@@ -29791,8 +29791,8 @@
 	  github: '',
 	  role: 'Web Developer',
 	  type: 'Hackathon',
-	  title: 'ChimeHack2 Best Product for Innovation',
-	  description: 'Best product',
+	  title: 'Best Product for Innovation',
+	  description: '#ChimeHack2 Best product',
 	  img: ''
 	}, {
 	  id: 7,
@@ -29801,8 +29801,8 @@
 	  github: '',
 	  role: 'Web Developer',
 	  type: 'Hackathon',
-	  title: 'ChimeHack Best Product',
-	  description: 'Best product',
+	  title: 'Best Product',
+	  description: 'Chimehack Best product',
 	  img: ''
 	}];
 
@@ -29814,13 +29814,18 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Recent Projects'
+	      ),
 	      _react2.default.createElement('div', { className: 'projects-main-image' }),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'projects-row' },
 	        PROJECTS.map(function (project) {
 	          return _react2.default.createElement(
-	            'a',
+	            _reactRouter.Link,
 	            {
 	              className: 'project-container',
 	              key: project.id,
@@ -29840,52 +29845,54 @@
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'project-skills' },
+	                { className: 'project-content' },
 	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  project.type,
-	                  ', ',
-	                  project.role
+	                  'div',
+	                  { className: 'project-skills' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    project.role
+	                  )
 	                ),
 	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  project.languages ? project.languages : ''
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'project-description' },
+	                  'div',
+	                  { className: 'project-description' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    project.description
+	                  ),
+	                  project.languages ? _react2.default.createElement(
+	                    'p',
+	                    { className: 'project-languages' },
+	                    project.languages
+	                  ) : null
+	                ),
 	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  project.description
+	                  'div',
+	                  { className: 'project-links' },
+	                  project.website ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.website, target: '_blank' },
+	                    'Website'
+	                  ) : _react2.default.createElement('div', null),
+	                  project.live ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.live, target: '_blank' },
+	                    'Live'
+	                  ) : _react2.default.createElement('div', null),
+	                  project.info ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.info, target: '_blank' },
+	                    'Info'
+	                  ) : _react2.default.createElement('div', null),
+	                  project.github ? _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { href: '' + project.github, target: '_blank' },
+	                    'Github'
+	                  ) : ''
 	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'project-links' },
-	                project.website ? _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { href: '' + project.website, target: '_blank' },
-	                  'Website'
-	                ) : _react2.default.createElement('div', null),
-	                project.live ? _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { href: '' + project.live, target: '_blank' },
-	                  'Live'
-	                ) : _react2.default.createElement('div', null),
-	                project.info ? _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { href: '' + project.info, target: '_blank' },
-	                  'Info'
-	                ) : _react2.default.createElement('div', null),
-	                project.github ? _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { href: '' + project.github, target: '_blank' },
-	                  'Github'
-	                ) : ''
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -29963,37 +29970,14 @@
 
 	exports.default = _react2.default.createClass({
 	  displayName: 'ProjectsContainer',
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    // if we changed routes...
-	    if (nextProps.location.key !== this.props.location.key && nextProps.location.state && nextProps.location.state.modal) {
-	      // save the old children (just like animation)
-	      this.previousChildren = this.props.children;
-	    }
-	  },
 	  render: function render() {
 	    var location = this.props.location;
 
 
-	    var isModal = location.state && location.state.modal && this.previousChildren;
-
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Recent Projects'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        isModal ? this.previousChildren : this.props.children,
-	        isModal && _react2.default.createElement(
-	          _Modal2.default,
-	          { isOpen: true, returnTo: location.state.returnTo },
-	          this.props.children
-	        )
-	      )
+	      this.props.children
 	    );
 	  }
 	});
@@ -30072,9 +30056,9 @@
 	     render: function render() {
 	          return _react2.default.createElement(
 	               'div',
-	               { className: 'project-modal' },
+	               { className: 'project-individual' },
 	               _react2.default.createElement(
-	                    'h5',
+	                    'h1',
 	                    null,
 	                    _Projects.PROJECTS[this.props.params.id].title
 	               ),
@@ -30095,7 +30079,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -30113,36 +30097,39 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function Home() {
-	    return _react2.default.createElement(
-	        'div',
-	        { className: 'about-page' },
-	        _react2.default.createElement(
-	            'h1',
-	            null,
-	            'About'
-	        ),
-	        _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                'I am a web developer passionate about user centered design, mentoring and teaching.'
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                'Active teacher and mentor.'
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                'Fluent in Spanish.'
-	            )
-	        )
-	    );
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'about-page' },
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I am a web developer passionate about user centered design, mentoring and teaching. Technologies potential for large scale impact motivates my daily learning. I enjoy working on impact based projects, and am motivated by tough technical challenges that require in-depth problem solving.'
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I primarily work with Ruby on Rails, Python and Flask, and React. I am open to new languages and frameworks and often experiment with other langauges in my free time. I write well designed, clean and DRY code following best practices, and can adapt to different coding styles. Testing is a must, as I write code through TDD.'
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I have a passion for education, and am active in teaching and mentoring. I hope to use my skills as a web developer and teacher to better promote diversity in the technology sector.'
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'I am fluent in Spanish, and enjoy traveling to countries where I can connect with the communities through shared language.'
+	    )
+	  );
 	} // modules/Home.js
 	exports.default = Home;
+
+	// Draw to the work
+	// Type of projects
+	// What drives you
 
 /***/ },
 /* 268 */

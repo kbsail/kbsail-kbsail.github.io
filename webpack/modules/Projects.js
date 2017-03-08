@@ -11,7 +11,7 @@ export const PROJECTS = [
     title: 'ReqCheck',
     github: 'https://github.com/codeforamerica/ReqCheck',
     languages: 'Ruby, Rails, PostgreSQL, Docker',
-    role: 'Sole Developer',
+    role: 'Lead Developer',
     type: 'Technical Project',
     description: 'Open-source medical algorithm using CDC data to evaluate a patient\'s vaccination record',
     img: '../assets/img/ReqCheckWeb.png'
@@ -78,8 +78,8 @@ export const PROJECTS = [
     github: '',
     role: 'Web Developer',
     type: 'Hackathon',
-    title: 'ChimeHack2 Best Product for Innovation',
-    description: 'Best product',
+    title: 'Best Product for Innovation',
+    description: '#ChimeHack2 Best product',
     img: ''
   },
   {
@@ -89,8 +89,8 @@ export const PROJECTS = [
     github: '',
     role: 'Web Developer',
     type: 'Hackathon',
-    title: 'ChimeHack Best Product',
-    description: 'Best product',
+    title: 'Best Product',
+    description: 'Chimehack Best product',
     img: ''
   }
 ]
@@ -101,11 +101,12 @@ export default React.createClass({
     
     return (
       <div>
+        <h1>Recent Projects</h1>
         <div className="projects-main-image">
         </div>
         <div className="projects-row">
           {PROJECTS.map(project => (  
-            <a
+            <Link
               className="project-container"
               key={project.id}
               href={`/projects/${project.id}`}
@@ -114,30 +115,30 @@ export default React.createClass({
                 <div className="project-title">
                   <h4>{project.title}</h4>
                 </div>
-                <div className="project-skills">
-                  <p>{project.type}, {project.role}</p>
-                  <p>
+                <div className="project-content">
+                  <div className="project-skills">
+                    <p>{project.role}</p>
+                  </div>
+                  <div className="project-description">
+                    <p>{project.description}</p>
                     {
-                      project.languages ? project.languages : ''
+                      project.languages ? <p className="project-languages">{project.languages}</p> : null
                     }
-                  </p>
-                </div>
-                <div className="project-description">
-                  <p>{project.description}</p>
-                </div>
-                <div className="project-links">
-                  {
-                    project.website ? <Link href={`${project.website}`} target="_blank">Website</Link> : <div/>
-                  }
-                  {
-                    project.live ? <Link href={`${project.live}`} target="_blank">Live</Link> : <div/>
-                  }
-                  {
-                    project.info ? <Link href={`${project.info}`} target="_blank">Info</Link> : <div/>
-                  }
-                  {
-                    project.github ? <Link href={`${project.github}`} target="_blank">Github</Link>: ''
-                  }
+                  </div>
+                  <div className="project-links">
+                    {
+                      project.website ? <Link href={`${project.website}`} target="_blank">Website</Link> : <div/>
+                    }
+                    {
+                      project.live ? <Link href={`${project.live}`} target="_blank">Live</Link> : <div/>
+                    }
+                    {
+                      project.info ? <Link href={`${project.info}`} target="_blank">Info</Link> : <div/>
+                    }
+                    {
+                      project.github ? <Link href={`${project.github}`} target="_blank">Github</Link>: ''
+                    }
+                  </div>
                 </div>
               </div>
               <div className="project-image">
@@ -145,7 +146,7 @@ export default React.createClass({
                   project.img ? <img className="responsive-image" style={{ margin: '0' }} src={project.img} /> : <div/>
                 }
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

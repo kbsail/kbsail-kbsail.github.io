@@ -36,6 +36,7 @@ $dark-grey: #5c5c5c;
 $transparent-clear: rgba(0, 0, 0, .5);
 $black: #555;
 $dark-black: #000000;
+$nice-blue: #0269c4;
 
 // ###
 // # Custom Styles
@@ -228,6 +229,9 @@ a, a:visited, a:hover, a:active {
 // # About Page
 // ###
 .about-page {
+  margin: 2rem auto;
+  width: 90%;
+
   h2, h5, p {
     text-align: left;
   }
@@ -276,6 +280,13 @@ a, a:visited, a:hover, a:active {
 }
 
 // ###
+// # Projects Skills
+// ###
+.project-skills {
+  font-style: italic;
+}
+
+// ###
 // # Projects Links
 // ###
 .project-links {
@@ -293,7 +304,8 @@ a, a:visited, a:hover, a:active {
   
   a {
     margin-right: 20px;
-    color: $black;
+    color: $nice-blue;
+    text-decoration: underline;
   }
 }
 
@@ -362,17 +374,27 @@ a, a:visited, a:hover, a:active {
 }
 
 // ###
+// # Project Content
+// ###
+.project-content {
+  margin-left: 3px !important;
+}
+
+// ###
 // # Project Description
 // ###
 .project-description {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   width: 100%;
 
   p {
     font-size: .6em !important;
   }
+}
+// ###
+// # Project Languages
+// ###
+.project-languages {
+  margin-top: .5rem !important;
 }
 
 // ###
@@ -545,7 +567,7 @@ a, a:visited, a:hover, a:active {
 .front-about {
   flex-basis: 100% !important;
   text-align: left;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 
@@ -597,7 +619,7 @@ a, a:visited, a:hover, a:active {
 @media screen and (min-width: 600px) {
   .header-container {
     margin-top: 0;
-    padding-top: 1rem;
+    padding: 0 2rem;
   }
   .side-nav-container {
     border-left: 2px solid $light-grey;
@@ -607,7 +629,6 @@ a, a:visited, a:hover, a:active {
     top: 0;
     bottom: 0;
   }
-
   .side-nav-list {
     height: inherit;
     flex-direction: row;
@@ -616,6 +637,10 @@ a, a:visited, a:hover, a:active {
     li {
       margin-left: 2rem;
     }
+  }
+
+  .about-page {
+    width: 70%;
   }
 
   // ###
