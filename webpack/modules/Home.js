@@ -8,15 +8,15 @@ function Home() {
         <div className="about-page">
           <p>
             I am a web developer passionate about user centered design, mentoring and teaching. 
-            Technologies potential for large scale impact motivates my daily learning.
-            I enjoy working on impact based projects, and am motivated by tough technical challenges that require in-depth problem solving.
+            Technology's potential for large scale impact motivates my daily learning.
+            I enjoy working on impact based projects, and am motivated by tough technical challenges that require problem solving.
           </p>
           <br/>
           <p>
-            I primarily work with Ruby on Rails, Python and Flask, and React.
+            I primarily work with Ruby on Rails, Python with Flask, and React.
             I am open to new languages and frameworks and often experiment with other langauges in my free time.
-            I write well designed, clean and DRY code following best practices, and can adapt to different coding styles.
-            Testing is a must, as I write code through TDD. 
+            I write well designed, DRY code following best practices, and can adapt to different coding styles.
+            Testing is a must, and I write code through TDD. 
           </p>
           <br/>
           <p>
