@@ -37,7 +37,8 @@ export const PROJECTS = [
     subtitle: 'Content',
     title: 'KCMO Hiring Initiative',
     description: 'Created a guide for the Kansas City Health Department to assist hiring a new digital services team',
-    img: '../assets/img/CreatingADigitalServicesTeam.png' },
+    img: '../assets/img/CreatingADigitalServicesTeam.png'
+  },
   { 
     id: 3,
     info: '',
@@ -47,7 +48,8 @@ export const PROJECTS = [
     type: 'Technical Project',
     title: 'Flyr FairKeep Pricing APIs ',
     description: 'Built pricing and purchasing APIs for core product',
-    img: '../assets/img/GetFlyrWeb.png' },
+    img: '../assets/img/GetFlyrWeb.png'
+  },
   { 
     id: 4,
     info: '',
@@ -73,25 +75,29 @@ export const PROJECTS = [
   },
   { 
     id: 6,
-    info: '',
-    live: '',
-    github: '',
-    role: 'Web Developer',
+    info: 'http://www.elle.com/culture/news/a29317/a-hackathon-with-a-conscience/?zoomable',
+    twitter: 'https://twitter.com/ChimeforChange/status/620390041789968385',
+    youtube: 'https://www.youtube.com/watch?v=86ECVBcPWcg',
+    press: 'http://cdn.chimeforchange.org/wp-content/uploads/2015/07/CHIMEHACK-2-post-event-release.pdf',
+    role: 'Backend Engineer',
+    languages: 'NodeJS with ExpressJS',
     type: 'Hackathon',
     title: 'Best Product for Innovation',
-    description: '#ChimeHack2 Best product',
-    img: ''
+    description: 'Winner of #ChimeHack2\'s Best Product for Innovation for the application \'SafeBridge\'.',
+    img: '../assets/img/chimehack1.jpg'
   },
   {
     id: 7,
-    info: '',
-    live: '',
-    github: '',
-    role: 'Web Developer',
+    info: 'https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue',
+    twitter: 'https://twitter.com/SusanWojcicki/status/409531616990478336',
+    youtube: 'https://www.youtube.com/watch?v=WpHRSi0JFKY',
+    press: 'https://www.unicefusa.org/press/releases/gucci-partners-twitter-and-women-who-code-host-chimehack-creating-innovative-mobile',
+    role: 'Backend Engineer',
+    languages: 'Ruby on Rails, JavaScript',
     type: 'Hackathon',
     title: 'Best Product',
-    description: 'Chimehack Best product',
-    img: ''
+    description: 'Winner of #Chimehack\'s Best Product for the application \'ReSound\'.',
+    img: '../assets/img/chimehack2Web.png'
   }
 ]
 
@@ -125,16 +131,25 @@ export default React.createClass({
                   </div>
                   <div className="project-links">
                     {
-                      project.website ? <Link href={`${project.website}`} target="_blank"><p>Website</p></Link> : <div/>
+                      project.press ? <Link href={`${project.press}`} target="_blank"><p>Press Release</p></Link> : null
                     }
                     {
-                      project.live ? <Link href={`${project.live}`} target="_blank"><p>Live</p></Link> : <div/>
+                      project.website ? <Link href={`${project.website}`} target="_blank"><p>Website</p></Link> : null
                     }
                     {
-                      project.info ? <Link href={`${project.info}`} target="_blank"><p>Info</p></Link> : <div/>
+                      project.live ? <Link href={`${project.live}`} target="_blank"><p>Live</p></Link> : null
                     }
                     {
-                      project.github ? <Link href={`${project.github}`} target="_blank"><p>Github</p></Link>: ''
+                      project.info ? <Link href={`${project.info}`} target="_blank"><p>Info</p></Link> : null
+                    }
+                    {
+                      project.github ? <Link href={`${project.github}`} target="_blank"><p>Github</p></Link>: null
+                    }
+                    {
+                      project.twitter ? <Link href={`${project.twitter}`} target="_blank"><p>Twitter</p></Link> : null
+                    }
+                    {
+                      project.youtube ? <Link href={`${project.youtube}`} target="_blank"><p>YouTube</p></Link>: null
                     }
                   </div>
                 </div>
