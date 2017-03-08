@@ -27407,7 +27407,7 @@
 	  type: 'Hackathon',
 	  title: 'Best Product for Innovation',
 	  description: 'Winner of #ChimeHack2 (2015), \'Best Product for Innovation\' for the application \'SafeBridge\'.',
-	  img: '../assets/img/ChimeHack2Web.jpg'
+	  img: '../assets/img/ChimeHack2Web.png'
 	}, {
 	  id: 7,
 	  info: 'https://www.fastcompany.com/3023332/innovation-agents/gucci-teams-up-with-twitter-jawbone-and-more-to-tackle-global-womens-issue',
@@ -27419,7 +27419,7 @@
 	  type: 'Hackathon',
 	  title: 'Best Product',
 	  description: 'Winner of #Chimehack (2013), \'Best Product\' for the application \'ReSound\'.',
-	  img: '../assets/img/chimehack1.png'
+	  img: '../assets/img/chimehack1.jpg'
 	}];
 
 	exports.default = _react2.default.createClass({
