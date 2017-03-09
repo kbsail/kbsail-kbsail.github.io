@@ -27265,9 +27265,11 @@
 	    var sideBarClasses = 'side-nav-container';
 	    var mainPageClasses = 'main-page';
 	    var slidingContainerClasses = "sliding-container";
+	    var profileMainClasses = 'profile-main';
+
 	    if (this.state.visible) {
 	      sideBarClasses = 'side-open side-nav-container';
-	      mainPageClasses = 'side-open main-page';
+	      profileMainClasses = 'side-open profile-main';
 	      slidingContainerClasses = "side-open sliding-container";
 	    }
 	    var headerContent = _react2.default.createElement(
@@ -27295,12 +27297,16 @@
 	      'div',
 	      { className: 'react-container' },
 	      headerContent,
-	      _react2.default.createElement(_Profile2.default, null),
 	      _react2.default.createElement(
 	        'div',
-	        { className: mainPageClasses },
-	        this.props.children,
-	        _react2.default.createElement(_Footer2.default, null)
+	        { className: profileMainClasses },
+	        _react2.default.createElement(_Profile2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { className: mainPageClasses },
+	          this.props.children,
+	          _react2.default.createElement(_Footer2.default, null)
+	        )
 	      )
 	    );
 	  }
@@ -28028,7 +28034,7 @@
 	        resumeUrl = 'https://drive.google.com/file/d/0B1NiEZqYOerQb2Jjb1o1ZzlxUFU/view?usp=sharing';
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'flex-container mini-profile' },
+	      { className: 'mini-profile' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'front-photo' },
@@ -28062,18 +28068,14 @@
 	        'div',
 	        { className: 'front-about' },
 	        _react2.default.createElement(
-	          'div',
+	          'p',
 	          null,
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Web developer passionate about user centered design.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Specializing in Ruby, Python and React.'
-	          )
+	          'Web developer passionate about user centered design.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Specializing in Ruby, Python and React.'
 	        )
 	      )
 	    );

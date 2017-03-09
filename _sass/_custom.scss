@@ -102,6 +102,15 @@ a, a:visited, a:hover, a:active {
   width: 100%;
 }
 
+// ###
+// # Profile Main
+// ###
+.profile-main {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+}
 
 // ###
 // # Main Page
@@ -121,11 +130,23 @@ a, a:visited, a:hover, a:active {
   font-size: 1.1rem;
   margin: 0 auto;
   text-align: center;
-  display: block;
-  float: none;
-  width: 80%;
+  align-content: center;
+  align-items: center;  
+  
+  display: flex;
+  flex-direction: column;
   flex-wrap: nowrap !important;
+  justify-content: center;
+
   line-height: 150%;
+  width: 80%;
+  max-width: 1200px;
+  
+  div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
 
   p {
     margin: 0 auto;
@@ -142,6 +163,28 @@ a, a:visited, a:hover, a:active {
 // ###
 .front-page {
   margin-top: calc(10% - 70px);
+}
+
+// ###
+// # Flex Container
+// ###
+.flex-container {
+  // Flex settings
+  align-content: center;
+  align-items: center;
+  // border: 1px solid $black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
 }
 
 // ###
@@ -184,25 +227,11 @@ a, a:visited, a:hover, a:active {
 // ###
 .side-open {
   &.sliding-container {
-    // transform: translate(-12.5rem, 0);
     transform: translate(0, 4rem);
   }
-}
-
-
-// ###
-// # Custom Modal
-// ###
-.custom-modal {
-  background: $white;
-  bottom: 20%;
-  box-shadow: 0 0 150px 130px $transparent-clear;
-  left: 20%;
-  overflow: auto;
-  padding: 20;
-  position: fixed;
-  right: 20%;
-  top: 20%;
+  // &.profile-main {
+  //   transform: translate(0, 4rem);
+  // }
 }
 
 // ###
@@ -235,7 +264,7 @@ a, a:visited, a:hover, a:active {
 // ###
 .about-page {
   margin: 2rem auto;
-  width: 90%;
+  width: 80%;
 
   h2, h5, p {
     text-align: left;
@@ -322,6 +351,7 @@ a, a:visited, a:hover, a:active {
 .project-container {
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 100%;
   min-width: 100%;
@@ -342,12 +372,10 @@ a, a:visited, a:hover, a:active {
 // # Project Details
 // ###
 .project-details {
-  // margin: 2rem 2rem 0 2rem;
-  margin: auto 2rem;
+  margin: 2rem;
   text-align: left;
   margin-left: 4rem;
   height: 100%;
-  width: 100%;
 
   div {
     margin: 0;
@@ -362,9 +390,7 @@ a, a:visited, a:hover, a:active {
 // # Project Image
 // ###
 .project-image {
-  max-width: 340px;
-  min-width: 340px;
-  height: 250px;
+  width: 100%;
   right: 0;
   border-left: 1px solid $light-grey;
 }
@@ -541,34 +567,14 @@ a, a:visited, a:hover, a:active {
   }
 }
 
-// Info Section
-
-.flex-container {
-  // Flex settings
-  align-content: center;
-  align-items: center;
-  // border: 1px solid $black;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 1200px;
-
-  div {
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-}
-
-
 // ###
 // # Front Title
 // ###
 .front-title {
   text-align: left;
   margin-left: 20px;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 // ###
@@ -578,6 +584,7 @@ a, a:visited, a:hover, a:active {
   flex-basis: 100% !important;
   text-align: left;
   margin-left: 20px;
+  margin-top: 1rem;
 }
 
 
@@ -647,6 +654,26 @@ a, a:visited, a:hover, a:active {
     li {
       margin-left: 2rem;
     }
+  }
+
+  .mini-profile {
+    flex-direction: row;
+  }
+
+  .project-container {
+    flex-direction: row;
+  }
+
+  .project-details {
+    margin: auto 2rem;
+    width: 100%;
+    margin-left: 4rem;
+  }
+
+  .project-image {
+    max-width: 340px;
+    min-width: 340px;
+    height: 250px;
   }
 
   .about-page {

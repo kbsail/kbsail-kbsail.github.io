@@ -20,9 +20,11 @@ export default React.createClass({
     let sideBarClasses = 'side-nav-container';
     let mainPageClasses = 'main-page';
     let slidingContainerClasses = "sliding-container";
+    let profileMainClasses = 'profile-main';
+
     if (this.state.visible) {
       sideBarClasses  = 'side-open side-nav-container'
-      mainPageClasses = 'side-open main-page'
+      profileMainClasses = 'side-open profile-main'
       slidingContainerClasses = "side-open sliding-container";
     }
     let headerContent = (
@@ -45,10 +47,12 @@ export default React.createClass({
     return (
       <div className="react-container">
         {headerContent}
-        <Profile/>
-        <div className={mainPageClasses}>
-          {this.props.children}
-          <Footer/>
+        <div className={profileMainClasses}>
+          <Profile/>
+          <div className={mainPageClasses}>
+            {this.props.children}
+            <Footer/>
+          </div>
         </div>
       </div>
     )
